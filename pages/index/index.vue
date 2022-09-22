@@ -1,255 +1,195 @@
 <template>
-  <view class="template-food tn-safe-area-inset-bottom">
-    <swiper class="card-swiper tn-margin-top-sm" :circular="true"
-      :autoplay="true" duration="500" interval="5000" previous-margin="75rpx" next-margin="75rpx" @change="cardSwiper"> 
-      <swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''">
-        <view class="swiper-item image-banner">
-          <image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>
-        </view>
-        <view class="swiper-item-text">
-          <view class="tn-text-xxl tn-text-bold">{{item.name}}</view>
-          <view class="tn-text-sm tn-text-bold tn-padding-top-xs">{{item.text}}</view>
-        </view>
-      </swiper-item>
-    </swiper>
-    <view class="indication">
-        <block v-for="(item,index) in swiperList" :key="index">
-            <view class="spot" :class="cardCur==index?'active':''"></view>
-        </block>
+  <view class="template-bless tn-safe-area-inset-bottom">
+    <!-- 顶部自定义导航 -->
+    <tn-nav-bar fixed alpha customBack>
+      <view slot="back" class='tn-custom-nav-bar__back'
+        @click="goBack">
+        <text class='icon tn-icon-left'></text>
+        <text class='icon tn-icon-home-capsule-fill'></text>
+      </view>
+	  <view class="logo-banner">
+	  	<image src="http://www.cofco.com/img/logo.png" mode=""></image>
+	  </view>
+    </tn-nav-bar>
+	
+	<view class="top-backgroup">
+		<image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image>
+	</view>
+	<swiperA></swiperA>
+	<swiperB></swiperB>
+	<swiperC></swiperC>
+	<swiperD></swiperD>
+	<swiperE></swiperE>
+	<swiperF></swiperF>
+	<swiperG></swiperG>
+	<swiperH></swiperH>
+	<swiperI></swiperI>
+	<swiperJ></swiperJ>
+
+    <!-- 底部背景图片-->
+    <view class="login__bg login__bg--bottom">
+      <image src="https://tnuiimage.tnkjapp.com/bless/bless-bottom.jpg" mode="widthFix"></image>
     </view>
-    
     <!-- 底部tabbar start-->
     <view class="tabbar footerfixed">
-      <view class="action">
+      <view class="action" @click="navTuniaoUI">
         <view class="bar-icon">
-          <!-- <view class="tn-icon-home-smile">
-          </view> -->
-          <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/food-home.png'></image>
+          <image class="" src='https://tnuiimage.tnkjapp.com/bless/bless-home.png'></image>
         </view>
-        <view class="tn-color-black">小吃</view>
+        <view class="tn-color-gray">首页</view>
       </view>
-      <view class="action">
-        <view class="bar-icon">
-          <!-- <view class="tn-icon-watercup tn-color-gray">
-          </view> -->
-          <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/food-buy.png'></image>
+      <view class="action" @click="navTuniaoUI">
+        <view class="bar-icon">      
+          <image class="" src='https://tnuiimage.tnkjapp.com/bless/bless-flower.png'></image>
         </view>
-        <view class="tn-color-gray">奶茶</view>
+        <view class="tn-color-gray">发现</view>
       </view>
-      <view class="action">
-        <view class="bar-icon">
-          <!-- <view class="tn-icon-ticket tn-color-gray">
-          </view> -->
-          <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/food-list.png'></image>
+      <view class="action bar-center" @click="navTuniaoHome">
+        <view class="nav-index-button">
+          <view class="nav-index-button__content">
+              <view class="nav-index-button__content--icon tn-flex tn-flex-row-center tn-flex-col-center">
+                <!-- <view class="tn-icon-logo-tuniao"></view> -->
+                <view class="bar-circle">
+                  <image class="" src='https://tnuiimage.tnkjapp.com/bless/bless-tiger.png'></image>
+                </view>
+              </view>  
+          </view>
+        
+          <view class="nav-index-button__meteor">
+            <view class="nav-index-button__meteor__wrapper">
+              <view v-for="(item,index) in 6" :key="index" class="nav-index-button__meteor__item" :style="{transform: `rotateX(${-60 + (30 * index)}deg) rotateZ(${-60 + (30 * index)}deg)`}">
+                <view class="nav-index-button__meteor__item--pic"></view>
+              </view>
+            </view>
+          </view>
         </view>
-        <view class="tn-color-gray">面包</view>
       </view>
-      <view class="action">
+      
+      <view class="action" @click="navTuniaoUI">
         <view class="bar-icon">
-          <!-- <view class="tn-icon-my tn-color-gray">
+          <!-- <view class="tn-icon-image-text tn-color-gray--dark">
           </view> -->
-          <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/food-my.png'></image>
+          <image class="" src='https://tnuiimage.tnkjapp.com/bless/bless-china.png'></image>
         </view>
-        <view class="tn-color-gray">雪糕</view>
+        <view class="tn-color-gray">祝福</view>
+      </view>
+      <view class="action" @click="navTuniaoUI">
+        <view class="bar-icon">
+          <!-- <view class="tn-icon-my tn-color-gray--dark">
+          </view> -->
+          <image class="" src='https://tnuiimage.tnkjapp.com/bless/bless-money.png'></image>
+        </view>
+        <view class="tn-color-gray">我的</view>
       </view>
     </view>
     
-    <!-- 回到首页悬浮按钮-->
-    <nav-index-button></nav-index-button>
     
   </view>
 </template>
 
 <script>
   import template_page_mixin from '@/libs/mixin/template_page_mixin.js'
-  import NavIndexButton from '@/libs/components/nav-index-button.vue'
+  import swiperA from '@/wxcomponents/swiper/swiper1.vue';
+  import swiperB from '@/wxcomponents/swiper/swiper2.vue';
+  import swiperC from '@/wxcomponents/swiper/swiper3.vue';
+  import swiperD from '@/wxcomponents/swiper/swiper4.vue';
+  import swiperE from '@/wxcomponents/swiper/swiper5.vue';
+  import swiperF from '@/wxcomponents/swiper/swiper6.vue';
+  import swiperG from '@/wxcomponents/swiper/swiper7.vue';
+  import swiperH from '@/wxcomponents/swiper/swiper8.vue';
+  import swiperI from '@/wxcomponents/swiper/swiper9.vue';
+  import swiperJ from '@/wxcomponents/swiper/swiper10.vue';
+
+
   export default {
-    name: 'TemplateFood',
+    name: 'index',
     mixins: [template_page_mixin],
-    components: { NavIndexButton },
     data(){
       return {
-        cardCur: 0,
-        swiperList: [{
-          id: 0,
-          type: 'image',
-          name: '麻辣香锅',
-          text: '广东人的微微辣',
-          url: 'https://tnuiimage.tnkjapp.com/swiper/swiper3.jpg',
-        }, {
-          id: 1,
-          type: 'image',
-          name: '太二酸菜鱼',
-          text: '当然是酸菜鱼+酸菜罐子啦',
-          url: 'https://tnuiimage.tnkjapp.com/swiper/swiper4.jpg',
-        }, {
-          id: 2,
-          type: 'image',
-          name: '蛙小侠',
-          text: '打卡蒜香牛蛙',
-          url: 'https://tnuiimage.tnkjapp.com/swiper/swiper1.jpg',
-        }, {
-          id: 3,
-          type: 'image',
-          name: '九毛九',
-          text: '打卡大酱骨',
-          url: 'https://tnuiimage.tnkjapp.com/swiper/deer.jpg',
-        }, {
-          id: 4,
-          type: 'image',
-          name: '牛小灶',
-          text: '冬天必打卡',
-          url: 'https://tnuiimage.tnkjapp.com/swiper/swiper2.jpg',
-        }],
       }
     },
-    methods: {
-      // cardSwiper
-      cardSwiper(e) {
-        this.cardCur = e.detail.current
-      },
-    }
+	components: {
+		swiperA,
+		swiperB,
+		swiperC,
+		swiperD,
+		swiperE,
+		swiperF,
+		swiperG,
+		swiperH,
+		swiperI,
+		swiperJ
+	},
+    onLoad() {
+    },
+    methods: {}
   }
 </script>
 
 <style lang="scss" scoped>
   @import '@/static/css/templatePage/custom_nav_bar.scss';
-  /* 自定义导航栏内容 start */
-  .custom-nav {
+  .template-bless{
+	  height: 100vh;
+	  overflow: scroll;
+  }
+  page{
+	  height:100vh;overflow: scroll;
+  }
+  .top-backgroup {
+    height: 667rpx;
+	z-index: -1;
+
+	.backgroud-image {
+	  width: 100%;
+	  height: 667rpx;
+	}
+  }
+  .login {
+    position: relative;
     height: 100%;
+    z-index: 1;
     
-    &__back {
-      margin: auto 5rpx;
-      font-size: 40rpx;
-      margin-right: 10rpx;
-      margin-left: 30rpx;
-      flex-basis: 5%;
-    }
-    
-    &__search {
-      flex-basis: 70%;
-      width: 100%;
-      height: 100%;
+  /* 背景图片 start */
+    &__bg {
+      z-index: -1;
+      position: fixed;
       
-      &__box {
+      &--top {
+        top: 0;
+        left: 0;
+        right: 0;
         width: 100%;
-        height: 70%;
-        padding: 15rpx 0;
-        margin: 0 30rpx;
-        border-radius: 10rpx;
-        font-size: 24rpx;
+        
+        .bg {
+          width: 750rpx;
+          will-change: transform;
+        }
+        .rocket {
+          margin: 50rpx 30%;
+          width: 300rpx;
+          will-change: transform;
+        }
       }
       
-      &__icon {
-        padding-right: 10rpx;
-        margin-left: 20rpx;
-        font-size: 30rpx;
-      }
-      
-      &__text {
-        color: #AAAAAA;
+      &--bottom {
+        bottom: -10rpx;
+        left: 0;
+        right: 0;
+        width: 100%;
+        // height: 144px;
+        // margin-bottom: env(safe-area-inset-bottom);
+        
+        image {
+          width: 750rpx;
+          will-change: transform;
+        }
       }
     }
   }
-  .logo-image{
-    width: 65rpx;
-    height: 65rpx;
-    position: relative;
-  }
-  .logo-pic{
-    background-size: cover;
-    background-repeat:no-repeat;
-    // background-attachment:fixed;
-    background-position:top;
-    border-radius: 50%;
-  }
-  /* 自定义导航栏内容 end */
-  /* 轮播 start*/
-  .card-swiper {
-    height: 60vh !important;
-  }
-  
-  .card-swiper swiper-item {
-    width: 600rpx !important;
-    // left: 75rpx;
-    box-sizing: border-box;
-    padding: 0rpx 20rpx 0rpx 20rpx;
-    overflow: initial;
-  }
-  
-  .card-swiper swiper-item .swiper-item {
-    width: 100%;
-    display: block;
-    height: 45vh;
-    border-radius: 20rpx 20rpx 0 0;
-    transform: scale(1);
-    transition: all 0.3s ease-in 0s;
-    overflow: hidden;
-  }
-  
-  .card-swiper swiper-item.cur .swiper-item {
-    transform: scale(1);
-    transition: all 0.3s ease-in 0s;
-  }
-  
-  .card-swiper swiper-item .swiper-item-text {
-    padding: 20rpx;
-    width: 100%;
-    display: block;
-    height: 140rpx;
-    border-radius: 0 0 20rpx 20rpx;
-    transform: none;
-    transition: all 0.4s ease 0s;
-    overflow: hidden;
-    color: #000000;
-    background-color: rgba(255,255,255,1);
-    box-shadow: 0rpx 30rpx 30rpx 0rpx rgba(0,0,245, 0.08);
-  }
+  /* 背景图片 end */
     
-  .card-swiper swiper-item.cur .swiper-item-text {
-    transition: all 0.4s ease 0s;
-    text-shadow: 0rpx 10rpx 20rpx rgba(0,0,0,0.1);
-  }
-  
-  .image-banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .image-banner image{
-    width: 100%;
-    height: 100%;
-  }
-/* 轮播指示点 start*/
-  .indication{
-    z-index: 9999;
-    width: 100%;
-    height: 36rpx;
-    position: absolute;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-  }
-  
-  .spot{
-    opacity: 0.8;
-    width: 10rpx;
-    height: 10rpx;
-    border-radius: 50%;
-    margin: 0 8rpx !important;
-    position: relative;
-    background-color: #3165CC;
-  }
-  
-  .spot.active{
-    opacity: 1;
-    width: 35rpx;
-    height: 35rpx;
-    border: 2rpx solid #3165CC;
-    background-color: #FFFFFF;
-  }
-  
+    
+    
   
   /* 底部tabbar start*/
   .footerfixed{
@@ -257,8 +197,8 @@
    width: 100%;
    bottom: 0;
    z-index: 999;
-   background-color: #FFFFFF;
-   box-shadow: 0rpx 0rpx 30rpx 0rpx rgba(0, 0, 0, 0.07);
+   // background-color: #FFFFFF;
+   // box-shadow: 0rpx 0rpx 30rpx 0rpx rgba(0, 0, 0, 0.07);
   }
   
   .tabbar {
@@ -284,6 +224,19 @@
   	overflow: initial;
   }
   
+  .bar-center{
+    animation: suspension 3s ease-in-out infinite;
+  }
+  
+  @keyframes suspension {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.8rem);
+    }
+  }  
+  
   .tabbar .action .bar-icon {
   	width: 100rpx;
   	position: relative;
@@ -292,11 +245,160 @@
   	margin: 0 auto 10rpx;
   	text-align: center;
   	font-size: 42rpx;
+    // line-height: 50rpx;
   }
   
   .tabbar .action .bar-icon image {
   	width: 50rpx;
   	height: 50rpx;
   	display: inline-block;
+  }
+  
+  .tabbar .action .bar-circle {
+    position: relative;
+    display: block;
+    margin: 0rpx auto 0rpx;
+    text-align: center;
+    font-size: 52rpx;
+    line-height: 90rpx;
+    // background-color: #01BEFF;
+    width: 100rpx !important;
+    height: 100rpx !important;
+    overflow: hidden;
+    // border-radius: 50%;
+    // box-shadow: 0px 10px 30px rgba(70,23,129, 0.12),
+    //   0px -8px 40px rgba(255, 255, 255, 1),
+    //   inset 0px -10px 10px rgba(70,23,129, 0.05),
+    //   inset 0px 10px 20px rgba(255, 255, 255, 1);
+    // box-shadow: 0rpx 0rpx 20rpx 0rpx rgba(1, 190, 255, 0.5);
+  }
+  
+  .tabbar .action .bar-circle image {
+    width: 100rpx;
+  	height: 100rpx;
+  	display: inline-block;
+    margin: 0rpx auto 0rpx;
+  }
+  
+  /* 流星+悬浮 */
+  .nav-index-button {
+    animation: suspension 3s ease-in-out infinite;
+    z-index: 999999;
+    
+    
+    &__content {
+      position: absolute;
+      width: 100rpx;
+      height: 100rpx;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      &--icon {
+        width: 100rpx;
+        height: 100rpx;
+        font-size: 60rpx;
+        border-radius: 50%;
+        margin-bottom: 18rpx;
+        position: relative;
+        z-index: 1;
+        transform: scale(0.85);
+        
+        &::after {
+          content: " ";
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          bottom: 0;
+          border-radius: inherit;
+          opacity: 1;
+          transform: scale(1, 1);
+          background-size: 100% 100%;
+          // background-image: url(https://tnuiimage.tnkjapp.com/cool_bg_image/icon_bg6.png);
+        }
+      }
+    }
+    
+    &__meteor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100rpx;
+      height: 100rpx;
+      transform-style: preserve-3d;
+      transform: translate(-50%, -50%) rotateY(75deg) rotateZ(10deg);
+      
+      &__wrapper {
+        width: 100rpx;
+        height: 100rpx;
+        transform-style: preserve-3d;
+        animation: spin 20s linear infinite;
+      }
+      
+      &__item {
+        position: absolute;
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 1000rpx;
+        left: 0;
+        top: 0;
+        
+        &--pic {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(https://tnuiimage.tnkjapp.com/cool_bg_image/arc2.png) no-repeat center center;
+          background-size: 100% 100%;
+          animation: arc 4s linear infinite;
+        }
+      }
+    }
+  }
+  
+  
+  @keyframes suspension {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.6rem);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(0deg);
+    }
+  
+    100% {
+      transform: rotateX(-360deg);
+    }
+  }
+  
+  @keyframes arc {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .logo-banner{
+	  width: 70%;
+	  height: 100%;
+	  position: relative;
+	  display: flex;
+	  justify-content: space-evenly;
+	  align-items: center;
+	  box-sizing: border-box;
+	  /* background-color: rgba(0, 0, 0, 0.15); */
+	  border-radius: 1000rpx;
+	  border: 1rpx solid rgba(255, 255, 255, 0.5);
+	  color: #FFFFFF;
+	  font-size: 36rpx;
+	  margin: 0 auto;
+	  image{
+		  width: 100%;
+		  height: 100%;
+	  }
   }
 </style>
