@@ -19,7 +19,16 @@
           "disableScroll": true
         }
       }
-  }],
+  }    ,{
+            "path" : "pagesMarking/blogger/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "preloadRule": {
     "pages/index/index": {
       "network": "all",
