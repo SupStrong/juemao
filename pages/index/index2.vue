@@ -9,20 +9,22 @@
 			<view class="logo-banner"><image :src="tabbar.logoImg" mode=""></image></view>
 		</tn-nav-bar>
 		<tn-nav-bar :isBack="false" :bottomShadow="false" backgroundColor="#FFFFFF" v-else>
-		  <view class="" style="width: 72vw;overflow: hidden;">
-			<tn-tabs :list="scrollList" :current="current" @change="tabChange" activeColor="#000" bold="true" :fontSize="36"></tn-tabs>
-		  </view>
+			<view class="" style="width: 72vw;overflow: hidden;">
+				<tn-tabs :list="scrollList" :current="current" @change="tabChange" activeColor="#000" bold="true" :fontSize="36"></tn-tabs>
+			</view>
 		</tn-nav-bar>
 		<view class="top-backgroup"><image class="backgroud-image" :src="tabbar.topImg" mode=""></image></view>
 
+		<navA></navA>
+		<navB></navB>
 		<!-- 底部背景图片-->
 		<view class="login__bg login__bg--bottom"><image :src="tabbar.bottomImg" mode="widthFix"></image></view>
 		<!-- 底部tabbar start-->
 		<view class="tabbar footerfixed">
-			<view class="action" @click="navTuniaoUI(item,index)" :class="{ 'bar-center': item.isHome }" v-for="(item, index) of tabbar.list" :key="index">
+			<view class="action" @click="navTuniaoUI(item, index)" :class="{ 'bar-center': item.isHome }" v-for="(item, index) of tabbar.list" :key="index">
 				<!-- 小tabbar -->
 				<view class="" v-if="item.isHome != true">
-			<view class="bar-icon"><image class="" :src="curIndex == index ? item.activeIcon : item.inactiveIcon"></image></view>
+					<view class="bar-icon"><image class="" :src="curIndex == index ? item.activeIcon : item.inactiveIcon"></image></view>
 					<tn-badge
 						v-if="item.num"
 						:dot="false"
@@ -40,7 +42,7 @@
 				</view>
 				<!-- 居中tabbar -->
 				<view class="nav-index-button" v-else>
-		 		<view class="nav-index-button__content">
+					<view class="nav-index-button__content">
 						<view class="nav-index-button__content--icon tn-flex tn-flex-row-center tn-flex-col-center">
 							<view class="bar-circle"><image class="" :src="item.activeIcon"></image></view>
 						</view>
@@ -111,30 +113,30 @@
 
 <script>
 import template_page_mixin from '@/libs/mixin/template_page_mixin.js';
-
+import navA from '@/wxcomponents/nav/nav1.vue';
+import navB from '@/wxcomponents/nav/nav2.vue';
 export default {
 	name: 'index',
 	mixins: [template_page_mixin],
+	components: {
+		navA,
+		navB
+	},
 	data() {
 		return {
+			list: [],
 			show2: false,
-			curIndex:0,
-			curItem:{},
-			scrollList: [
-			  {name: '单品', count: '10'},
-			  {name: '品牌', count: '10'},
-			  {name: '分类'},
-			  {name: '专题'},
-			  {name: '排行榜'},
-			  {name: '文章'}
-			],
+			curIndex: 0,
+			curItem: {},
+			loadStatus: 'loadmore',
+			scrollList: [{ name: '单品', count: '10' }, { name: '品牌', count: '10' }, { name: '分类' }, { name: '专题' }, { name: '排行榜' }, { name: '文章' }],
 			tabbar: {
 				bottomImg: 'https://tnuiimage.tnkjapp.com/bless/bless-bottom.jpg',
 				topImg: 'https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg',
 				logoImg: 'http://www.cofco.com/img/logo.png',
-				allBgColor:'',
-			 list: [
-				 {
+				allBgColor: '',
+				list: [
+					{
 						title: '首页',
 						activeIcon: 'https://tnuiimage.tnkjapp.com/bless/bless-home.png',
 						inactiveIcon: 'https://tnuiimage.tnkjapp.com/tabbar/home_tn.png',
@@ -145,8 +147,8 @@ export default {
 						title: '商城',
 						activeIcon: 'https://tnuiimage.tnkjapp.com/bless/bless-flower.png',
 						inactiveIcon: 'https://tnuiimage.tnkjapp.com/tabbar/information_tn.png',
-					 num: '40',
-					 path: ''
+						num: '40',
+						path: ''
 					},
 					{
 						title: '活动',
@@ -168,28 +170,10 @@ export default {
 						path: ''
 					}
 				]
-			}
+			},
 		};
 	},
-	components: {},
-	onLoad() {},
 	methods: {
-		navTuniaoUI(item,index) {
-			this.curIndex = index;
-			this.curItem = item;
-			console.log(item, 'item');
-		},
-		navCreate(){
-			console.log("111")
-		},
-		// 弹出压屏窗
-		showLandscape() {
-			this.show2 = true;
-		},
-		// 关闭压屏窗
-		closeLandscape() {
-			this.show2 = false;
-		},
 	}
 };
 </script>
@@ -197,8 +181,10 @@ export default {
 <style lang="scss" scoped>
 @import '@/static/css/templatePage/custom_nav_bar.scss';
 .template-bless {
-	height: 100vh;
-	overflow: scroll;
+	// height: 100vh;
+	// overflow: scroll;
+	padding-bottom: 240rpx;
+	// background-color: red;
 }
 page {
 	height: 100vh;
@@ -483,42 +469,42 @@ page {
 .hx-k6 {
 	transform: rotateX(90deg) rotateZ(90deg);
 }
-  /* 图标容器9 start */
-  .icon9 {
-    &__item {
-      width: 30%;
-      background-color: #FFFFFF;
-      border-radius: 10rpx;
-      padding: 30rpx;
-      margin: 20rpx 10rpx;
-      transform: scale(1);
-      transition: transform 0.3s linear;
-      transform-origin: center center;
-      
-      &--icon {
-        width: 110rpx;
-        height: 110rpx;
-        font-size: 65rpx;
-        border-radius: 50%;
-        margin: 20rpx 40rpx;
-        position: relative;
-        z-index: 1;
-        
-        &::after {
-          content: " ";
-          position: absolute;
-          z-index: -1;
-          width: 100%;
-          height: 100%;
-          left: 0;
-          bottom: 0;
-          border-radius: inherit;
-          opacity: 1;
-          transform: scale(1, 1);
-          background-size: 100% 100%;
-          background-image: url(https://tnuiimage.tnkjapp.com/cool_bg_image/icon_bg5.png);
-        }
-      }
-    }
-  }
+/* 图标容器9 start */
+.icon9 {
+	&__item {
+		width: 30%;
+		background-color: #ffffff;
+		border-radius: 10rpx;
+		padding: 30rpx;
+		margin: 20rpx 10rpx;
+		transform: scale(1);
+		transition: transform 0.3s linear;
+		transform-origin: center center;
+
+		&--icon {
+			width: 110rpx;
+			height: 110rpx;
+			font-size: 65rpx;
+			border-radius: 50%;
+			margin: 20rpx 40rpx;
+			position: relative;
+			z-index: 1;
+
+			&::after {
+				content: ' ';
+				position: absolute;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				bottom: 0;
+				border-radius: inherit;
+				opacity: 1;
+				transform: scale(1, 1);
+				background-size: 100% 100%;
+				background-image: url(https://tnuiimage.tnkjapp.com/cool_bg_image/icon_bg5.png);
+			}
+		}
+	}
+}
 </style>

@@ -15,6 +15,10 @@
 		</tn-nav-bar>
 		<view class="top-backgroup"><image class="backgroud-image" :src="tabbar.topImg" mode=""></image></view>
 
+		<!-- 商品 -->
+		<goodsA />
+		<goodsB />
+
 		<!-- 底部背景图片-->
 		<view class="login__bg login__bg--bottom"><image :src="tabbar.bottomImg" mode="widthFix"></image></view>
 		<!-- 底部tabbar start-->
@@ -111,7 +115,8 @@
 
 <script>
 import template_page_mixin from '@/libs/mixin/template_page_mixin.js';
-
+import goodsA from '@/wxcomponents/goods/goods1.vue'
+import goodsB from '@/wxcomponents/goods/goods2.vue'
 export default {
 	name: 'index',
 	mixins: [template_page_mixin],
@@ -171,7 +176,10 @@ export default {
 			}
 		};
 	},
-	components: {},
+	components: {
+		goodsA,
+		goodsB
+	},
 	onLoad() {},
 	methods: {
 		navTuniaoUI(item,index) {
@@ -194,8 +202,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/static/css/templatePage/custom_nav_bar.scss';
+@import '@/static/css/main.scss';
 .template-bless {
 	height: 100vh;
 	overflow: scroll;
