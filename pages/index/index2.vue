@@ -17,6 +17,12 @@
 
 		<navA></navA>
 		<navB></navB>
+		<navC></navC>
+		<navD></navD>
+		<navE></navE>
+		<navF></navF>
+		<navG></navG>
+		<navH></navH>
 		<!-- 底部背景图片-->
 		<view class="login__bg login__bg--bottom"><image :src="tabbar.bottomImg" mode="widthFix"></image></view>
 		<!-- 底部tabbar start-->
@@ -115,12 +121,24 @@
 import template_page_mixin from '@/libs/mixin/template_page_mixin.js';
 import navA from '@/wxcomponents/nav/nav1.vue';
 import navB from '@/wxcomponents/nav/nav2.vue';
+import navC from '@/wxcomponents/nav/nav3.vue';
+import navD from '@/wxcomponents/nav/nav4.vue';
+import navE from '@/wxcomponents/nav/nav5.vue';
+import navF from '@/wxcomponents/nav/nav6.vue';
+import navG from '@/wxcomponents/nav/nav7.vue';
+import navH from '@/wxcomponents/nav/nav8.vue';
 export default {
 	name: 'index',
 	mixins: [template_page_mixin],
 	components: {
 		navA,
-		navB
+		navB,
+		navC,
+		navD,
+		navE,
+		navF,
+		navG,
+		navH
 	},
 	data() {
 		return {

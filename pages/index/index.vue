@@ -37,6 +37,7 @@
 		<bannerD></bannerD>
 		<bannerE @freshAllData="freshAllData" @refreshData="onRefreshData" :hideAnimation="hideAnimation"></bannerE>
 		<bannerF></bannerF>
+		<bannerG></bannerG>
 		<!-- <bannerG></bannerG> -->
 		<!--  -->
 

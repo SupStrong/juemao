@@ -31,6 +31,7 @@
 					<template v-slot:left="{ leftList }">
 						<view class="goods-list" style="position: relative;display: flow-root;">
 							<activityB></activityB>
+							<activityD></activityD>
 						</view>
 						<view v-for="(item, index) in leftList" :key="item.id" class="product__item">
 							<view class="item__image">
@@ -188,13 +189,16 @@ import template_page_mixin from '@/libs/mixin/template_page_mixin.js';
 import activityA from '@/wxcomponents/activity/activity1.vue';
 import activityB from '@/wxcomponents/activity/activity2.vue';
 import activityC from '@/wxcomponents/activity/activity3.vue';
+import activityD from '@/wxcomponents/activity/activity4.vue';
+
 export default {
 	name: 'index',
 	mixins: [template_page_mixin],
 	components: {
 		activityA,
 		activityB,
-		activityC
+		activityC,
+		activityD
 	},
 	data() {
 		return {
@@ -388,7 +392,7 @@ export default {
 	// height: 100vh;
 	// overflow: scroll;
 	padding-bottom: 240rpx;
-	// background-color: red;
+	background-color: red;
 }
 page {
 	height: 100vh;
@@ -713,7 +717,8 @@ page {
 }
 activity-a,
 activity-b,
-activity-c {
+activity-c,
+activity-d{
 	display: flex;
 	// width: 50%;
 	float: left;
