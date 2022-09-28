@@ -22,6 +22,7 @@
 			<activityB></activityB>
 			<activityC style='margin-right: 10rpx;'></activityC>
 			<activityA></activityA>
+			<activityE></activityE>
 		</view>
 
 		<!-- 商品 -->
@@ -190,6 +191,7 @@ import activityA from '@/wxcomponents/activity/activity1.vue';
 import activityB from '@/wxcomponents/activity/activity2.vue';
 import activityC from '@/wxcomponents/activity/activity3.vue';
 import activityD from '@/wxcomponents/activity/activity4.vue';
+import activityE from '@/wxcomponents/activity/activity5.vue';
 
 export default {
 	name: 'index',
@@ -198,7 +200,8 @@ export default {
 		activityA,
 		activityB,
 		activityC,
-		activityD
+		activityD,
+		activityE
 	},
 	data() {
 		return {
