@@ -12,7 +12,10 @@
 		<view class="top-backgroup"><image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image></view>
 		
 		<swiperWW></swiperWW>
-		<swiperVV></swiperVV>
+		<swiperVV></swiperVV>	
+		<swiperEE></swiperEE>
+		<swiperAA></swiperAA>
+		<swiperBB></swiperBB>
 		<swiperA></swiperA>
 		<swiperB></swiperB>
 		<swiperC></swiperC>
@@ -124,6 +127,9 @@ import swiperQ from '@/wxcomponents/swiper/swiper17.vue';
 import swiperW from '@/wxcomponents/swiper/swiper18.vue';
 import swiperWW from '@/wxcomponents/swiper/swiper19.vue';
 import swiperVV from '@/wxcomponents/swiper/swiper20.vue';
+import swiperEE from '@/wxcomponents/swiper/swiper21.vue';
+import swiperAA from '@/wxcomponents/swiper/swiper22.vue'
+import swiperBB from '@/wxcomponents/swiper/swiper23.vue'
 
 import bannerA from '@/wxcomponents/banner/banner1.vue';
 import bannerB from '@/wxcomponents/banner/banner2.vue';
@@ -172,6 +178,9 @@ export default {
 		bannerF,
 		swiperWW,
 		swiperVV,
+		swiperEE,
+		swiperAA,
+		swiperBB,
 		// bannerG,
 		loginA
 	},

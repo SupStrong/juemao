@@ -14,7 +14,6 @@
 			</view>
 		</tn-nav-bar>
 		<view class="top-backgroup"><image class="backgroud-image" :src="tabbar.topImg" mode=""></image></view>
-
 		<view class="goods-list" style="position: relative;padding: 0 24rpx;display: flow-root;">
 			<activityB style='margin-right: 10rpx;'></activityB>
 			<activityA></activityA>
@@ -31,8 +30,12 @@
 				<tn-waterfall ref="waterfall" v-model="list" @finish="handleWaterFallFinish">
 					<template v-slot:left="{ leftList }">
 						<view class="goods-list" style="position: relative;display: flow-root;">
+							<activityF></activityF>
 							<activityB></activityB>
 							<activityD></activityD>
+						</view>
+						<view class="goods-list" style="position: relative;display: flow-root;">
+							<activityI></activityI>
 						</view>
 						<view v-for="(item, index) in leftList" :key="item.id" class="product__item">
 							<view class="item__image">
@@ -65,6 +68,11 @@
 						</view>
 						<view class="goods-list" style="position: relative;display: flow-root;">
 							<activityA></activityA>
+						</view>
+						<view class="goods-list" style="position: relative;display: flow-root;">
+							<activityF></activityF>
+							<activityG></activityG>
+							<activityH></activityH>
 						</view>
 						<view v-for="(item, index) in rightList" :key="item.id" class="product__item">
 							<view class="item__image">
@@ -192,6 +200,10 @@ import activityB from '@/wxcomponents/activity/activity2.vue';
 import activityC from '@/wxcomponents/activity/activity3.vue';
 import activityD from '@/wxcomponents/activity/activity4.vue';
 import activityE from '@/wxcomponents/activity/activity5.vue';
+import activityF from '@/wxcomponents/activity/activity6.vue';
+import activityG from '@/wxcomponents/activity/activity7.vue';
+import activityH from '@/wxcomponents/activity/activity8.vue';
+import activityI from '@/wxcomponents/activity/activity9.vue';
 
 export default {
 	name: 'index',
@@ -201,7 +213,11 @@ export default {
 		activityB,
 		activityC,
 		activityD,
-		activityE
+		activityE,
+		activityF,
+		activityG,
+		activityH,
+		activityI
 	},
 	data() {
 		return {
