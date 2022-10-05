@@ -19,8 +19,33 @@
           "disableScroll": true
         }
       }
-  }    ,{
+  },
+	 {
+	     "path": "pages/user/index",
+	     "style": {
+	       "mp-weixin": {
+	         "disableScroll": true
+	       },
+	       "app-plus": {
+	         "bounce": "none"
+	       },
+	       "mp-alipay": {
+	         "allowsBounceVertical": "NO"
+	       },
+	       "mp-baidu": {
+	         "disableScroll": true
+	       }
+	     }
+	 },{
             "path" : "pagesMarking/blogger/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pagesMarking/nav/index",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -53,6 +78,13 @@
                 "enablePullDownRefresh": false
             }
             
+        },{
+            "path" : "pages/index/index3",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }    
         }
         ,{
             "path" : "pagesMarking/order/detail",

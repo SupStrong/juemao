@@ -73,6 +73,7 @@
 							<activityF></activityF>
 							<activityG></activityG>
 							<activityH></activityH>
+							<activityJ></activityJ>
 						</view>
 						<view v-for="(item, index) in rightList" :key="item.id" class="product__item">
 							<view class="item__image">
@@ -204,6 +205,7 @@ import activityF from '@/wxcomponents/activity/activity6.vue';
 import activityG from '@/wxcomponents/activity/activity7.vue';
 import activityH from '@/wxcomponents/activity/activity8.vue';
 import activityI from '@/wxcomponents/activity/activity9.vue';
+import activityJ from '@/wxcomponents/activity/activity10.vue';
 
 export default {
 	name: 'index',
@@ -217,7 +219,8 @@ export default {
 		activityF,
 		activityG,
 		activityH,
-		activityI
+		activityI,
+		activityJ
 	},
 	data() {
 		return {
