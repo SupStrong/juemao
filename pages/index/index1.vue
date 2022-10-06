@@ -414,7 +414,7 @@ export default {
 	// height: 100vh;
 	// overflow: scroll;
 	padding-bottom: 240rpx;
-	background-color: red;
+	// background-color: red;
 }
 page {
 	height: 100vh;
