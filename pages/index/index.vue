@@ -13,7 +13,7 @@
     </view>
     <view v-if="tabberPageLoadFlag[2]" :style="{display: currentIndex === 2 ? '' : 'none'}">
       <scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
-        <vip ref="vip"></vip>
+        <childItem ref="vip"></childItem>
       </scroll-view>
     </view>
     <view v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}">
@@ -46,6 +46,7 @@
   import Basic from './index1.vue'
   import NavItem from '@/pagesMarking/nav/index.vue'
   import TemplatePage from './index1.vue'
+  import childItem from './index3.vue'
   import cartItem from '@/pagesMarking/cart/index.vue'
   import UserItem from '@/pages/user/index.vue'
   
@@ -55,7 +56,8 @@
       NavItem,
       TemplatePage,
       cartItem,
-      UserItem
+      UserItem,
+	  childItem
     },
     data() {
       return {

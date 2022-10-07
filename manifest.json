@@ -1,6 +1,6 @@
 {
     "name" : "TuniaoUI_UniApp",
-    "appid" : "__UNI__C82400B",
+    "appid" : "__UNI__03BC37D",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -85,7 +85,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxd687706e478a8c38",
+        "appid" : "wxf3d81a452b88ff4b",
         "setting" : {
             "urlCheck" : false,
             "es6" : true,

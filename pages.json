@@ -85,6 +85,13 @@
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }    
+        },{
+            "path" : "pages/index/index4",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }    
         }
         ,{
             "path" : "pagesMarking/order/detail",

@@ -10,13 +10,25 @@
 		</tn-nav-bar>
 
 		<view class="top-backgroup"><image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image></view>
-		
+		<swiperSS></swiperSS>
+		<swiperTT></swiperTT>
+		<swiperUU></swiperUU>
+		<swiperYY></swiperYY>
+		<swiperOO></swiperOO>
+		<swiperXX></swiperXX>
+		<swiperII></swiperII>
+		<swiperMM></swiperMM>
+		<swiperLL></swiperLL>
+		<swiperKK></swiperKK>
 		<swiperWW></swiperWW>
 		<swiperVV></swiperVV>	
 		<swiperEE></swiperEE>
 		<swiperAA></swiperAA>
 		<swiperCC></swiperCC>
-		<swiperBB></swiperBB>
+		<swiperGG></swiperGG>
+		<swiperJJ></swiperJJ>
+		<!-- <swiperBB></swiperBB> -->
+		<swiperDD></swiperDD>
 		<swiperA></swiperA>
 		<swiperB></swiperB>
 		<swiperC></swiperC>
@@ -133,6 +145,19 @@ import swiperAA from '@/wxcomponents/swiper/swiper22.vue'
 import swiperBB from '@/wxcomponents/swiper/swiper23.vue'
 // import swiperBB from '@/wxcomponents/swiper/swiper23.vue'
 import swiperCC from '@/wxcomponents/swiper/swiper27.vue';
+import swiperDD from '@/wxcomponents/swiper/swiper28.vue';
+import swiperGG from '@/wxcomponents/swiper/swiper29.vue';
+import swiperJJ from '@/wxcomponents/swiper/swiper30.vue';
+import swiperKK from '@/wxcomponents/swiper/swiper31.vue';
+import swiperLL from '@/wxcomponents/swiper/swiper32.vue';
+import swiperMM from '@/wxcomponents/swiper/swiper33.vue';
+import swiperII from '@/wxcomponents/swiper/swiper34.vue';
+import swiperXX from '@/wxcomponents/swiper/swiper35.vue';
+import swiperOO from '@/wxcomponents/swiper/swiper36.vue';
+import swiperSS from '@/wxcomponents/swiper/swiper37.vue';
+import swiperTT from '@/wxcomponents/swiper/swiper38.vue';
+import swiperUU from '@/wxcomponents/swiper/swiper39.vue';
+import swiperYY from '@/wxcomponents/swiper/swiper40.vue';
 
 import bannerA from '@/wxcomponents/banner/banner1.vue';
 import bannerB from '@/wxcomponents/banner/banner2.vue';
@@ -185,6 +210,19 @@ export default {
 		swiperAA,
 		swiperBB,
 		swiperCC,
+		swiperDD,
+		swiperJJ,
+		swiperGG,
+		swiperKK,
+		swiperLL,
+		swiperMM,
+		swiperII,
+		swiperXX,
+		swiperOO,
+		swiperSS,
+		swiperTT,
+		swiperUU,
+		swiperYY,
 		// bannerG,
 		loginA
 	},
