@@ -9,7 +9,7 @@
 		>
 			<view
 				class="rax-view-v2"
-				style="display: flex; position: relative; float: right; align-items: center; flex-direction: row; place-content: flex-start center; background-color: rgb(255, 255, 255); width: 45.6vw; height: 26.9333vw; box-sizing: border-box; flex-shrink: 0; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw; border-radius: 3.2vw; overflow: hidden;"
+				style="display: flex; position: relative; float: right; align-items: center; flex-direction: row; place-content: flex-start center; background-color: rgb(255, 255, 255); width: 348rpx; height: 26.9333vw; box-sizing: border-box; flex-shrink: 0; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw; border-radius: 3.2vw; overflow: hidden;"
 			>
 				<view
 					class="rax-view-v2"

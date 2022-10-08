@@ -135,7 +135,7 @@
 		}
 		/* #endif */
 		flex: 1;
-		width: 342rpx;
+		width: 348rpx;
 		justify-content: center;
 		align-items: center;
 		float: left;
@@ -143,20 +143,20 @@
 		background-color: white;
 		border-radius: 10rpx;
 		.youji-mfw-index-item{
-			width: 342rpx;
+			width: 348rpx;
 			height: 550rpx;
 			border-radius: 20rpx;
 			//padding: 10rpx 0;
 			// margin-bottom: 20rpx;
 			.Image-box{
-				width:342rpx;
+				width:348rpx;
 				border-radius: 20rpx;
 				.Image{
-					width:342rpx;
+					width:348rpx;
 					border-radius: 20rpx;
 				}
 				.content{
-					width: 342rpx;
+					width: 348rpx;
 					//background-color: #3DA7FF;
 					align-items: center;
 					.Top-youji-tit{
@@ -209,7 +209,7 @@
 				}
 			}
 			.UserInfo-box{
-				width: 342rpx;
+				width: 348rpx;
 				align-items: center;
 				justify-content: center;
 				margin-top: 50rpx;

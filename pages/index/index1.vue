@@ -14,19 +14,19 @@
 			</view>
 		</tn-nav-bar>
 		<view class="top-backgroup"><image class="backgroud-image" :src="tabbar.topImg" mode=""></image></view>
-		<view class="goods-list" style="position: relative;padding: 0 24rpx;display: flow-root;">
-			<activityB style='margin-right: 10rpx;'></activityB>
+		<view class="goods-list" style="position: relative;padding: 0 16rpx;display: flow-root;">
+			<activityB style='margin-right: 20rpx;'></activityB>
 			<activityA></activityA>
-			<activityC style='margin-right: 10rpx;'></activityC>
+			<activityC style='margin-right: 20rpx;'></activityC>
 			<activityB></activityB>
-			<activityC style='margin-right: 10rpx;'></activityC>
+			<activityC style='margin-right: 20rpx;'></activityC>
 			<activityA></activityA>
 			<activityE></activityE>
 		</view>
 
 		<!-- 商品 -->
 		<view>
-			<view class="tn-padding">
+			<view class="goods-list" style="position: relative;padding: 0 16rpx;display: flow-root;">
 				<tn-waterfall ref="waterfall" v-model="list" @finish="handleWaterFallFinish">
 					<template v-slot:left="{ leftList }">
 						<view class="goods-list" style="position: relative;display: flow-root;">
@@ -39,6 +39,9 @@
 						</view>
 						<view class="goods-list" style="position: relative;display: flow-root;">
 							<activityI></activityI>
+						</view>
+						<view class="goods-list" style="position: relative;display: flow-root;">
+							<activityK></activityK>
 						</view>
 						<view v-for="(item, index) in leftList" :key="item.id" class="product__item">
 							<view class="item__image">
@@ -210,6 +213,7 @@ import activityH from '@/wxcomponents/activity/activity8.vue';
 import activityI from '@/wxcomponents/activity/activity9.vue';
 import activityJ from '@/wxcomponents/activity/activity10.vue';
 import activityP from '@/wxcomponents/activity/activity11.vue';
+import activityK from '@/wxcomponents/activity/activity12.vue';
 
 export default {
 	name: 'index',
@@ -225,7 +229,8 @@ export default {
 		activityH,
 		activityI,
 		activityJ,
-		activityP
+		activityP,
+		activityK
 	},
 	data() {
 		return {
@@ -419,7 +424,7 @@ export default {
 	// height: 100vh;
 	// overflow: scroll;
 	padding-bottom: 240rpx;
-	// background-color: red;
+	background-color: red;
 }
 page {
 	height: 100vh;

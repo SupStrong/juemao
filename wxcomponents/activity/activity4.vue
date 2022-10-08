@@ -83,7 +83,7 @@
 	}
 .recommend-list-box {
 	    flex: 1;
-	    width: 342rpx;
+	    width: 348rpx;
 	    justify-content: center;
 	    align-items: center;
 	    float: left;

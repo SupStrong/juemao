@@ -156,7 +156,7 @@
 		}
 		/* #endif */
 		flex: 1;
-		width: 342rpx;
+		width: 348rpx;
 		height: 550rpx;
 		//padding: 10rpx 0;
 		//background-color: #07C160;
@@ -168,16 +168,16 @@
 		// margin-bottom: 20rpx;
     display: inline-block;
 		.huati-mfw-index-item{
-			width: 342rpx;
+			width: 348rpx;
 			border-radius: 20rpx;
 			//padding: 10rpx 0;
 			margin-bottom: 30rpx;//图文特殊点，离下面30rpx
 			align-items: center;
 			.Image-box{
-				width:342rpx;
+				width:348rpx;
 				border-radius: 20rpx;
 				.Image{
-					width:342rpx;
+					width:348rpx;
 					border-radius: 20rpx;
 				}
 				// .Top-right-ImageVideoIcon{
@@ -186,7 +186,7 @@
 				// 	}
 				// }
 				.content{
-					width: 342rpx;
+					width: 348rpx;
 					//background-color: #3DA7FF;
 					align-items: center;
 					background-image:linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
@@ -229,7 +229,7 @@
 						}
 					}
 					.Bottom-desc-Title{
-						width: 342rpx;//28rpx,左右14
+						width: 348rpx;//28rpx,左右14
 						//background-color: rgba(217, 222, 232, 0.75);
 						//background-color: rgba(0, 126, 255, 0.75);
 						background-color: rgba(125, 182, 216, 0.75);
@@ -282,7 +282,7 @@
 				}
 			}
 			.Bottom-Image-bg{
-				width: 342rpx;
+				width: 348rpx;
 				align-items: center;
 				justify-content: center;
 				.Image-bg{
@@ -294,7 +294,7 @@
 				}
 			}
 			.UserInfo-box{
-				width: 342rpx;
+				width: 348rpx;
 				align-items: center;
 				justify-content: center;
 				margin-top: 35rpx;

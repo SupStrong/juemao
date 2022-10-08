@@ -160,8 +160,8 @@ view, scroll-view, swiper-item {
 // 由于nvue没有媒体查询，所以必须指定宽度
 // 750rpx - 左右20 = 710rpx
 // 710rpx / 2 = 355rpx
-// 355rpx - 3 = 342rpx(352盒子的宽度)(3距离)
-// 342rpx X 2 = 704rpx
+// 355rpx - 3 = 348rpx(352盒子的宽度)(3距离)
+// 348rpx X 2 = 704rpx
 // 710rpx - 704rpx = 6rpx(中间的间隙)
 .Topbangdan-mfw-index,
 .Top-Image-mfw-box,
@@ -184,7 +184,7 @@ view, scroll-view, swiper-item {
 	}
 	/* #endif */
 	flex: 1;
-	width: 342rpx;
+	width: 348rpx;
 	//background-color: #F368E0;
 	justify-content: center;
 	align-items: center;
@@ -195,27 +195,27 @@ view, scroll-view, swiper-item {
 		height: 90rpx;
 	}
 	.Topbangdan-mfw-index {
-		width: 342rpx;
+		width: 348rpx;
 		height: 550rpx;
 		//border-radius: 14rpx;
 		background-color: #f8ede2;
 		// top
 		.Top-Image-mfw-box {
-			width: 342rpx;
+			width: 348rpx;
 			//border-radius: 14rpx;
 			.bg-Image-box {
 				//background-color: #F0AD4E;
-				width: 342rpx;
+				width: 348rpx;
 				height: 200rpx !important;
 				.Image {
-					width: 342rpx;
+					width: 348rpx;
 					height: 200rpx !important;
 				}
 			}
 			.post-content-box {
-				width: 342rpx;
+				width: 348rpx;
 				.Top {
-					width: 342rpx;
+					width: 348rpx;
 					padding: 14rpx 14rpx 0 14rpx;
 					align-items: flex-end;
 					.ringht-bd-btn {
@@ -230,7 +230,7 @@ view, scroll-view, swiper-item {
 					}
 				}
 				.conter {
-					width: 342rpx;
+					width: 348rpx;
 					//background-color: #0FAEFF;
 					padding-bottom: 20rpx;
 					padding-left: 20rpx;
@@ -258,7 +258,7 @@ view, scroll-view, swiper-item {
 					}
 				}
 				.Bottom {
-					width: 342rpx;
+					width: 348rpx;
 					padding: 0 20rpx;
 					.desc-ttf-box {
 						.desc-text {
@@ -271,10 +271,10 @@ view, scroll-view, swiper-item {
 		}
 		// bottom
 		.Bottom-topbangdan-Info-box {
-			width: 342rpx;
+			width: 348rpx;
 			padding-bottom: 20rpx;
 			.topbangdan-item {
-				width: 342rpx;
+				width: 348rpx;
 				flex-direction: row;
 				flex-wrap: nowrap;
 				padding: 12rpx 20rpx;

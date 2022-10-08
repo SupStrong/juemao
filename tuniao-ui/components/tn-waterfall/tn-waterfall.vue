@@ -1,7 +1,7 @@
 <template>
   <view class="tn-waterfall-class tn-waterfall">
     <view id="tn-waterfall-left" class="tn-waterfall__column"><slot name="left" :leftList="leftList"></slot></view>
-    <view id="tn-waterfall-right" class="tn-waterfall__column"><slot name="right" :rightList="rightList"></slot></view>
+    <view id="tn-waterfall-right" class="tn-waterfall__column" style="margin-left: 16rpx;"><slot name="right" :rightList="rightList"></slot></view>
   </view>
 </template>
 

@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 	.gpBxCt{
-		width: 342rpx;
+		width: 348rpx;
 		height: 370rpx;
 		background-color: white;
 		border-radius: 20rpx;

@@ -69,13 +69,13 @@
 
   /* 轮播视觉差 start */
   .card-swiper {
-	  width: 342rpx;
+	  width: 348rpx;
     height: 500rpx !important;
 	margin-bottom: 20rpx;
   }
     
   .card-swiper swiper-item {
-    width: 342rpx !important;
+    width: 348rpx !important;
     left: 0rpx;
     box-sizing: border-box;
     // padding: 0rpx 30rpx 90rpx 30rpx;
@@ -128,7 +128,7 @@
   /* 轮播指示点 start*/
   .indication{
     z-index: 9999;
-    width: 342rpx;
+    width: 348rpx;
     height: 36rpx;
     position: absolute;
     display:flex;
