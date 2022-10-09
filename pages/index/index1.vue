@@ -76,6 +76,9 @@
 							<activityA></activityA>
 						</view>
 						<view class="goods-list" style="position: relative;display: flow-root;">
+							<activityL></activityL>
+						</view>
+						<view class="goods-list" style="position: relative;display: flow-root;">
 							<activityF></activityF>
 							<activityG></activityG>
 							<activityH></activityH>
@@ -214,6 +217,7 @@ import activityI from '@/wxcomponents/activity/activity9.vue';
 import activityJ from '@/wxcomponents/activity/activity10.vue';
 import activityP from '@/wxcomponents/activity/activity11.vue';
 import activityK from '@/wxcomponents/activity/activity12.vue';
+import activityL from '@/wxcomponents/activity/activity13.vue';
 
 export default {
 	name: 'index',
@@ -230,7 +234,8 @@ export default {
 		activityI,
 		activityJ,
 		activityP,
-		activityK
+		activityK,
+		activityL
 	},
 	data() {
 		return {
@@ -424,7 +429,6 @@ export default {
 	// height: 100vh;
 	// overflow: scroll;
 	padding-bottom: 240rpx;
-	background-color: red;
 }
 page {
 	height: 100vh;
