@@ -2,7 +2,7 @@
 	<view>
 		<view
 			class="rax-view"
-			style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw;"
+			style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw;overflow: scroll;"
 		>
 			<view
 				id="J_tabheader_0"
