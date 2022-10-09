@@ -436,7 +436,7 @@
 										lines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 2.9333vw; white-space: nowrap; color: rgba(28, 28, 28, 0.7); font-weight: 500; line-height: 5.8667vw;"
 									>
-										进店
+										购买
 									</span>
 									<view
 										style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: row; place-content: flex-start center; flex-shrink: 0; position: relative; align-items: flex-start; margin-left: 0.5333vw;"

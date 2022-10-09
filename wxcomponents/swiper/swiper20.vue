@@ -53,7 +53,7 @@
 					</a>
 					<view
 						class="rax-view-v2 actWrapper"
-						style="position:relative;margin-top:23.0667vw;margin-left:2.4vw;width:89.0667vw;display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between;"
+						style="position:relative;margin-top:23.0667vw;margin-left:2.4vw;width:89.0667vw;display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between;overflow: scroll;"
 					>
 						<view
 							class="rax-view-v2 cube"
@@ -92,20 +92,136 @@
 										style="width: 12vw; height: 12vw; position: relative; margin-top: 0.8vw;"
 										data-has-disappeared="true"
 									/>
-									<span
+									<text
 										class="cubeTitle"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.4667vw; white-space: nowrap; color: rgb(0, 0, 0); font-weight: 400; line-height: 5.0667vw; text-align: center; min-width: 13.8667vw; max-width: 20.2667vw; margin-top: 0.5333vw; text-overflow: clip; overflow: hidden;"
 									>
 										苹果盛典
-									</span>
-									<span
+									</text>
+									<text
 										class="cubeDesc"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: rgb(109, 41, 255); font-weight: 400; line-height: 3.7333vw; text-align: center; width: 26.4vw; transform: scale(0.833); transform-origin: center 0px; text-overflow: ellipsis; overflow: hidden;"
 									>
 										抢苹果14
-									</span>
+									</text>
+								</a>
+							</view>
+							<view
+								class="rax-view-v2 cubeTopMask"
+								style="position: absolute; background: linear-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 100%); border-top-left-radius: 0.8vw; border-top-right-radius: 0.8vw; left: 0vw; top: 0vw; width: 100%; height: 2.4vw;"
+							></view>
+						</view>
+						<view
+							class="rax-view-v2 cube"
+							style="position: relative; width: 21.8667vw; height: 22.4vw; border-radius: 0.8vw; background: rgb(255, 255, 255); display: flex; flex-direction: column; place-items: center flex-start; overflow: hidden;"
+						>
+							<view
+								class="rax-view-v2 cubeMask"
+								style="position: absolute; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(219, 203, 254) 100%); border-bottom-left-radius: 0.8vw; border-bottom-right-radius: 0.8vw; left: 0vw; bottom: 0vw; width: 100%; height: 9.3333vw;"
+							></view>
+							<view
+								class="rax-view-v2 itemListWrapper"
+								style="position: absolute; width: 100%; height: auto; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; transition-duration: 800ms; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-property: transform; will-change: transform;"
+							>
+								<a
+									href="//pages.tmall.com/wow/a/act/tmall/tmc/35412/16847/wupr?wh_pid=industry-457728&amp;disableNav=YES&amp;status_bar_transparent=true&amp;itemId=656171271212&amp;item_id=656171271212&amp;dczt_module_id=33022&amp;expo_id=1000000000457728002&amp;srcinfo=mainexpo_1&amp;scm=1007.20000.272800.33022_0_272800&amp;utparam=%7B%22x_hestia_source%22%3A%22dczt%22%2C%22hc_object_id%22%3A%221000000000457728002%22%2C%22x_object_type%22%3A%22item%22%2C%22x_hestia_subsource%22%3A%22%22%2C%22hc_object_type%22%3A%22zhc_b%22%2C%22wh_pid%22%3A%22%22%2C%22x_pos%22%3A%220%22%2C%22tpp_buckets%22%3A%2210000%230%23272800%2317%22%2C%22pvid%22%3A%22cf3f834f-0db9-4d6d-97e3-f49a820177c7%22%2C%22x_mt%22%3A%226%22%2C%22x_src%22%3A%2233022%22%2C%22x_pvid%22%3A%22cf3f834f-0db9-4d6d-97e3-f49a820177c7%22%2C%22x_object_id%22%3A%22656171271212%22%7D"
+									isonce="true"
+									target="_blank"
+									logkey=""
+									exp-type="auto"
+									data-track-params=""
+									class="item"
+									data-before-current-y="625"
+									data-appeared="false"
+									data-has-appeared="true"
+									style="display: flex; position: relative; width: 21.8667vw; height: 22.4vw; flex-direction: column; align-items: center;"
+									data-has-disappeared="true"
+								>
+									<image
+										class="cubeImg"
+										lazyload="true"
+										data-once="true"
+										src="//gw.alicdn.com/bao/uploaded/O1CN01TJgZzF1z4mv16dei1_!!6000000006661-0-yinhe.jpg_110x10000Q75.jpg_.webp"
+										data-before-current-y="786.109375"
+										data-appeared="false"
+										data-has-appeared="true"
+										style="width: 12vw; height: 12vw; position: relative; margin-top: 0.8vw;"
+										data-has-disappeared="true"
+									/>
+									<text
+										class="cubeTitle"
+										numberoflines="1"
+										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.4667vw; white-space: nowrap; color: rgb(0, 0, 0); font-weight: 400; line-height: 5.0667vw; text-align: center; min-width: 13.8667vw; max-width: 20.2667vw; margin-top: 0.5333vw; text-overflow: clip; overflow: hidden;"
+									>
+										苹果盛典
+									</text>
+									<text
+										class="cubeDesc"
+										numberoflines="1"
+										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: rgb(109, 41, 255); font-weight: 400; line-height: 3.7333vw; text-align: center; width: 26.4vw; transform: scale(0.833); transform-origin: center 0px; text-overflow: ellipsis; overflow: hidden;"
+									>
+										抢苹果14
+									</text>
+								</a>
+							</view>
+							<view
+								class="rax-view-v2 cubeTopMask"
+								style="position: absolute; background: linear-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 100%); border-top-left-radius: 0.8vw; border-top-right-radius: 0.8vw; left: 0vw; top: 0vw; width: 100%; height: 2.4vw;"
+							></view>
+						</view>
+						<view
+							class="rax-view-v2 cube"
+							style="position: relative; width: 21.8667vw; height: 22.4vw; border-radius: 0.8vw; background: rgb(255, 255, 255); display: flex; flex-direction: column; place-items: center flex-start; overflow: hidden;"
+						>
+							<view
+								class="rax-view-v2 cubeMask"
+								style="position: absolute; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(219, 203, 254) 100%); border-bottom-left-radius: 0.8vw; border-bottom-right-radius: 0.8vw; left: 0vw; bottom: 0vw; width: 100%; height: 9.3333vw;"
+							></view>
+							<view
+								class="rax-view-v2 itemListWrapper"
+								style="position: absolute; width: 100%; height: auto; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; transition-duration: 800ms; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-property: transform; will-change: transform;"
+							>
+								<a
+									href="//pages.tmall.com/wow/a/act/tmall/tmc/35412/16847/wupr?wh_pid=industry-457728&amp;disableNav=YES&amp;status_bar_transparent=true&amp;itemId=656171271212&amp;item_id=656171271212&amp;dczt_module_id=33022&amp;expo_id=1000000000457728002&amp;srcinfo=mainexpo_1&amp;scm=1007.20000.272800.33022_0_272800&amp;utparam=%7B%22x_hestia_source%22%3A%22dczt%22%2C%22hc_object_id%22%3A%221000000000457728002%22%2C%22x_object_type%22%3A%22item%22%2C%22x_hestia_subsource%22%3A%22%22%2C%22hc_object_type%22%3A%22zhc_b%22%2C%22wh_pid%22%3A%22%22%2C%22x_pos%22%3A%220%22%2C%22tpp_buckets%22%3A%2210000%230%23272800%2317%22%2C%22pvid%22%3A%22cf3f834f-0db9-4d6d-97e3-f49a820177c7%22%2C%22x_mt%22%3A%226%22%2C%22x_src%22%3A%2233022%22%2C%22x_pvid%22%3A%22cf3f834f-0db9-4d6d-97e3-f49a820177c7%22%2C%22x_object_id%22%3A%22656171271212%22%7D"
+									isonce="true"
+									target="_blank"
+									logkey=""
+									exp-type="auto"
+									data-track-params=""
+									class="item"
+									data-before-current-y="625"
+									data-appeared="false"
+									data-has-appeared="true"
+									style="display: flex; position: relative; width: 21.8667vw; height: 22.4vw; flex-direction: column; align-items: center;"
+									data-has-disappeared="true"
+								>
+									<image
+										class="cubeImg"
+										lazyload="true"
+										data-once="true"
+										src="//gw.alicdn.com/bao/uploaded/O1CN01TJgZzF1z4mv16dei1_!!6000000006661-0-yinhe.jpg_110x10000Q75.jpg_.webp"
+										data-before-current-y="786.109375"
+										data-appeared="false"
+										data-has-appeared="true"
+										style="width: 12vw; height: 12vw; position: relative; margin-top: 0.8vw;"
+										data-has-disappeared="true"
+									/>
+									<text
+										class="cubeTitle"
+										numberoflines="1"
+										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.4667vw; white-space: nowrap; color: rgb(0, 0, 0); font-weight: 400; line-height: 5.0667vw; text-align: center; min-width: 13.8667vw; max-width: 20.2667vw; margin-top: 0.5333vw; text-overflow: clip; overflow: hidden;"
+									>
+										苹果盛典
+									</text>
+									<text
+										class="cubeDesc"
+										numberoflines="1"
+										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: rgb(109, 41, 255); font-weight: 400; line-height: 3.7333vw; text-align: center; width: 26.4vw; transform: scale(0.833); transform-origin: center 0px; text-overflow: ellipsis; overflow: hidden;"
+									>
+										抢苹果14
+									</text>
 								</a>
 							</view>
 							<view
@@ -150,20 +266,20 @@
 										data-has-disappeared="true"
 										style="width: 12vw; height: 12vw; position: relative; margin-top: 0.8vw;"
 									/>
-									<span
+									<text
 										class="cubeTitle"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.4667vw; white-space: nowrap; color: rgb(0, 0, 0); font-weight: 400; line-height: 5.0667vw; text-align: center; min-width: 13.8667vw; max-width: 20.2667vw; margin-top: 0.5333vw; text-overflow: clip; overflow: hidden;"
 									>
 										潮流玩家
-									</span>
-									<span
+									</text>
+									<text
 										class="cubeDesc"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: rgb(109, 41, 255); font-weight: 400; line-height: 3.7333vw; text-align: center; width: 26.4vw; transform: scale(0.833); transform-origin: center 0px; text-overflow: ellipsis; overflow: hidden;"
 									>
 										新品限量抢
-									</span>
+									</text>
 								</a>
 							</view>
 							<view
@@ -208,20 +324,20 @@
 										data-has-disappeared="true"
 										style="width: 12vw; height: 12vw; position: relative; margin-top: 0.8vw;"
 									/>
-									<span
+									<text
 										class="cubeTitle"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.4667vw; white-space: nowrap; color: rgb(0, 0, 0); font-weight: 400; line-height: 5.0667vw; text-align: center; min-width: 13.8667vw; max-width: 20.2667vw; margin-top: 0.5333vw; text-overflow: clip; overflow: hidden;"
 									>
 										手机好店
-									</span>
-									<span
+									</text>
+									<text
 										class="cubeDesc"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: rgb(109, 41, 255); font-weight: 400; line-height: 3.7333vw; text-align: center; width: 26.4vw; transform: scale(0.833); transform-origin: center 0px; text-overflow: ellipsis; overflow: hidden;"
 									>
 										抢24期免息
-									</span>
+									</text>
 								</a>
 							</view>
 							<view
@@ -266,20 +382,20 @@
 										data-has-disappeared="true"
 										style="width: 12vw; height: 12vw; position: relative; margin-top: 0.8vw;"
 									/>
-									<span
+									<text
 										class="cubeTitle"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.4667vw; white-space: nowrap; color: rgb(0, 0, 0); font-weight: 400; line-height: 5.0667vw; text-align: center; min-width: 13.8667vw; max-width: 20.2667vw; margin-top: 0.5333vw; text-overflow: clip; overflow: hidden;"
 									>
 										美力新品榜
-									</span>
-									<span
+									</text>
+									<text
 										class="cubeDesc"
 										numberoflines="1"
 										style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: rgb(109, 41, 255); font-weight: 400; line-height: 3.7333vw; text-align: center; width: 26.4vw; transform: scale(0.833); transform-origin: center 0px; text-overflow: ellipsis; overflow: hidden;"
 									>
 										爆款不只5折
-									</span>
+									</text>
 								</a>
 							</view>
 							<view
