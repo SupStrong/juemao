@@ -10,6 +10,23 @@
 		</tn-nav-bar>
 
 		<view class="top-backgroup"><image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image></view>
+		<swiperBHQ></swiperBHQ>
+		<swiperBHW></swiperBHW>
+		<swiperBHE></swiperBHE>
+		<swiperBHR></swiperBHR>
+		<swiperBHT></swiperBHT>
+		<swiperBHY></swiperBHY>
+		<swiperBHU></swiperBHU>
+		<swiperBHI></swiperBHI>
+		<swiperBHO></swiperBHO>
+		<swiperBHP></swiperBHP>
+		
+		<swiperBC></swiperBC>
+		<swiperBD></swiperBD>
+		<swiperBE></swiperBE>
+		<swiperBF></swiperBF>
+		<swiperBG></swiperBG>
+		<swiperBH></swiperBH>
 		<swiperBA></swiperBA>
 		<swiperBL></swiperBL>
 		<swiperBV></swiperBV>
@@ -31,6 +48,8 @@
 		<swiperCC></swiperCC>
 		<swiperGG></swiperGG>
 		<swiperJJ></swiperJJ>
+		
+		
 		<!-- <swiperBB></swiperBB> -->
 		<swiperDD></swiperDD>
 		<swiperA></swiperA>
@@ -166,6 +185,23 @@ import swiperBV from '@/wxcomponents/swiper/swiper41.vue';
 import swiperBJ from '@/wxcomponents/swiper/swiper42.vue';
 import swiperBL from '@/wxcomponents/swiper/swiper43.vue';
 import swiperBA from '@/wxcomponents/swiper/swiper44.vue';
+import swiperBC from '@/wxcomponents/swiper/swiper45.vue';
+import swiperBD from '@/wxcomponents/swiper/swiper46.vue';
+import swiperBE from '@/wxcomponents/swiper/swiper47.vue';
+import swiperBF from '@/wxcomponents/swiper/swiper48.vue';
+import swiperBG from '@/wxcomponents/swiper/swiper49.vue';
+import swiperBH from '@/wxcomponents/swiper/swiper50.vue';
+
+import swiperBHQ from '@/wxcomponents/swiper/swiper51.vue';
+import swiperBHW from '@/wxcomponents/swiper/swiper52.vue';
+import swiperBHE from '@/wxcomponents/swiper/swiper53.vue';
+import swiperBHR from '@/wxcomponents/swiper/swiper54.vue';
+import swiperBHT from '@/wxcomponents/swiper/swiper55.vue';
+import swiperBHY from '@/wxcomponents/swiper/swiper56.vue';
+import swiperBHU from '@/wxcomponents/swiper/swiper57.vue';
+import swiperBHI from '@/wxcomponents/swiper/swiper58.vue';
+import swiperBHO from '@/wxcomponents/swiper/swiper59.vue';
+import swiperBHP from '@/wxcomponents/swiper/swiper60.vue';
 
 import bannerA from '@/wxcomponents/banner/banner1.vue';
 import bannerB from '@/wxcomponents/banner/banner2.vue';
@@ -235,11 +271,27 @@ export default {
 		swiperBJ,
 		swiperBL,
 		swiperBA,
+		swiperBC,
+		swiperBD,
+		swiperBE,
+		swiperBF,
+		swiperBG,
+		swiperBH,
+		swiperBHQ,
+		swiperBHW,
+		swiperBHE,
+		swiperBHR,
+		swiperBHT,
+		swiperBHY,
+		swiperBHU,
+		swiperBHI,
+		swiperBHO,
+		swiperBHP,
 		// bannerG,
 		loginA
 	},
 	onLoad() {},
-	methods: {}
+	methods: {},
 };
 </script>
 
