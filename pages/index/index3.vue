@@ -10,6 +10,20 @@
 		</tn-nav-bar>
 
 		<view class="top-backgroup"><image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image></view>
+		
+		
+		<swiperBAS />
+		<swiperBAD />
+		<swiperBAF />
+		<swiperBAG />
+		<swiperBAH />
+		<swiperBAJ />
+		<swiperBAK />
+		<swiperBAL />
+		<swiperBAZ />
+		<swiperBAX />
+		
+		
 		<swiperBHQ></swiperBHQ>
 		<swiperBHW></swiperBHW>
 		<swiperBHE></swiperBHE>
@@ -203,6 +217,21 @@ import swiperBHI from '@/wxcomponents/swiper/swiper58.vue';
 import swiperBHO from '@/wxcomponents/swiper/swiper59.vue';
 import swiperBHP from '@/wxcomponents/swiper/swiper60.vue';
 
+
+
+
+import swiperBAS from '@/wxcomponents/swiper/swiper61.vue';
+import swiperBAD from '@/wxcomponents/swiper/swiper62.vue';
+import swiperBAF from '@/wxcomponents/swiper/swiper63.vue';
+import swiperBAG from '@/wxcomponents/swiper/swiper64.vue';
+import swiperBAH from '@/wxcomponents/swiper/swiper65.vue';
+import swiperBAJ from '@/wxcomponents/swiper/swiper66.vue';
+import swiperBAK from '@/wxcomponents/swiper/swiper67.vue';
+import swiperBAL from '@/wxcomponents/swiper/swiper68.vue';
+import swiperBAZ from '@/wxcomponents/swiper/swiper69.vue';
+import swiperBAX from '@/wxcomponents/swiper/swiper70.vue';
+
+
 import bannerA from '@/wxcomponents/banner/banner1.vue';
 import bannerB from '@/wxcomponents/banner/banner2.vue';
 import bannerC from '@/wxcomponents/banner/banner3.vue';
@@ -287,6 +316,17 @@ export default {
 		swiperBHI,
 		swiperBHO,
 		swiperBHP,
+		
+		swiperBAS,
+		swiperBAD,
+		swiperBAF,
+		swiperBAG,
+		swiperBAH,
+		swiperBAJ,
+		swiperBAK,
+		swiperBAL,
+		swiperBAZ,
+		swiperBAX,
 		// bannerG,
 		loginA
 	},
