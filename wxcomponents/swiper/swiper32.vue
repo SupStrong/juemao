@@ -18,7 +18,7 @@
 					isonce="true"
 					data-track-type="ALL"
 					exp-type="rt"
-					data-track-params="{&quot;trackInfo&quot;:&quot;/heybox.brand.like-----pvid=25ca6ac2-ee66-45e3-97d5-50d91c24c733&amp;pageIndex=1&amp;brandId=31752866&amp;index=1&amp;lyg=tmxpicon.lyg_tmxp_25421_brandlike.235455.31752866&amp;type=brand&amp;scm=1007.35421.235455.45066&amp;impid=25ca6ac2-ee66-45e3-97d5-50d91c24c733&amp;pagePos=0&amp;scene=heybox-----GET&quot;}"
+					data-track-params="{&trackInfo&:&/heybox.brand.like-----pvid=25ca6ac2-ee66-45e3-97d5-50d91c24c733&amp;pageIndex=1&amp;brandId=31752866&amp;index=1&amp;lyg=tmxpicon.lyg_tmxp_25421_brandlike.235455.31752866&amp;type=brand&amp;scm=1007.35421.235455.45066&amp;impid=25ca6ac2-ee66-45e3-97d5-50d91c24c733&amp;pagePos=0&amp;scene=heybox-----GET&}"
 					target="_blank"
 					logkey="/heybox.brand.like"
 					gokey="pvid=25ca6ac2-ee66-45e3-97d5-50d91c24c733&amp;pageIndex=1&amp;brandId=31752866&amp;index=1&amp;lyg=tmxpicon.lyg_tmxp_25421_brandlike.235455.31752866&amp;type=brand&amp;scm=1007.35421.235455.45066&amp;impid=25ca6ac2-ee66-45e3-97d5-50d91c24c733&amp;pagePos=0&amp;scene=heybox"
