@@ -12,6 +12,17 @@
 		<view class="top-backgroup"><image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image></view>
 		
 		
+		<swiperBBS />
+		<swiperBBD />
+		<swiperBBF />
+		<swiperBBG />
+		<swiperBBH />
+		<swiperBBJ />
+		<swiperBBK />
+		<swiperBBL />
+		<swiperBBZ />
+		<swiperBBX />
+		
 		<swiperBAS />
 		<swiperBAD />
 		<swiperBAF />
@@ -232,6 +243,18 @@ import swiperBAZ from '@/wxcomponents/swiper/swiper69.vue';
 import swiperBAX from '@/wxcomponents/swiper/swiper70.vue';
 
 
+import swiperBBS from '@/wxcomponents/swiper/swiper71.vue';
+import swiperBBD from '@/wxcomponents/swiper/swiper72.vue';
+import swiperBBF from '@/wxcomponents/swiper/swiper73.vue';
+import swiperBBG from '@/wxcomponents/swiper/swiper74.vue';
+import swiperBBH from '@/wxcomponents/swiper/swiper75.vue';
+import swiperBBJ from '@/wxcomponents/swiper/swiper76.vue';
+import swiperBBK from '@/wxcomponents/swiper/swiper77.vue';
+import swiperBBL from '@/wxcomponents/swiper/swiper78.vue';
+import swiperBBZ from '@/wxcomponents/swiper/swiper79.vue';
+import swiperBBX from '@/wxcomponents/swiper/swiper80.vue';
+
+
 import bannerA from '@/wxcomponents/banner/banner1.vue';
 import bannerB from '@/wxcomponents/banner/banner2.vue';
 import bannerC from '@/wxcomponents/banner/banner3.vue';
@@ -327,6 +350,16 @@ export default {
 		swiperBAL,
 		swiperBAZ,
 		swiperBAX,
+		swiperBBS,
+		swiperBBD,
+		swiperBBF,
+		swiperBBG,
+		swiperBBH,
+		swiperBBJ,
+		swiperBBK,
+		swiperBBL,
+		swiperBBZ,
+		swiperBBX,
 		// bannerG,
 		loginA
 	},
