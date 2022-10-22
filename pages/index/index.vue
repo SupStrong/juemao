@@ -49,8 +49,9 @@
   import childItem from './index3.vue'
   import cartItem from '@/pagesMarking/cart/index.vue'
   import UserItem from '@/pages/user/index.vue'
-  
+  // import loginMixins from '@/mixins/login.js';
   export default {
+	// mixins: [loginMixins],
     components: {
       Basic,
       NavItem,
@@ -106,6 +107,8 @@
       }
     },
     onLoad(options) {
+	// this.handleGetToken()
+	// console.log('')
       const index = Number(options.index || 0)
       // 根据底部tabbar菜单列表设置对应页面的加载情况
       this.tabberPageLoadFlag = this.tabbarList.map((item, tabbar_index) => {

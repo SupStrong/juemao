@@ -13,6 +13,9 @@ Vue.use(TuniaoUI)
 let vuexStore = require('@/store/$t.mixin.js')
 Vue.mixin(vuexStore)
 
+import {router,RouterMount} from './router/index.js'
+Vue.use(router)
+
 // 引入TuniaoUI对小程序分享的mixin封装
 let mpShare = require('tuniao-ui/libs/mixin/mpShare.js')
 Vue.mixin(mpShare)
