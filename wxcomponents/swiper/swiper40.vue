@@ -28,7 +28,6 @@
 					</text>
 				</view>
 				<view
-					data-spm-click="gostr=/tbtrip;locaid=d1tab"
 					class="rax-view-v2"
 					style="width: 17.3333vw; border-radius: 3.2vw; display: flex; flex-direction: column; justify-content: start; margin-right: 2.4vw; z-index: 16; box-shadow: rgba(0, 0, 0, 0.03) 0px 0.1333vw 0.2667vw -0.2667vw, rgba(0, 0, 0, 0.03) 0px 0.4vw 0.8vw 0px, rgba(0, 0, 0, 0.03) 0px 0.6667vw 1.6vw 0.5333vw; height: 17.3333vw; background-color: rgb(255, 255, 255);"
 					data-spm-anchor-id="181.22862678.tab-bar.d1tab"
@@ -36,26 +35,21 @@
 					<image
 						src="https://img.alicdn.com/imgextra/i2/O1CN013TYwVy1xEHuwsP6im_!!6000000006411-0-tps-228-150.jpg"
 						style="width: 15.7333vw; height: 10.6667vw; border-radius: 2.6667vw; margin-top: 0.8vw; margin-left: 0.8vw; margin-right: 0.8vw;"
-						data-spm-anchor-id="181.22862678.tab-bar.i2.43b24cd5e0rMyE"
 					/>
 					<text
 						class="rax-text-v2 "
 						style="margin-top: 1.7333vw; text-align: center; height: 2.9333vw; font-size: 2.9333vw; font-weight: bold; line-height: 2.9333vw; color: rgb(95, 114, 152);"
-						data-spm-anchor-id="181.22862678.tab-bar.i0.43b24cd5e0rMyE"
 					>
 						错峰游玩
 					</text>
 				</view>
 				<view
-					data-spm-click="gostr=/tbtrip;locaid=d2tab"
 					class="rax-view-v2"
 					style="width: 17.3333vw; border-radius: 3.2vw; display: flex; flex-direction: column; justify-content: start; margin-right: 2.4vw; z-index: 16; box-shadow: rgba(0, 0, 0, 0.03) 0px 0.1333vw 0.2667vw -0.2667vw, rgba(0, 0, 0, 0.03) 0px 0.4vw 0.8vw 0px, rgba(0, 0, 0, 0.03) 0px 0.6667vw 1.6vw 0.5333vw; height: 17.3333vw; background-color: rgb(255, 255, 255);"
-					data-spm-anchor-id="181.22862678.tab-bar.d2tab"
 				>
 					<image
 						src="https://gw.alicdn.com/imgextra/i1/O1CN01uyUDc51zI4M4y9UUP_!!6000000006690-2-tps-228-150.png"
 						style="width: 15.7333vw; height: 10.6667vw; border-radius: 2.6667vw; margin-top: 0.8vw; margin-left: 0.8vw; margin-right: 0.8vw;"
-						data-spm-anchor-id="181.22862678.tab-bar.i3.43b24cd5e0rMyE"
 					/>
 					<text
 						class="rax-text-v2 "
@@ -65,15 +59,12 @@
 					</text>
 				</view>
 				<view
-					data-spm-click="gostr=/tbtrip;locaid=d3tab"
 					class="rax-view-v2"
 					style="width: 17.3333vw; border-radius: 3.2vw; display: flex; flex-direction: column; justify-content: start; margin-right: 2.4vw; z-index: 16; box-shadow: rgba(0, 0, 0, 0.03) 0px 0.1333vw 0.2667vw -0.2667vw, rgba(0, 0, 0, 0.03) 0px 0.4vw 0.8vw 0px, rgba(0, 0, 0, 0.03) 0px 0.6667vw 1.6vw 0.5333vw; height: 17.3333vw; background-color: rgb(255, 255, 255);"
-					data-spm-anchor-id="181.22862678.tab-bar.d3tab"
 				>
 					<image
 						src="https://gw.alicdn.com/imgextra/i4/O1CN01bAtxVf26bUSc2VOUW_!!6000000007680-2-tps-228-150.png"
 						style="width: 15.7333vw; height: 10.6667vw; border-radius: 2.6667vw; margin-top: 0.8vw; margin-left: 0.8vw; margin-right: 0.8vw;"
-						data-spm-anchor-id="181.22862678.tab-bar.i4.43b24cd5e0rMyE"
 					/>
 					<text
 						class="rax-text-v2 "
@@ -83,15 +74,12 @@
 					</text>
 				</view>
 				<view
-					data-spm-click="gostr=/tbtrip;locaid=d4tab"
 					class="rax-view-v2"
 					style="width: 17.3333vw; border-radius: 3.2vw; display: flex; flex-direction: column; justify-content: start; margin-right: 2.4vw; z-index: 16; box-shadow: rgba(0, 0, 0, 0.03) 0px 0.1333vw 0.2667vw -0.2667vw, rgba(0, 0, 0, 0.03) 0px 0.4vw 0.8vw 0px, rgba(0, 0, 0, 0.03) 0px 0.6667vw 1.6vw 0.5333vw; height: 17.3333vw; background-color: rgb(255, 255, 255);"
-					data-spm-anchor-id="181.22862678.tab-bar.d4tab"
 				>
 					<image
 						src="https://gw.alicdn.com/imgextra/i4/O1CN01I2Ohvm1F3tmDxPNjH_!!6000000000432-2-tps-228-150.png"
 						style="width: 15.7333vw; height: 10.6667vw; border-radius: 2.6667vw; margin-top: 0.8vw; margin-left: 0.8vw; margin-right: 0.8vw;"
-						data-spm-anchor-id="181.22862678.tab-bar.i5.43b24cd5e0rMyE"
 					/>
 					<text
 						class="rax-text-v2 "
@@ -103,7 +91,6 @@
 				<view
 					class="rax-view-v2"
 					style="width: 17.3333vw; border-radius: 3.2vw; display: flex; flex-direction: column; justify-content: start; margin-right: 2.4vw; z-index: 16; box-shadow: rgba(0, 0, 0, 0.03) 0px 0.1333vw 0.2667vw -0.2667vw, rgba(0, 0, 0, 0.03) 0px 0.4vw 0.8vw 0px, rgba(0, 0, 0, 0.03) 0px 0.6667vw 1.6vw 0.5333vw; height: 17.3333vw; background-color: rgb(255, 255, 255);"
-					data-spm-anchor-id="181.22862678.tab-bar.d5tab"
 				>
 					<image
 						src="https://gw.alicdn.com/imgextra/i1/O1CN01NzH1Lr1OBzJTEKhUw_!!6000000001668-2-tps-228-150.png"

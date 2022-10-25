@@ -1,6 +1,5 @@
 <template>
-	<view>
-		<view id="home_top_container">
+		<view class="home_top_container">
 			<view class="banner_container">
 				<view class="device-helper">
 					<view class="h5-home-title">
@@ -73,7 +72,6 @@
 				</view>
 			</view>
 		</view>
-	</view>
 </template>
 <script>
 export default {
@@ -84,6 +82,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.home_top_container{
+	width: 750rpx;
+}
 .title_container {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;

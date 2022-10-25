@@ -3,7 +3,7 @@ import qs from 'qs'
 // 公共地址
 const platform = uni.getSystemInfoSync().platform
 export const myRequest = (options) => {
-	options.headers['admtoken'] = common.admToken;
+	if (!options.headers) options.headers = {}
 	let newData = {}
 	if (options.headers.noFilter) {
 		newData = options.data;

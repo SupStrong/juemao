@@ -1,24 +1,22 @@
 <template>
-	<view>
-		<view class="rax-view-v2">
-			<view class="rax-view-v2 InfoCard--info_card_welfare--3ugqqIR">
-				<view class="rax-view-v2 InfoCard--info_card_welfare_bg--2VoejIl"></view>
-				<view class="rax-view-v2 InfoCard--info_card_welfare_context--3DChPBU">
-					做好事 攒爱豆
-					<view class="rax-view-v2 InfoCard--info_card_welfare_context_icon--3ZIo0Lq"></view>
-				</view>
+	<view class="rax-view-v2" style="width: 750rpx;">
+		<view class="rax-view-v2 InfoCard--info_card_welfare--3ugqqIR">
+			<view class="rax-view-v2 InfoCard--info_card_welfare_bg--2VoejIl"></view>
+			<view class="rax-view-v2 InfoCard--info_card_welfare_context--3DChPBU">
+				做好事 攒爱豆
+				<view class="rax-view-v2 InfoCard--info_card_welfare_context_icon--3ZIo0Lq"></view>
 			</view>
-			<view class="rax-view-v2 InfoCard--info_card_center--26vHbzb">
-				<view class="rax-view-v2 InfoCard--info_card_center_block--2eHcvw-">
-					<text class="rax-text-v2 InfoCard--info_card_center_title--2dpPefS">当前爱豆</text>
-					<text class="rax-text-v2 InfoCard--info_card_center_num--1mrI3dd">0</text>
-				</view>
-				<view class="rax-view-v2 InfoCard--info_card_center_block--2eHcvw-">
-					<text class="rax-text-v2 InfoCard--info_card_center_title--2dpPefS">勋章/枚</text>
-					<text class="rax-text-v2 InfoCard--info_card_center_num--1mrI3dd">0</text>
-				</view>
-				<view class="rax-view-v2 InfoCard--info_card_center_line--53o3bQP"></view>
+		</view>
+		<view class="rax-view-v2 InfoCard--info_card_center--26vHbzb">
+			<view class="rax-view-v2 InfoCard--info_card_center_block--2eHcvw-">
+				<text class="rax-text-v2 InfoCard--info_card_center_title--2dpPefS">当前爱豆</text>
+				<text class="rax-text-v2 InfoCard--info_card_center_num--1mrI3dd">0</text>
 			</view>
+			<view class="rax-view-v2 InfoCard--info_card_center_block--2eHcvw-">
+				<text class="rax-text-v2 InfoCard--info_card_center_title--2dpPefS">勋章/枚</text>
+				<text class="rax-text-v2 InfoCard--info_card_center_num--1mrI3dd">0</text>
+			</view>
+			<view class="rax-view-v2 InfoCard--info_card_center_line--53o3bQP"></view>
 		</view>
 	</view>
 </template>

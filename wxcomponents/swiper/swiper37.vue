@@ -12,7 +12,7 @@
 								class="lazyload-img undefined advert-item-pic104  big-height loaded"
 								height="122"
 								src="https://m11.360buyimg.com/babel/jfs/t1/116601/15/27894/53884/633a473dEb1559378/d7ee298a5a1a169c.avif"
-								data-resize="1"
+								
 								style="background-color: transparent; background-image: none;"
 							/>
 						</view>
@@ -25,24 +25,22 @@
 								class="lazyload-img undefined advert-item-pic104  big-height loaded"
 								height="122"
 								src="https://m11.360buyimg.com/babel/jfs/t1/52010/14/22196/49871/633a4750E068e03d2/739d31f792094f5d.avif"
-								data-resize="1"
+								
 								style="background-color: transparent; background-image: none;"
 							/>
 						</view>
 					</a>
 				</view>
 				<view class="ad_wrap expo">
-					<a href="//pro.m.jd.com/mall/active/2JWENuZU4FDGV4xBd4c8FxJDZSjX/index.html">
 						<view class="img_wrap" style="height: 122px;">
 							<image
 								class="lazyload-img undefined advert-item-pic104  big-height loaded"
 								height="122"
 								src="https://m11.360buyimg.com/babel/jfs/t1/135304/8/25422/21264/62f7bd22Ea3a52022/9574e81672f24b84.avif"
-								data-resize="1"
+								
 								style="background-color: transparent; background-image: none;"
 							/>
 						</view>
-					</a>
 				</view>
 				<view class="ad_wrap expo">
 					<a href="//pro.m.jd.com/mall/active/412ACxDdCqi1CDryDmH3jsKaQw6n/index.html?babelChannel=ttt15">
@@ -51,7 +49,7 @@
 								class="lazyload-img undefined advert-item-pic104  big-height loaded"
 								height="122"
 								src="https://m11.360buyimg.com/babel/jfs/t1/184656/31/28949/50732/633a475bEa4de587e/dc3e845a8bffc58f.avif"
-								data-resize="1"
+								
 								style="background-color: transparent; background-image: none;"
 							/>
 						</view>

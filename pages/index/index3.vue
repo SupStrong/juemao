@@ -374,6 +374,7 @@ export default {
 @import '@/static/css/templatePage/custom_nav_bar.scss';
 .template-bless {
 	height: 100vh;
+	width: 100vh;
 	overflow: scroll;
 }
 page {

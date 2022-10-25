@@ -2,7 +2,7 @@
 	<view>
 		<view
 			class="rax-view"
-			style="box-sizing: border-box; display: flex; position: relative; -webkit-box-orient: vertical; flex-direction: column; flex-shrink: 0; align-content: flex-start; border-width: 0rem; border-style: solid; border-color: black; margin: 0rem auto; padding: 0rem 0rem 2.93333vw; min-width: 0rem; -webkit-box-align: start; align-items: flex-start; border-radius: 1.6vw; background-color: rgba(0, 0, 0, 0.05); width: 92vw;"
+			style="box-sizing: border-box; display: flex; position: relative; -webkit-box-orient: vertical; flex-direction: column; flex-shrink: 0; align-content: flex-start; border-width: 0rem; border-style: solid; border-color: black; margin: 0rem auto; padding: 0rem 0rem 2.93333vw; min-width: 0rem; -webkit-box-align: start; align-items: flex-start; border-radius: 1.6vw; background-color: rgba(0, 0, 0, 0.05); width: 750rpx;margin:0"
 		>
 			<view
 				class="rax-view"

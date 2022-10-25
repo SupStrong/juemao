@@ -6,7 +6,7 @@
 			<view
 				style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex-shrink: 0; position: absolute; width: 100%; height: 17.0667vw; border-radius: 2.4vw; left: 0vw; bottom: 0vw; background: linear-gradient(rgb(238, 237, 242) 0%, rgb(255, 255, 255) 100%); box-shadow: rgba(16, 0, 0, 0.05) 0px 6px 16px 0px;"
 			></view>
-			<img
+			<image
 				src="//gw.alicdn.com/imgextra/i4/O1CN01DcP53Q1J7LHSLZTnI_!!6000000000981-0-yinhe.jpg_170x10000Q75.jpg_.webp"
 				style="width: 20vw; height: 20vw; position: relative; border-radius: 1.6vw;"
 			/>

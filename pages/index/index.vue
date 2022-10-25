@@ -100,14 +100,13 @@
           }
         ],
         // tabbar当前被选中的序号
-        currentIndex: 0,
+        currentIndex: 2,
         // 自定义底栏对应页面的加载情况
         tabberPageLoadFlag: []
       }
     },
     onLoad(options) {
 	// this.handleGetToken()
-	console.log('123456789123456789')
       const index = Number(options.index || 0)
       // 根据底部tabbar菜单列表设置对应页面的加载情况
       this.tabberPageLoadFlag = this.tabbarList.map((item, tabbar_index) => {

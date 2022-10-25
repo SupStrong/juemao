@@ -1,7 +1,7 @@
 <template>
 	<view class="">
 		<view
-			style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0;"
+			style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0;width: 750rpx;"
 		>
 			<view
 				style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: 93.6%; margin: 0px auto; background-color: rgb(255, 255, 255); height: 70px; border-radius: 1.6vw; position: relative; box-shadow: rgba(157, 157, 157, 0.5) 0px 1px 2px 0px; overflow: hidden; background-image: linear-gradient(to right, rgb(129, 70, 236), rgb(101, 132, 255));"

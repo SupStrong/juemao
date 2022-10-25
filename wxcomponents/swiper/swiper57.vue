@@ -1,12 +1,12 @@
 <template>
 	<view>
-		<view class="rax-view-v2 mpmw-commodity-list" style="margin-top: 0vw; margin-bottom: 0vw;">
+		<view class="rax-view-v2 mpmw-commodity-list" style="margin-top: 0vw; margin-bottom: 0vw;width:750rpx;">
 			<view class="rax-view-v2 mppmw-commodity-list-card">
 				<view class="rax-view-v2 card-content" style="background: rgb(255, 255, 255);">
 					<view class="rax-view-v2 primary">
-						<text lines="2" class="rax-text-v2 title" style="color: rgb(17, 17, 17);">岩板电视柜榜</text>
+						<text class="rax-text-v2 title" style="color: rgb(17, 17, 17);">岩板电视柜榜</text>
 						<view class="rax-view-v2 group">
-							<img class="icon" src="//gw.alicdn.com/imgextra/i1/O1CN01XqEPX71D0ZlbEZvUh_!!6000000000154-2-tps-48-48.png_.webp" />
+							<image class="icon" src="//gw.alicdn.com/imgextra/i1/O1CN01XqEPX71D0ZlbEZvUh_!!6000000000154-2-tps-48-48.png_.webp" />
 							<view class="num">1883</view>
 							<view class="rax-view-v2 view">
 								<text class="rax-text-v2 tag">设计师</text>
@@ -18,15 +18,15 @@
 						<view class="rax-view-v2 sub">
 							<view class="rax-view-v2 mask"></view>
 							<view class="rax-view-v2 group1">
-								<img class="lable-icon" src="//gw.alicdn.com/imgextra/i3/O1CN01tpHPXS1P429INtruD_!!6000000001786-2-tps-36-36.png_.webp" />
-								<img class="entryPic" src="//gw.alicdn.com/bao/uploaded/i1/O1CN017EG10s1DTt6f9Xgxe_!!6000000000218-2-yinhe.png_.webp" />
+								<image class="lable-icon" src="//gw.alicdn.com/imgextra/i3/O1CN01tpHPXS1P429INtruD_!!6000000001786-2-tps-36-36.png_.webp" />
+								<image class="entryPic" src="//gw.alicdn.com/bao/uploaded/i1/O1CN017EG10s1DTt6f9Xgxe_!!6000000000218-2-yinhe.png_.webp" />
 							</view>
 							<view class="rax-view-v2 infoWrapper"><text class="rax-text-v2 info" style="color: rgb(181, 94, 3);">784位设计师收藏</text></view>
 						</view>
 						<view class="rax-view-v2 side">
 							<view class="rax-view-v2 contain-bac">
 								<view class="contain-bac-mask"></view>
-								<img class="lable-icon" src="//gw.alicdn.com/imgextra/i2/O1CN013vGXee1QZ0YJsHN5V_!!6000000001989-2-tps-36-36.png_.webp" />
+								<image class="lable-icon" src="//gw.alicdn.com/imgextra/i2/O1CN013vGXee1QZ0YJsHN5V_!!6000000001989-2-tps-36-36.png_.webp" />
 								<view
 									class="rax-view-v2 group2"
 									style="background-image: url(https://img.alicdn.com/bao/upload/O1CN01LtNcnO1fJdSCwBcnN_!!6000000003986-0-yinhe.jpg);"
@@ -34,7 +34,7 @@
 							</view>
 							<view class="rax-view-v2 contain-bac">
 								<view class="contain-bac-mask"></view>
-								<img class="lable-icon" src="//gw.alicdn.com/imgextra/i3/O1CN012W4I231GJIoNbHzbT_!!6000000000601-2-tps-36-36.png_.webp" />
+								<image class="lable-icon" src="//gw.alicdn.com/imgextra/i3/O1CN012W4I231GJIoNbHzbT_!!6000000000601-2-tps-36-36.png_.webp" />
 								<view
 									class="rax-view-v2 group3"
 									style="background-image: url(https://img.alicdn.com/bao/upload/O1CN01kynfXx1Gahr959S2n_!!6000000000639-0-yinhe.jpg);"
@@ -266,21 +266,6 @@ export default {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-origin: padding-box;
-}
-.card-content .view3 {
-	flex-direction: row;
-	align-self: flex-start;
-	padding: 0 1.33333vw 0.93333vw;
-	background-image: url('https://img.alicdn.com/imgextra/i3/O1CN01bLIG7W1DAC5SpdWAO_!!6000000000175-2-tps-72-72.png');
-}
-.card-content .num3 {
-	margin-left: 0.26667vw;
-	font-family: PingFangSC-Medium;
-	font-size: 3.06667vw;
-	font-weight: 600;
-	line-height: 3.73333vw;
-	color: #fff;
-	white-space: nowrap;
 }
 .mpmw-commodity-list {
 	margin: 3.2vw 0;

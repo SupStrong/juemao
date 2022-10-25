@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view/
+		<view
 			class="rax-view rax-scrollview rax-scrollview-horizontal listContainer"
 			style="box-sizing: border-box; display: flex; flex-direction: row; align-content: flex-start; flex: 1 1 0%; position: relative; overflow: scroll;"
 		>
@@ -9,7 +9,6 @@
 				style="box-sizing: border-box; display: flex; flex-direction: row; align-content: flex-start; flex-shrink: 0; position: relative; height: 68.2667vw; padding-left: 3.2vw; padding-top: 0.8vw; padding-bottom: 2.4vw;"
 			>
 				<a
-					href="https://pages.tmall.com/wow/z/import/pha/tmgPhawupr?pha=true&amp;disableNav=YES&amp;wh_pid=spaceX-tubes%2FspaceXUpr&amp;bizAssetsId=1100988193&amp;packageId=798&amp;templateId=13&amp;&amp;boardId=1100988193"
 					class="boardItem"
 					
 					
@@ -17,7 +16,7 @@
 					
 				>
 					<image
-						class="boardItemBg"/
+						class="boardItemBg"
 						src="https://gw.alicdn.com/imaextra/i4/O1CN015JLTaR1nr5L2j0YVr_!!6000000005142-2-tps-466-493.png_570x10000.jpg_.webp"/
 						style="width: 100%; height: 246px; position: absolute; left: 0vw; top: 0vw;"
 						
@@ -40,8 +39,6 @@
 						<image
 							class="boardTitleArr"
 							src="https://gw.alicdn.com/imageextra/i2/O1CN01lC60Wu1H88lQBvCEI_!!6000000000712-2-tps-34-34.png_110x10000.jpg_.webp"
-							
-							
 							style="width: 4.5333vw; height: 4.5333vw; margin-left: 0.4vw;"
 							
 						/>
@@ -78,7 +75,6 @@
 							</view>
 							<image
 								class="topItemTag"
-								
 								src="https://gw.alicdn.com/imageextra/i1/O1CN01NB262A1vWUREpsOYp_!!6000000006180-2-tps-96-68.png_.webp"
 								style="width: auto; height: 8.2667vw; position: absolute; left: 1.8667vw; top: 1.3333vw;"
 								
@@ -139,11 +135,7 @@
 									/>
 									<image
 										class="itemTag"
-										
 										src="https://gw.alicdn.com/imageextra/i4/O1CN01AYHiup1gmmHrEwTWA_!!6000000004185-2-tps-126-68.png_110x10000.jpg_.webp"
-										
-										
-										
 										style="width: 8.5333vw; height: auto; position: absolute; top: 1.0667vw; left: 0.9333vw;"
 										
 									/>
@@ -199,8 +191,6 @@
 					<image
 						class="boardItemBg"
 						src="https://gw.alicdn.com/imageextra/i4/O1CN015JLTaR1nr5L2j0YVr_!!6000000005142-2-tps-466-493.png_570x10000.jpg_.webp"
-						
-						
 						style="width: 100%; height: 246px; position: absolute; left: 0vw; top: 0vw;"
 						
 					/>
@@ -223,9 +213,6 @@
 							class="boardTitleArr"
 							src="https://gw.alicdn.com/imageextra/i2/O1CN01lC60Wu1H88lQBvCEI_!!6000000000712-2-tps-34-34.png_110x10000.jpg_.webp"
 							style="width: 4.5333vw; height: 4.5333vw; margin-left: 0.4vw;"
-							
-							
-							
 						/>
 					</view>
 					<text
@@ -245,26 +232,19 @@
 							>
 								<image
 									class="topItemMask"
-									
 									src="https://gw.alicdn.com/imageextra/i3/O1CN01GazXRR23h2VAoJ8rR_!!6000000007286-2-tps-245-221.png_360x10000.jpg_.webp"
-									
-									
-									
 									style="width: 30.1333vw; height: 30.1333vw; position: absolute; left: 0vw; top: 0vw;"
 									
 								/>
 								<image
 									class="topItemimage"
-									
 									src="https://gw.alicdn.com/tfscom/i1/3042485483/O1CN01zh2WJR1qNGPVzKkOD_!!0-item_pic.jpg_360x10000Q75.jpg_.webp"
-									
 									style="width: 28vw; height: 28vw;"
 									
 								/>
 							</view>
 							<image
 								class="topItemTag"
-								
 								src="https://gw.alicdn.com/imageextra/i1/O1CN01NB262A1vWUREpsOYp_!!6000000006180-2-tps-96-68.png_.webp"
 								style="width: auto; height: 8.2667vw; position: absolute; left: 1.8667vw; top: 1.3333vw;"
 								
@@ -280,9 +260,7 @@
 								<view class="rax-view-v2 topItemScoreWrapper" style="margin-top: 1.6vw; position: relative; display: flex; flex-direction: row;">
 									<image
 										class="topItemScoreBg"
-										
 										src="https://gw.alicdn.com/imageextra/i1/O1CN01JpDIhl1KOZpWdcrpp_!!6000000001154-2-tps-165-36.png_290x10000.jpg_.webp"
-										
 										style="width: 22vw; height: 4.8vw; position: absolute; left: 0vw; top: 0vw;"
 										
 									/>
@@ -317,16 +295,13 @@
 								<view class="rax-view-v2 itemimageWrapper" style="width: 17.8667vw; height: 17.8667vw;">
 									<image
 										class="itemimage"
-										
 										src="https://gw.alicdn.com/tfscom/i4/3257525483/O1CN01WRsKVJ1qNGOjTPOBu_!!0-item_pic.jpg_220x10000Q75.jpg_.webp"
 										style="width: 17.8667vw; height: 17.8667vw; position: relative; border-radius: 0.8vw;"
 										
 									/>
 									<image
 										class="itemTag"
-										
 										src="https://gw.alicdn.com/imageextra/i4/O1CN01AYHiup1gmmHrEwTWA_!!6000000004185-2-tps-126-68.png_110x10000.jpg_.webp"
-										
 										style="width: 8.5333vw; height: auto; position: absolute; top: 1.0667vw; left: 0.9333vw;"
 										
 									/>
@@ -346,23 +321,19 @@
 								<view class="rax-view-v2 itemimageWrapper" style="width: 17.8667vw; height: 17.8667vw;">
 									<image
 										class="itemimage"
-										
 										src="https://gw.alicdn.com/imageextra/i4/O1CN01svob7p1gVNEy9SKdw_!!6000000004147-2-yinhe.png_220x10000.jpg_.webp"
 										style="width: 17.8667vw; height: 17.8667vw; position: relative; border-radius: 0.8vw;"
 										
 									/>
 									<image
 										class="itemTag"
-										
 										src="https://gw.alicdn.com/imageextra/i2/O1CN019YdJFG1txqsAl1upS_!!6000000005969-2-tps-126-68.png_110x10000.jpg_.webp"
-										data-before-current-y="340.015625"
 										style="width: 8.5333vw; height: auto; position: absolute; top: 1.0667vw; left: 0.9333vw;"
 										
 									/>
 								</view>
 								<text
 									class="itemTitle"
-									
 									style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: var(--color-text-2, #666); font-weight: 400; line-height: 4.2667vw; text-align: left; margin-top: 0.5333vw; max-width: 90%; text-overflow: ellipsis; overflow: hidden;"
 								>
 									日本皓乐齿牙膏清新亮白去黄防蛀温和去牙渍鲜桃薄荷味花香白茶味
@@ -419,31 +390,24 @@
 							>
 								<image
 									class="topItemMask"
-									
 									src="https://gw.alicdn.com/imageextra/i3/O1CN01GazXRR23h2VAoJ8rR_!!6000000007286-2-tps-245-221.png_360x10000.jpg_.webp"
-									
 									style="width: 30.1333vw; height: 30.1333vw; position: absolute; left: 0vw; top: 0vw;"
 								/>
 								<image
 									class="topItemimage"
-									
 									src="https://img.alicdn.com/tfscom///gw.alicdn.com/imageextra/i2/O1CN014vi2sk1RKdjPWDRg7_!!6000000002093-0-tps-800-800.jpg_360x10000Q75.jpg_.webp"
-									data-before-current-y="265.640625"
 									style="width: 28vw; height: 28vw;"
 								/>
 							</view>
 							<image
 								class="topItemTag"
-								
 								src="https://gw.alicdn.com/imageextra/i1/O1CN01NB262A1vWUREpsOYp_!!6000000006180-2-tps-96-68.png_.webp"
-								data-before-current-y="241.71875"
 								style="width: auto; height: 8.2667vw; position: absolute; left: 1.8667vw; top: 1.3333vw;"
 								
 							/>
 							<view class="rax-view-v2 topItemInfo" style="width: 100%; position: relative; display: flex; flex-direction: column; align-items: center;">
 								<text
 									class="topItemTitle"
-									
 									style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: rgb(84, 84, 84); font-weight: 400; text-align: left; max-width: 32.5333vw; text-overflow: ellipsis; overflow: hidden;"
 								>
 									MOTHER TOMCAT博主同款男友裤宽松高腰破洞直筒
@@ -451,9 +415,7 @@
 								<view class="rax-view-v2 topItemScoreWrapper" style="margin-top: 1.6vw; position: relative; display: flex; flex-direction: row;">
 									<image
 										class="topItemScoreBg"
-										
 										src="https://gw.alicdn.com/imageextra/i1/O1CN01JpDIhl1KOZpWdcrpp_!!6000000001154-2-tps-165-36.png_290x10000.jpg_.webp"
-										
 										style="width: 22vw; height: 4.8vw; position: absolute; left: 0vw; top: 0vw;"
 										
 									/>
@@ -488,17 +450,13 @@
 								<view class="rax-view-v2 itemimageWrapper" style="width: 17.8667vw; height: 17.8667vw;">
 									<image
 										class="itemimage"
-										
 										src="https://img.alicdn.com/tfscom///gw.alicdn.com/imageextra/i1/O1CN01YUjWAf1DTt6jPTOk0_!!6000000000218-0-tps-800-800.jpg_220x10000Q75.jpg_.webp"
-										data-before-current-y="236.53125"
 										style="width: 17.8667vw; height: 17.8667vw; position: relative; border-radius: 0.8vw;"
 										
 									/>
 									<image
 										class="itemTag"
-										
 										src="https://gw.alicdn.com/imageextra/i4/O1CN01AYHiup1gmmHrEwTWA_!!6000000004185-2-tps-126-68.png_110x10000.jpg_.webp"
-										
 										style="width: 8.5333vw; height: auto; position: absolute; top: 1.0667vw; left: 0.9333vw;"
 										
 									/>
@@ -518,9 +476,7 @@
 								<view class="rax-view-v2 itemimageWrapper" style="width: 17.8667vw; height: 17.8667vw;">
 									<image
 										class="itemimage"
-										
 										src="https://img.alicdn.com/tfscom///gw.alicdn.com/imageextra/i2/O1CN014cXAOO1kpIwcu58gJ_!!6000000004732-0-tps-800-800.jpg_220x10000Q75.jpg_.webp"
-										data-before-current-y="335.859375"
 										style="width: 17.8667vw; height: 17.8667vw; position: relative; border-radius: 0.8vw;"
 										
 									/>
@@ -528,14 +484,12 @@
 										class="itemTag"
 										
 										src="https://gw.alicdn.com/imageextra/i2/O1CN019YdJFG1txqsAl1upS_!!6000000005969-2-tps-126-68.png_110x10000.jpg_.webp"
-										data-before-current-y="340.015625"
 										style="width: 8.5333vw; height: auto; position: absolute; top: 1.0667vw; left: 0.9333vw;"
 										
 									/>
 								</view>
 								<text
 									class="itemTitle"
-									
 									style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: var(--color-text-2, #666); font-weight: 400; line-height: 4.2667vw; text-align: left; margin-top: 0.5333vw; max-width: 90%; text-overflow: ellipsis; overflow: hidden;"
 								>
 									Calvin Klein/CK男士简约字母T恤百搭2022夏新款宽松纯棉短袖潮牌

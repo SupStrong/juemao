@@ -8,13 +8,13 @@ export default {
 	
 	data() {
 		return {
+			
 		}
 	},
 	methods: {
 		handleGetToken(){
-			console.log("!2121")
 			getToken().then(result => {
-				console.log(result)
+				console.log(result.data.token)
 			})
 		}
 	}

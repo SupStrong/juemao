@@ -1,5 +1,4 @@
 <template>
-	<view>
 		<view
 			class="rax-view-v2 mui-zebra-module"
 			style="position: relative;"
@@ -10,7 +9,7 @@
 				<view
 					style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex-shrink: 0; position: relative; width: 96.8vw; height: 60.5333vw; align-items: stretch; overflow: hidden;"
 				>
-					<img
+					<image
 						src="//gw.alicdn.com/imgextra/i4/O1CN01HdGocj1uB8OKuBLOm_!!6000000005998-2-tps-726-454.png_790x10000.jpg_.webp"
 						style="width: 96.8vw; height: 60.5333vw; position: absolute; left: 0vw; top: 0vw;"
 					/>
@@ -21,7 +20,7 @@
 							href="https://pages.tmall.com/wow/z/jinkou/zy-tab-rax/chaoshiwupr-index?wh_pid=s2-channel%2F5HbXjSQtp2EdX3Ge83XP&amp;activityId=3588"
 							style="display: flex; position: relative; height: 4.8vw; flex-direction: row; align-items: flex-end;"
 						>
-							<img
+							<image
 								src="//gw.alicdn.com/imgextra/i1/O1CN01aaJGan1YhGZL95BLf_!!6000000003090-2-tps-303-72.png_.webp"
 								style="height: 4.5333vw;"
 							/>
@@ -52,7 +51,7 @@
 									10:00
 								</text>
 							</view>
-							<img
+							<image
 								src="//gw.alicdn.com/imgextra/i4/O1CN01UG9j0J1NdBG1fbnjH_!!6000000001592-2-tps-1-42.png_.webp"
 								style="height: 6vw;"
 							/>
@@ -73,7 +72,7 @@
 									20:00
 								</text>
 							</view>
-							<img
+							<image
 								src="//gw.alicdn.com/imgextra/i4/O1CN01UG9j0J1NdBG1fbnjH_!!6000000001592-2-tps-1-42.png_.webp"
 								style="height: 6vw;"
 							/>
@@ -110,7 +109,7 @@
 							<view
 								style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex-shrink: 0; position: relative; width: 26.2667vw; height: 26.2667vw; margin-top: 1.3333vw;"
 							>
-								<img
+								<image
 									l
 									src="//img.alicdn.com/tfscom///img.alicdn.com/imgextra/i2/2200657715182/O1CN01D6icHg1o9PCVQuAyr_!!2200657715182-0-tmgimage.jpg_220x10000Q75.jpg_.webp"
 									style="width: 26.2667vw; height: 26.2667vw;"
@@ -165,7 +164,7 @@
 							<view
 								style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex-shrink: 0; position: relative; width: 26.2667vw; height: 26.2667vw; margin-top: 1.3333vw;"
 							>
-								<img
+								<image
 									src="//gw.alicdn.com/tfscom/i2/2200657715182/O1CN01z90VbE1o9PCQW8URC_!!0-item_pic.jpg_220x10000Q75.jpg_.webp"
 									style="width: 26.2667vw; height: 26.2667vw;"
 								/>
@@ -219,7 +218,7 @@
 							<view
 								style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex-shrink: 0; position: relative; width: 26.2667vw; height: 26.2667vw; margin-top: 1.3333vw;"
 							>
-								<img
+								<image
 									src="//gw.alicdn.com/tfscom/i3/2200657715182/O1CN01H8ZMtf1o9PCSOBco2_!!0-item_pic.jpg_220x10000Q75.jpg_.webp"
 									style="width: 26.2667vw; height: 26.2667vw;"
 								/>
@@ -269,7 +268,6 @@
 				</view>
 			</view>
 		</view>
-	</view>
 </template>
 
 <script>

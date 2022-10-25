@@ -1,23 +1,23 @@
 <template>
 	<view>
-		<view class="_1MEvrXDz" quality="80" style="background-image:url(https://promotion.pddpic.com/cart/upload-image-4f984068ad6366a1e523b0df7f698059.png.slim.png?domino)">
+		<view class="_1MEvrXDz" style="background-image:url(https://promotion.pddpic.com/cart/upload-image-4f984068ad6366a1e523b0df7f698059.png.slim.png?domino)">
 			<view class="_22_O8yIa">今日省钱推荐</view>
 			<view class="mLt-Deth">
-				<view class="_2NkPPA6p" data-uniqid="1">
+				<view class="_2NkPPA6p">
 					<image
 						src="https://img.pddpic.com/mms-material-img/2022-08-29/e28d3409-45b1-426d-b861-e30c462837d3.jpeg.a.jpeg?imageView2/2/w/800/q/80/format/webp"
 						class="_3sSJRqY4"
 					/>
 					<view class="_2g3RjNYy">¥ 126.72</view>
 				</view>
-				<view class="_2NkPPA6p" data-uniqid="2">
+				<view class="_2NkPPA6p">
 					<image
 						src="https://img.pddpic.com/mms-material-img/2021-12-06/f7ec033f-cdb6-4354-a149-e9ccb19d7100.jpeg.a.jpeg?imageView2/2/w/800/q/80/format/webp"
 						class="_3sSJRqY4"
 					/>
 					<view class="_2g3RjNYy">¥142.39</view>
 				</view>
-				<view class="_2NkPPA6p" data-uniqid="3">
+				<view class="_2NkPPA6p">
 					<image src="https://commimg.pddpic.com/auto-image/41c82b78-4dbb-11ed-bc38-0a580a481c2e.jpg?imageView2/2/w/800/q/80/format/webp" class="_3sSJRqY4" />
 					<view class="_2g3RjNYy">¥ 107.99</view>
 				</view>
@@ -47,8 +47,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.home_top_container{
+	width: 750rpx;
+}
 ._1MEvrXDz {
-	margin: 18rpx auto;
+	margin: 18rpx;
 	width: 714rpx;
 	height: 278rpx;
 	background-size: 100% 100%;

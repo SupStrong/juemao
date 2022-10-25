@@ -1,7 +1,5 @@
 <template>
-	<view>
 		<view
-			id="5803999560"
 			class="mui-zebra-module"
 			style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; position: relative;"
 		>
@@ -12,19 +10,19 @@
 							<view class="rax-view-v2 onedoller-draw-pro--header--2Tgqc5z">
 								<view class="rax-view-v2 onedoller-draw-pro--wrapperInner--10_4RmS">
 									<view class="rax-view-v2 onedoller-draw-pro--titleWrapper--3IZcbAQ">
-										<span lines="1" class="rax-text-v2 onedoller-draw-pro--title--lU2zqPH">我参与的</span>
+										<text class="rax-text-v2 onedoller-draw-pro--title--lU2zqPH">我参与的</text>
 									</view>
 									<view class="rax-view-v2 onedoller-draw-pro--group--CDq8V_q">
-										<img
+										<image
 											class="onedoller-draw-pro--verticalLine--1KnPLbj"
 											src="//gw.alicdn.com/imgextra/i1/O1CN01Qxwea71hSSJclTUKb_!!6000000004276-2-tps-2-50.png"
 										/>
-										<span lines="1" class="rax-text-v2 onedoller-draw-pro--tag--5EBUasz">每天12:00开奖哦</span>
+										<text class="rax-text-v2 onedoller-draw-pro--tag--5EBUasz">每天12:00开奖哦</text>
 									</view>
 								</view>
 								<view class="rax-view-v2 onedoller-draw-pro--wrapperInner1--s_BCJQn">
-									<span lines="1" class="rax-text-v2 onedoller-draw-pro--label--ptxyLtR">查看往期</span>
-									<img
+									<text class="rax-text-v2 onedoller-draw-pro--label--ptxyLtR">查看往期</text>
+									<image
 										class="onedoller-draw-pro--iconRight--25jdHxK"
 										src="//gw.alicdn.com/imgextra/i4/O1CN01e98ppD1UvEBpUyiAB_!!6000000002579-2-tps-20-28.png"
 									/>
@@ -36,7 +34,6 @@
 				</view>
 			</view>
 		</view>
-	</view>
 </template>
 
 <script>

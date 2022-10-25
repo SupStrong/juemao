@@ -3,9 +3,7 @@
 		<view
 			style="display: flex; position: relative; margin-top: 0.8vw; height: 28.8vw; padding: 0vw 3.2vw; flex-direction: row;"
 		>
-			<img
-				lazyload="false"
-				data-once="true"
+			<image
 				src="//gw.alicdn.com/imgextra/i4/O1CN01heJ8Du1PHm2RRwgwO_!!6000000001816-2-tps-222-216.png_290x10000.jpg_.webp"
 				style="width: 29.6vw; height: 28.8vw; margin-left: 2.9333vw;"
 			/>
@@ -25,7 +23,7 @@
 					>
 						欢迎来到妙颜社，开启你的颜值新发现，有问题可以找我聊聊哦~
 					</text>
-					<img
+					<image
 						src="//gw.alicdn.com/imgextra/i4/O1CN01qe5mjT1POBZnmq5Nb_!!6000000001830-2-tps-48-48.png_110x10000.jpg_.webp"
 						style="width: 3.2vw; height: 3.2vw; position: absolute; top: 2.4vw; right: 3.4667vw;"
 					/>

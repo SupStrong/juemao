@@ -10,9 +10,9 @@
 								
 								src="//gw.alicdn.com/imgextra/i2/O1CN01qxbx811nm2tRlrQiL_!!6000000005131-2-tps-618-110.png_.webp"
 							/>
-							<text lines="1" class="rax-text-v2 GewuRankCard--buttonBg--35nxxI8">好货达人</text>
+							<text class="rax-text-v2 GewuRankCard--buttonBg--35nxxI8">好货达人</text>
 						</view>
-						<text lines="1" class="rax-text-v2 GewuRankCard--jingxuantitle---De6kWS">为你精选品质好物</text>
+						<text class="rax-text-v2 GewuRankCard--jingxuantitle---De6kWS">为你精选品质好物</text>
 					</view>
 					<view class="rax-view-v2 GewuRankCard--group12--PiyY7MJ">
 						<view
@@ -29,7 +29,7 @@
 								
 								src="//gw.alicdn.com/imgextra/i1/2011438860/O1CN01hMt4Bp2FJvnkoyrO2_!!2011438860-0-beehive-scenes.jpg_Q75.jpg_.webp"
 							/>
-							<text lines="1" class="rax-text-v2 GewuRankCard--tag1--vS5ZRQ3">这些曾经LOL就</text>
+							<text class="rax-text-v2 GewuRankCard--tag1--vS5ZRQ3">这些曾经LOL就</text>
 						</view>
 						<view
 							class="rax-view-v2"
@@ -45,7 +45,7 @@
 								
 								src="//gw.alicdn.com/imgextra/i3/106580742/O1CN01k6l8qJ1HLsWkV6G1T_!!106580742-0-beehive-scenes.jpg_Q75.jpg_.webp"
 							/>
-							<text lines="1" class="rax-text-v2 GewuRankCard--tag1--vS5ZRQ3">创享师</text>
+							<text class="rax-text-v2 GewuRankCard--tag1--vS5ZRQ3">创享师</text>
 						</view>
 						<view
 							class="rax-view-v2"
@@ -61,7 +61,7 @@
 								
 								src="//gw.alicdn.com/imgextra/i1/2206758446475/O1CN01gnEYlH1xhbBDgM3Dr_!!2206758446475-0-beehive-scenes.jpg_Q75.jpg_.webp"
 							/>
-							<text lines="1" class="rax-text-v2 GewuRankCard--tag1--vS5ZRQ3">Jonen时尚啵</text>
+							<text class="rax-text-v2 GewuRankCard--tag1--vS5ZRQ3">Jonen时尚啵</text>
 						</view>
 					</view>
 				</view>
@@ -98,7 +98,7 @@
 											/>
 										</view>
 										<view class="rax-view-v2 GewuRankCard--group21--BQt5Mve">
-											<text lines="1" class="rax-text-v2 GewuRankCard--dysonSupersonic--1DHByLo">潮衣裤馆加绒阔腿裤</text>
+											<text class="rax-text-v2 GewuRankCard--dysonSupersonic--1DHByLo">潮衣裤馆加绒阔腿裤</text>
 											<text
 												class="rax-text-v2  rax-text-v2--overflow-hidden rax-text-v2--multiline"
 												style="width: 62.9333vw; height: 10.6667vw; line-height: 5.6vw; text-overflow: ellipsis; display: -webkit-box; font-size: 3.7333vw; margin-top: 1.8667vw; z-index: 10; -webkit-line-clamp: 2;"
@@ -112,7 +112,7 @@
 														
 														src="//gw.alicdn.com/imgextra/i1/O1CN01osjfaj1srbmYMZRmi_!!6000000005820-2-tps-48-48.png_.webp"
 													/>
-													<text lines="1" class="rax-text-v2 GewuRankCard--info--R489HpV">常规</text>
+													<text class="rax-text-v2 GewuRankCard--info--R489HpV">常规</text>
 												</view>
 												<view class="rax-view-v2 GewuRankCard--view--1Vdc-kr">
 													<image
@@ -120,7 +120,7 @@
 														
 														src="//gw.alicdn.com/imgextra/i1/O1CN01osjfaj1srbmYMZRmi_!!6000000005820-2-tps-48-48.png_.webp"
 													/>
-													<text lines="1" class="rax-text-v2 GewuRankCard--info--R489HpV">不会掉颜色</text>
+													<text class="rax-text-v2 GewuRankCard--info--R489HpV">不会掉颜色</text>
 												</view>
 											</view>
 										</view>
@@ -144,7 +144,7 @@
 											/>
 										</view>
 										<view class="rax-view-v2 GewuRankCard--group21--BQt5Mve">
-											<text lines="1" class="rax-text-v2 GewuRankCard--dysonSupersonic--1DHByLo">气质高腰半身裙</text>
+											<text class="rax-text-v2 GewuRankCard--dysonSupersonic--1DHByLo">气质高腰半身裙</text>
 											<text
 												class="rax-text-v2  rax-text-v2--overflow-hidden rax-text-v2--multiline"
 												style="width: 62.9333vw; height: 10.6667vw; line-height: 5.6vw; text-overflow: ellipsis; display: -webkit-box; font-size: 3.7333vw; margin-top: 1.8667vw; z-index: 10; -webkit-line-clamp: 2;"
@@ -157,7 +157,7 @@
 														class="GewuRankCard--icon--FaSAcuL"
 														src="//gw.alicdn.com/imgextra/i1/O1CN01osjfaj1srbmYMZRmi_!!6000000005820-2-tps-48-48.png_.webp"
 													/>
-													<text lines="1" class="rax-text-v2 GewuRankCard--info--R489HpV">通勤</text>
+													<text class="rax-text-v2 GewuRankCard--info--R489HpV">通勤</text>
 												</view>
 												<view class="rax-view-v2 GewuRankCard--view--1Vdc-kr">
 													<image
@@ -165,7 +165,7 @@
 														
 														src="//gw.alicdn.com/imgextra/i1/O1CN01osjfaj1srbmYMZRmi_!!6000000005820-2-tps-48-48.png_.webp"
 													/>
-													<text lines="1" class="rax-text-v2 GewuRankCard--info--R489HpV">中长款</text>
+													<text class="rax-text-v2 GewuRankCard--info--R489HpV">中长款</text>
 												</view>
 											</view>
 										</view>
@@ -201,7 +201,7 @@
 														
 														src="//gw.alicdn.com/imgextra/i1/O1CN01osjfaj1srbmYMZRmi_!!6000000005820-2-tps-48-48.png_.webp"
 													/>
-													<text lines="1" class="rax-text-v2 GewuRankCard--info--R489HpV">涤纶</text>
+													<text class="rax-text-v2 GewuRankCard--info--R489HpV">涤纶</text>
 												</view>
 												<view class="rax-view-v2 GewuRankCard--view--1Vdc-kr">
 													<image
@@ -209,7 +209,7 @@
 														
 														src="//gw.alicdn.com/imgextra/i1/O1CN01osjfaj1srbmYMZRmi_!!6000000005820-2-tps-48-48.png_.webp"
 													/>
-													<text lines="1" class="rax-text-v2 GewuRankCard--info--R489HpV">不容易变皱</text>
+													<text class="rax-text-v2 GewuRankCard--info--R489HpV">不容易变皱</text>
 												</view>
 											</view>
 										</view>

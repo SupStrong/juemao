@@ -8,18 +8,18 @@
 				class="rax-view-v2 ug-activity-mod--countdownWrap--2E9pHeU"
 				style="color: rgb(255, 239, 93); font-size: 2.9333vw; line-height: 2.9333vw; font-family: PingFangSC-Medium; letter-spacing: 0vw;"
 			>
-				<span class="rax-text-v2 ug-activity-mod--countdownPrefix--3AfNqnA">距离结束</span>
+				<text class="rax-text-v2 ug-activity-mod--countdownPrefix--3AfNqnA">距离结束</text>
 				3天 02:24:18
-				<!---->
+				
 			</view>
 			<view class="rax-view-v2 ug-activity-mod--titleWrap--1_N3jfs">
-				<span class="rax-text-v2 ug-activity-mod--title--3EY8wA0">预售种草清单</span>
-				<span class="rax-text-v2 ug-activity-mod--subtitle--3QzmKbo">预售爆款抢先看</span>
+				<text class="rax-text-v2 ug-activity-mod--title--3EY8wA0">预售种草清单</text>
+				<text class="rax-text-v2 ug-activity-mod--subtitle--3QzmKbo">预售爆款抢先看</text>
 				<view
 					class="rax-view-v2 ug-activity-mod--button--2tofa5Q"
 					style="background-color: rgb(189, 49, 75); box-shadow: rgba(160, 6, 49, 0.22) 2px 2px 5px 0px; margin-top: 2.6667vw;"
 				>
-					<span class="rax-text-v2 ug-activity-mod--buttonText--QtrAF0d" style="font-family: PingFangSC-Semibold;">去抢购&nbsp;</span>
+					<text class="rax-text-v2 ug-activity-mod--buttonText--QtrAF0d" style="font-family: PingFangSC-Semibold;">去抢购&nbsp;</text>
 					<image src="//gw.alicdn.com/imgextra/i3/O1CN01XWUqi71gwOdBodheU_!!6000000004206-2-tps-42-22.png_110x10000.jpg_.webp" style="width: 5.8667vw;height: 2.8667vw;" />
 					&nbsp;
 					<image
@@ -27,7 +27,7 @@
 						style="width: 1.0667vw; height: 2.1333vw;"
 					/>
 				</view>
-				<!---->
+				
 			</view>
 			<view class="rax-view-v2 ug-activity-mod--goodsListWrap--XyDJC3-">
 				<view class="rax-view-v2 ug-activity-mod--goodsItem--1-qNA2X" style="margin-right: 1.6vw;">

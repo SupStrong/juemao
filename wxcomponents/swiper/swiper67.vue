@@ -27,7 +27,7 @@
 									<text class="rax-text-v2 NewTabItem--tabItemText--3fZ2k-U" style="margin-bottom: 4.5333vw; color: rgb(254, 16, 68);">早10点抢</text>
 									<view class="rax-view-v2 CountDown--countdownWrap--1r0lTyi" style="background: rgb(255, 238, 245);">
 										<view class="rax-view-v2 CountDown--countTimeBox--11FNSmO">
-											<img
+											<image
 												style="position: absolute; left: 0vw; width: 2.4vw; height: 3.4667vw;"
 												src="//gw.alicdn.com/imgextra/i4/O1CN01FWwSlo1GFddwOHLgJ_!!6000000000593-2-tps-18-25.png_110x10000.jpg_.webp"
 											/>
@@ -56,7 +56,7 @@
 									<text class="rax-text-v2 NewTabItem--tabItemText--3fZ2k-U" style="margin-bottom: 4.5333vw; color: rgb(51, 51, 51);">晚8点半抢</text>
 									<view class="rax-view-v2 CountDown--countdownWrap--1r0lTyi" style="background: rgb(225, 246, 223);">
 										<view class="rax-view-v2 CountDown--countTimeBox--11FNSmO">
-											<img
+											<image
 												style="position: absolute; left: 0vw; width: 2.4vw; height: 3.4667vw;"
 												src="//gw.alicdn.com/imgextra/i4/O1CN01FWwSlo1GFddwOHLgJ_!!6000000000593-2-tps-18-25.png_110x10000.jpg_.webp"
 											/>

@@ -14,11 +14,8 @@
 				>
 					<view
 						href="https://f.m.taobao.com/wow/pone/pcraft/common/fupr?wh_pid=common%2Fzhenxuan-copy"
-						
 						class="rax-view banner-item"
-						
 						style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw; height: 38.9333vw; border-radius: 1.6vw; overflow: hidden; z-index: 2; background-color: rgb(103, 105, 156);"
-						data-has-disappeared="true"
 					>
 						<view
 							class="rax-view pic-box"
@@ -36,18 +33,18 @@
 							class="rax-view banner-contents"
 							style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 3.06667vw 2vw; min-width: 0vw; width: 28vw; height: 17.8667vw;"
 						>
-							<span
+							<text
 								class="rax-text main-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 4vw; white-space: nowrap; overflow: hidden; font-weight: 600; color: rgb(255, 255, 255); text-overflow: ellipsis;"
 							>
 								官方真选
-							</span>
-							<span
+							</text>
+							<text
 								class="rax-text sub-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; overflow: hidden; color: rgba(255, 255, 255, 0.7); text-overflow: ellipsis;"
 							>
 								杭州度假酒店
-							</span>
+							</text>
 						</view>
 					</view>
 				</view>
@@ -76,20 +73,20 @@
 							class="rax-view banner-contents"
 							style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 3.06667vw 2vw; min-width: 0vw; width: 28vw; height: 17.8667vw;"
 						>
-							<span
+							<text
 								class="rax-text main-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 4vw; white-space: nowrap; overflow: hidden; font-weight: 600; color: rgb(255, 255, 255); text-overflow: ellipsis;"
 							>
 								桂花飘香
-							</span>
-							<span
+							</text>
+							<text
 								class="rax-text sub-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; overflow: hidden; color: rgba(255, 255, 255, 0.7); text-overflow: ellipsis;"
 							>
 								淋一场桂花雨
-							</span>
+							</text>
 						</view>
-						<!---->
+						
 					</view>
 				</view>
 				<view
@@ -119,18 +116,18 @@
 							class="rax-view banner-contents"
 							style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 3.06667vw 2vw; min-width: 0vw; width: 28vw; height: 17.8667vw;"
 						>
-							<span
+							<text
 								class="rax-text main-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 4vw; white-space: nowrap; overflow: hidden; font-weight: 600; color: rgb(255, 255, 255); text-overflow: ellipsis;"
 							>
 								欢乐亲子游
-							</span>
-							<span
+							</text>
+							<text
 								class="rax-text sub-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; overflow: hidden; color: rgba(255, 255, 255, 0.7); text-overflow: ellipsis;"
 							>
 								带娃轻松涨知识
-							</span>
+							</text>
 						</view>
 					</view>
 				</view>
@@ -149,9 +146,7 @@
 							style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw; width: 28vw; height: 21.0667vw; border-top-left-radius: 1.6vw; border-top-right-radius: 1.6vw; background-color: rgb(242, 243, 245);"
 						>
 							<img
-								
 								class="pic-ico"
-								
 								src="//gw.alicdn.com/imgextra/i4/O1CN01shcB411mj0aUFu0B5_!!0-travel.jpg_220x10000Q75.jpg_.webp"
 								style="width: 28.2667vw; height: 21.0667vw; border-top-left-radius: 1.6vw; border-top-right-radius: 1.6vw; object-fit: cover;"
 							/>
@@ -160,20 +155,19 @@
 							class="rax-view banner-contents"
 							style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 3.06667vw 2vw; min-width: 0vw; width: 28vw; height: 17.8667vw;"
 						>
-							<span
+							<text
 								class="rax-text main-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 4vw; white-space: nowrap; overflow: hidden; font-weight: 600; color: rgb(255, 255, 255); text-overflow: ellipsis;"
 							>
 								大闸蟹开吃
-							</span>
-							<span
+							</text>
+							<text
 								class="rax-text sub-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; overflow: hidden; color: rgba(255, 255, 255, 0.7); text-overflow: ellipsis;"
 							>
 								芦苇荡里抓湖鲜
-							</span>
+							</text>
 						</view>
-						<!---->
 					</view>
 				</view>
 				<view
@@ -202,20 +196,20 @@
 							class="rax-view banner-contents"
 							style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 3.06667vw 2vw; min-width: 0vw; width: 28vw; height: 17.8667vw;"
 						>
-							<span
+							<text
 								class="rax-text main-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 4vw; white-space: nowrap; overflow: hidden; font-weight: 600; color: rgb(255, 255, 255); text-overflow: ellipsis;"
 							>
 								淡季错峰游
-							</span>
-							<span
+							</text>
+							<text
 								class="rax-text sub-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; overflow: hidden; color: rgba(255, 255, 255, 0.7); text-overflow: ellipsis;"
 							>
 								网红景点也能包场
-							</span>
+							</text>
 						</view>
-						<!---->
+						
 					</view>
 				</view>
 				<view
@@ -245,20 +239,20 @@
 							class="rax-view banner-contents"
 							style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 3.06667vw 2vw; min-width: 0vw; width: 28vw; height: 17.8667vw;"
 						>
-							<span
+							<text
 								class="rax-text main-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 4vw; white-space: nowrap; overflow: hidden; font-weight: 600; color: rgb(255, 255, 255); text-overflow: ellipsis;"
 							>
 								深秋赏银杏
-							</span>
-							<span
+							</text>
+							<text
 								class="rax-text sub-title rax-text--overflow-hidden rax-text--singleline"
 								style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; overflow: hidden; color: rgba(255, 255, 255, 0.7); text-overflow: ellipsis;"
 							>
 								爆美刷屏的金色海洋
-							</span>
+							</text>
 						</view>
-						<!---->
+						
 					</view>
 				</view>
 				<view
@@ -273,12 +267,12 @@
 						src="//gw.alicdn.com/imgextra/i3/O1CN01CgB6gL1vTk0MZe84F_!!6000000006174-2-tps-60-60.png_110x10000.jpg_.webp"
 						style="width: 5.3333vw; height: 5.3333vw; margin-right: 3.2vw;"
 					/>
-					<span
+					<text
 						class="rax-text v-text"
 						style="box-sizing: border-box; display: block; font-size: 3.46667vw; white-space: pre-wrap; width: 3.73333vw; color: rgb(145, 148, 153);"
 					>
 						滑动查看更多
-					</span>
+					</text>
 				</view>
 				<view
 					class="rax-view back-bg"

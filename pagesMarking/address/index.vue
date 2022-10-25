@@ -76,7 +76,9 @@
 </template>
 
 <script>
-	export default {
+  import loginMixins from '@/mixins/login.js';
+  export default {
+	mixins: [loginMixins],
 		data() {
 			return {
 				visible:false,
@@ -100,6 +102,9 @@
 					}
 				]
 			}
+		},
+		onLoad(){
+			this.handleGetToken()
 		},
 		methods: {
 			handleSelect(){
