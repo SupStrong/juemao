@@ -11,7 +11,7 @@ export function getToken (data) {
 
 export function getUserInfo (data) {
 	return myRequest({
-		method: "GET",
+		method: "POST",
 		url: `/papi/sys/merchant/${data.child}/type`,
 		data
 	})

@@ -39,13 +39,14 @@
         @tap.stop.prevent
       >
         <!-- 关闭按钮 -->
-        <view
+      <!--  <view
           v-if="closeBtn"
           class="tn-popup__close"
           :class="[`tn-icon-${closeBtnIcon}`, `tn-popup__close--${closeBtnPosition}`]"
           :style="[closeBtnStyle, {zIndex: elZIndex}]"
           @tap="close"
-        ></view>
+        ></view> -->
+		<image src="https://aliyun-wb-bvqq7ezi1t.oss-cn-beijing.aliyuncs.com/weapp/closeIcon.png" :class="[`tn-popup__close--${closeBtnPosition}`]" v-if="closeBtn" class="tn-popup__close close-img" @tap="close"></image>
         <scroll-view class="tn-popup__content__scroll-view">
           <slot></slot>
         </scroll-view>
@@ -354,7 +355,11 @@
 </script>
 
 <style lang="scss" scoped>
-  
+  .close-img{
+	  width: 60rpx;
+	  height: 60rpx;
+	  z-index: 1;
+  }
   .tn-popup {
     /* #ifndef APP-NVUE */
     display: block;
