@@ -14,7 +14,7 @@ export default {
 	methods: {
 		handleGetToken(){
 			getToken().then(result => {
-				console.log(result.data.token)
+				return result.data.token
 			})
 		}
 	}

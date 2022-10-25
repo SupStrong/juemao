@@ -10,6 +10,7 @@ let time = null;//time用来控制事件的触发
 router.beforeEach((to, from, next) => {
   // 判断进入页面是否需要登录
   if (to.meta && to.meta.needLogin) {
+    debugger
     let data = uni.getStorageSync('common')
     if(data.token){
       next();

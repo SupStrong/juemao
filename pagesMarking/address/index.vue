@@ -5,7 +5,7 @@
 				class="rf-list-item"
 				v-for="(item, index) in addressList"
 				:key="index"
-				@tap="checkAddress(item)"
+				@click="openDialog(item)"
 			>
 				<view
 					class="mid"
@@ -16,12 +16,12 @@
 							>默认</text
 						>
 						<text class="address in1line"
-							>{{ item.address_name }} {{ item.address_details }}</text
+							>{{ item.detail }} </text
 						>
 					</view>
 					<view class="u-box">
 						<text class="name">{{ item.realname }}</text>
-						<text class="mobile">{{ item.mobile }}</text>
+						<text class="mobile">{{ item.phone }}</text>
 					</view>
 				</view>
 			</view>
@@ -39,10 +39,10 @@
 		    <view class="">
 		      <view class="tn-text-lg tn-text-bold tn-color-purplered tn-text-center tn-padding">新增收货地址</view>
 		      <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-		        <input placeholder="姓名" name="input" placeholder-style="color:#AAAAAA" maxlength="20"></input>
+		        <input placeholder="姓名" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.real_name"></input>
 		      </view>
 			  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-			    <input placeholder="11位手机号码" name="input" placeholder-style="color:#AAAAAA" maxlength="20"></input>
+			    <input placeholder="11位手机号码" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.phone"></input>
 			  </view>
 			  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
 			    <picker @change="bindPickerChange" :value="index" :range="array">
@@ -54,7 +54,7 @@
 			              <view class="tn-color-gray" v-else>省市区</view>
 			          </view>
 			        </view>
-			        <view class="justify-content-item tn-text-lg tn-color-grey">
+        <view class="justify-content-item tn-text-lg tn-color-grey">
 			          <view class="tn-icon-right"></view>
 			        </view>
 			      </view>
@@ -66,17 +66,25 @@
 			  
 		    </view>
 		    <view class="tn-flex-1 justify-content-item tn-margin-sm tn-text-center" style="margin-top: 50rpx;">
-		      <tn-button backgroundColor="#3668FC" padding="40rpx 0" width="60%" shadow fontBold open-type="getPhoneNumber">
+		      <tn-button backgroundColor="#3668FC" padding="40rpx 0" width="60%" shadow fontBold open-type="getPhoneNumber" @click="saveFun">
 		        <text class="tn-color-white">保 存 收 货 地 址</text>
 		      </tn-button>
 		    </view>
 		  </view>
 		</tn-modal>
+		
+		<tn-action-sheet
+        v-model="actionSheetShow"
+		mode="single"
+        :list="actionSheetList"
+        @click="actionSheetClick"
+      ></tn-action-sheet>
 	</view>
 </template>
 
 <script>
   import loginMixins from '@/mixins/login.js';
+  import {getAddressList,saveAddress } from '@/api/modules/address'
   export default {
 	mixins: [loginMixins],
 		data() {
@@ -85,26 +93,51 @@
 				index: 0,
 				array: ['女', '男', '保密'],
 				addressList:[
-					{
+				{
 						
 						address_name:'呃呃',
 						address_details:'测试机',
 						realname:'俩次',
 						mobile:'17338132745',
-						id:'1'
+						id:'1',
+				is_default: false,
+
 					},{
 						
 						address_name:'呃呃',
 						address_details:'测试机',
 						realname:'俩次',
 						mobile:'17338132745',
-						id:'1'
+						id:'1',
+				is_default: true,
+
 					}
-				]
+				],
+				xToken: "",
+				infoForm:{
+					real_name:"",
+					phone:"",
+					city_id:"",
+					district:""
+				},
+				actionSheetShow: false,
+				actionSheetList:[
+					{
+					text: "编辑"
+				},
+				{
+					text: "删除"
+				},
+				{
+					text: "复制"
+				},
+				
+			]
+		
 			}
 		},
-		onLoad(){
-			this.handleGetToken()
+		 onLoad(){
+			this.xToken = this.handleGetToken();
 		},
 		methods: {
 			handleSelect(){
@@ -118,9 +151,49 @@
 					
 				}else{
 					this.visible = true
+
 				}
+			},
+			//列表
+			getAddressListFun(){
+				getAddressList().then(res =>{
+
+					if(res.status==1){
+						this.addressList = res.data
+					}
+				})
+			},
+
+			// 保存
+			saveFun(){
+				saveAddress(this.infoForm).then(res=>{
+
+				})
+			},
+			
+			actionSheetClick(index){
+				uni.hideKeyboard()
+                let type = this.actionSheetList[index].text
+			},
+			openDialog(val){
+				if(val.is_default == 1){
+					this.actionSheetList.unshift({
+						text: "取消默认地址"
+					})
+				} else {
+					this.actionSheetList.unshift({
+					text: "设为默认地址"
+				})
+				}
+				this.actionSheetShow=true
 			}
-		}
+
+			 
+		},
+		mounted() {
+			
+			this.getAddressListFun()
+		},
 	}
 </script>
 
