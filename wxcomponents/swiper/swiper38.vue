@@ -51,14 +51,14 @@
 									style="box-sizing: border-box; display: flex; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw 0.4vw 0vw 0vw; padding: 0vw; min-width: 0vw; transform: scale(1); position: relative; align-items: baseline; height: 10vw; transition: width 500ms linear 1000ms, height, top, bottom, left, right, backgroundColor, opacity, transform; transform-origin: 0px 0px;"
 								>
 									<text
-										lines="1"
+										
 										class="rax-text-v2 "
 										style="box-sizing: border-box; display: block; font-size: 3.46667vw; white-space: pre-wrap; margin-right: 0.53333vw; color: rgb(255, 255, 255); font-weight: 400; line-height: 3.46667vw;"
 									>
 										¥
 									</text>
 									<view
-										lines="1"
+										
 										class="rax-view-v2"
 										style="box-sizing: border-box; display: flex; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw;"
 									>
@@ -287,7 +287,7 @@
 												</view>
 											</view>
 										</view>
-										<!---->
+										
 									</view>
 								</view>
 								<view
@@ -295,7 +295,7 @@
 									style="box-sizing: border-box; display: flex; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: -0.26667vw 0vw 0vw 0.8vw; padding: 0vw 0.8vw 0vw 0.93333vw; min-width: 0vw; opacity: 1; position: relative; align-items: center; height: 4.26667vw; background-image: url(https://img.alicdn.com/imgextra/i2/O1CN01QmU1Ur1P1k5DxOwB5_!!6000000001781-2-tps-310-64.png); background-size: 100% 100%; line-height: 3.2vw; transition: width 500ms linear 800ms, height, top, bottom, left, right, backgroundColor, opacity, transform;"
 								>
 									<text
-										lines="1"
+										
 										class="rax-text-v2 "
 										style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: pre-wrap; color: rgb(130, 53, 15); font-weight: 400;"
 									>
@@ -308,7 +308,7 @@
 								style="box-sizing: border-box; display: flex; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 1.06667vw 0vw 0vw 0.13333vw; padding: 0vw; min-width: 0vw; position: relative; align-items: center; transition: width 200ms linear 0ms, height, top, bottom, left, right, backgroundColor, opacity, transform; opacity: 1;"
 							>
 								<text
-									lines="1"
+									
 									class="rax-text-v2 "
 									style="box-sizing: border-box; display: block; font-size: 3.46667vw; white-space: pre-wrap; margin-top: -0.13333vw; margin-right: 0.8vw; color: rgba(255, 255, 255, 0.6); font-weight: 400; line-height: 3.46667vw;"
 								>
@@ -319,7 +319,7 @@
 									style="box-sizing: border-box; display: flex; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0.13333vw 0.4vw 0vw 0vw; padding: 0vw 0.66667vw; min-width: 4.4vw; align-items: flex-start; border-radius: 0.8vw; background-color: rgba(255, 172, 136, 0.45); font-weight: 500; line-height: 4vw;"
 								>
 									<text
-										lines="1"
+										
 										class="rax-text-v2 "
 										style="box-sizing: border-box; display: block; font-size: 2.93333vw; white-space: pre-wrap; color: rgb(255, 255, 255);"
 									>
@@ -346,7 +346,7 @@
 									style="box-sizing: border-box; display: flex; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0.13333vw 0.4vw 0vw 0vw; padding: 0vw 0.66667vw; min-width: 4.4vw; align-items: flex-start; border-radius: 0.8vw; background-color: rgba(255, 172, 136, 0.45); font-weight: 500; line-height: 4vw;"
 								>
 									<text
-										lines="1"
+										
 										class="rax-text-v2 "
 										style="box-sizing: border-box; display: block; font-size: 2.93333vw; white-space: pre-wrap; color: rgb(255, 255, 255);"
 									>
@@ -373,7 +373,7 @@
 									style="box-sizing: border-box; display: flex; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0.13333vw 0vw 0vw; padding: 0vw 0.66667vw; min-width: 4.4vw; align-items: flex-start; border-radius: 0.8vw; background-color: rgba(255, 172, 136, 0.45); font-weight: 500; line-height: 4vw;"
 								>
 									<text
-										lines="1"
+										
 										class="rax-text-v2 "
 										style="box-sizing: border-box; display: block; font-size: 2.93333vw; white-space: pre-wrap; color: rgb(255, 255, 255);"
 									>

@@ -30,6 +30,9 @@
 				<tn-waterfall ref="waterfall" v-model="list" @finish="handleWaterFallFinish">
 					<template v-slot:left="{ leftList }">
 						<view class="goods-list" style="position: relative;display: flow-root;">
+							<activityBO></activityBO>
+						</view>
+						<view class="goods-list" style="position: relative;display: flow-root;">
 							<activityP></activityP>
 						</view>
 						<view class="goods-list" style="position: relative;display: flow-root;">
@@ -226,6 +229,7 @@ import activityK from '@/wxcomponents/activity/activity12.vue';
 import activityL from '@/wxcomponents/activity/activity13.vue';
 import activityS from '@/wxcomponents/activity/activity14.vue';
 import activityQ from '@/wxcomponents/activity/activity15.vue';
+import activityBO from '@/wxcomponents/activity/activity16.vue';
 
 export default {
 	name: 'index',
@@ -245,7 +249,8 @@ export default {
 		activityK,
 		activityL,
 		activityS,
-		activityQ
+		activityQ,
+		activityBO
 	},
 	data() {
 		return {

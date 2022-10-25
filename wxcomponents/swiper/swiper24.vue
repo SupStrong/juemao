@@ -13,42 +13,42 @@
 						<view class="item">
 							<image
 								class="swiper-lazy swiper-lazy-loaded"
-								data-src=""
+								
 								src="//m.360buyimg.com/babel/jfs/t1/108244/7/32036/52645/6332a827E8e7ccad9/803213653cc388be.png"
 							/>
 						</view>
 						<view class="item">
 							<image
 								class="swiper-lazy swiper-lazy-loaded"
-								data-src=""
+								
 								src="//m.360buyimg.com/babel/jfs/t1/119109/9/29796/194867/63317ef2E48f3cb50/a40822c4f74a6f7b.png"
 							/>
 						</view>
 						<view class="item">
 							<image
 								class="swiper-lazy swiper-lazy-loaded"
-								data-src=""
+								
 								src="//m.360buyimg.com/babel/jfs/t1/26836/26/20051/52645/63327990Efb9665ce/6e0efc8921582fe0.png"
 							/>
 						</view>
 						<view class="item">
 							<image
 								class="swiper-lazy swiper-lazy-loaded"
-								data-src=""
+								
 								src="//m.360buyimg.com/babel/jfs/t1/188348/34/28654/50231/631953daEbd02ea80/b826b535369d8cf9.png"
 							/>
 						</view>
 						<view class="item">
 							<image
 								class="swiper-lazy swiper-lazy-loaded"
-								data-src=""
+								
 								src="//m.360buyimg.com/babel/jfs/t1/153444/8/26980/143565/63228c51Efffe805a/0b21e1f4bdc8994f.png"
 							/>
 						</view>
 						<view class="item">
 							<image
 								class="swiper-lazy swiper-lazy-loaded"
-								data-src=""
+								
 								src="//m.360buyimg.com/babel/jfs/t1/184636/18/28450/135396/63280152E3fc6c0c2/7ba40df8ab293b64.png"
 							/>
 						</view>

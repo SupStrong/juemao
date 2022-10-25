@@ -48,6 +48,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+	.phbimg{
+		width: 100%;
+		height: 100%;
+	}
 .tdphb::-webkit-scrollbar {
 	display: none;
 }
@@ -80,6 +84,10 @@ export default {
 	width: 46%;
 	height: 100%;
 	left: 0;
+	image{
+		width: 100%;
+		height: 100%;
+	}
 }
 .tdphb .rightphb {
 	position: absolute;
@@ -96,6 +104,8 @@ export default {
 	top: 0;
 	pointer-events: none;
 	z-index: 9;
+	width: 100%;
+	height: 100%;
 }
 .tdphb .rightphb .smphb {
 	position: relative;

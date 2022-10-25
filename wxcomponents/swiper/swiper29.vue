@@ -1,11 +1,9 @@
 <template>
 	<view>
-		<view class="bab_opt_mod bab_opt_mod_3_11 module_84991194 custom_material" data-floornum="3_11" data-moduleid="84991194" data-template="custom_material">
+		<view class="bab_opt_mod bab_opt_mod_3_11 module_84991194 custom_material">
 			<view class="rv" style="overflow: hidden; height: 196px;">
 				<view class="rv-wrap" style="transform: scale(1); transform-origin: left top; width: 375px;">
 					<a
-						href="javascript:void(0);"
-						target="_self"
 						class="custom_ads_wrapper"
 						style="background-image: url(https://m.360buyimg.com/babel/jfs/t1/43413/11/19075/75415/63287041E78466495/6ce7c3769e20159a.jpg!q70.dpg); background-size: 100%; height: 196px; display: block;"
 					>
@@ -14,7 +12,6 @@
 								<image
 									class="lazyload-img lazyload-img-gmh big-height loaded"
 									src="https://m11.360buyimg.com/babel/jfs/t1/190449/16/27943/24484/632d8482Ec463e78d/227f50821034d913.jpg"
-									data-resize="1"
 									style="height: 152px; width: 105px; background-color: transparent; background-image: none;"
 								/>
 							</view>
@@ -24,7 +21,6 @@
 								<image
 									class="lazyload-img lazyload-img-gmh big-width loaded"
 									src="https://m11.360buyimg.com/babel/jfs/t1/132215/22/31048/10602/633260a2E57cc11e8/c2b694f4d71d28a0.jpg"
-									data-resize="1"
 									style="height: 64px; width: 117px; background-color: transparent; background-image: none;"
 								/>
 							</view>
@@ -32,7 +28,6 @@
 								<image
 									class="lazyload-img lazyload-img-gmh big-width loaded"
 									src="https://m11.360buyimg.com/babel/jfs/t1/192475/7/28463/7576/633564f4Ef8d13f63/fec85f7cd73d7790.jpg"
-									data-resize="1"
 									style="height: 64px; width: 117px; background-color: transparent; background-image: none;"
 								/>
 							</view>
@@ -40,7 +35,7 @@
 								<image
 									class="lazyload-img lazyload-img-gmh big-width loaded"
 									src="https://m11.360buyimg.com/babel/jfs/t1/153579/39/25862/47631/63353277Eed371dfd/dc57729cb9015e44.jpg"
-									data-resize="1"
+									
 									style="height: 64px; width: 117px; background-color: transparent; background-image: none;"
 								/>
 							</view>
@@ -48,7 +43,6 @@
 								<image
 									class="lazyload-img lazyload-img-gmh big-width loaded"
 									src="https://m11.360buyimg.com/babel/jfs/t1/27828/39/20190/46389/63353185E111b6d90/0f110e5e35add641.jpg"
-									data-resize="1"
 									style="height: 64px; width: 117px; background-color: transparent; background-image: none;"
 								/>
 							</view>

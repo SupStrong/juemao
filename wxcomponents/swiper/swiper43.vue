@@ -9,7 +9,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 					data-spm-anchor-id="a213fr.14883705/15.0.i2"
@@ -20,7 +20,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -37,7 +37,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(255, 20, 41);"
 					data-spm-anchor-id="a213fr.14883705/15.0.i3"
@@ -48,7 +48,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(255, 255, 255); background-color: rgb(255, 20, 41);"
 					>
@@ -65,7 +65,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					data-spm-anchor-id="a213fr.14883705/15.0.i1"
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
@@ -76,7 +76,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -93,7 +93,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 				>
@@ -103,7 +103,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -120,7 +120,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 				>
@@ -130,7 +130,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -147,7 +147,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 				>
@@ -157,7 +157,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -174,7 +174,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 				>
@@ -184,7 +184,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -201,7 +201,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 				>
@@ -211,7 +211,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -228,7 +228,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 				>
@@ -238,7 +238,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>
@@ -255,7 +255,7 @@
 				class="rax-view"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: column; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw 2.6667vw; min-width: 0vw; align-items: center; height: 16.5333vw; flex-grow: 1;"
 			>
-				<span
+				text
 					class="rax-text "
 					style="box-sizing: border-box; display: flex; font-size: 4.2667vw; white-space: pre-wrap; height: 4.2667vw; align-items: center; justify-content: center; font-weight: 500; color: rgb(51, 51, 51);"
 				>
@@ -265,7 +265,7 @@
 					class="rax-view"
 					style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 16.5333vw; text-align: center;"
 				>
-					<span
+					text
 						class="rax-text "
 						style="box-sizing: border-box; display: block; font-size: 3.2vw; white-space: nowrap; margin-top: 1.6vw; border-radius: 4vw; width: 16vw; padding: 0vw 0.8vw; overflow: hidden; color: rgb(102, 102, 102); background-color: transparent;"
 					>

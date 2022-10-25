@@ -21,8 +21,8 @@
 		<navD></navD>
 		<navE></navE>
 		<navF></navF>
-		<navG></navG>
-		<navH></navH>
+		<!-- <navG></navG>
+		<navH></navH> -->
 		<navI></navI>
 		<!-- 底部背景图片-->
 		<view class="login__bg login__bg--bottom"><image :src="tabbar.bottomImg" mode="widthFix"></image></view>
@@ -126,8 +126,8 @@ import navC from '@/wxcomponents/nav/nav3.vue';
 import navD from '@/wxcomponents/nav/nav4.vue';
 import navE from '@/wxcomponents/nav/nav5.vue';
 import navF from '@/wxcomponents/nav/nav6.vue';
-import navG from '@/wxcomponents/nav/nav7.vue';
-import navH from '@/wxcomponents/nav/nav8.vue';
+// import navG from '@/wxcomponents/nav/nav7.vue';
+// import navH from '@/wxcomponents/nav/nav8.vue';
 import navI from '@/wxcomponents/nav/nav9.vue';
 
 export default {
@@ -140,8 +140,8 @@ export default {
 		navD,
 		navE,
 		navF,
-		navG,
-		navH,
+		// navG,
+		// navH,
 		navI
 	},
 	data() {

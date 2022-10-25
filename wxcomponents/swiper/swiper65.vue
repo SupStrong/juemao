@@ -8,12 +8,12 @@
 				class="rax-view info-title-wrapper"
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; align-content: flex-start; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw; align-items: center;"
 			>
-				<span
+				<text
 					class="main-title"
 					style="border: 0px solid black; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 6.4vw; white-space: pre-wrap; color: var(--color-text-6, #fff); font-weight: 700; line-height: 7.4667vw; text-align: left; height: 7.4667vw;"
 				>
 					Wpc.
-				</span>
+				</text>
 				<img
 					class="rax-image info-desc-icon-normal-multibrand"
 					lazyload="false"
@@ -38,12 +38,12 @@
 					</view>
 					Wpc.打破了「伞具只是用来挡雨」这一传统观念，在设计中加入丰富多元的时尚元素，紧跟国际时尚潮流，打造「晴雨天的时尚单品」，使伞具成为时尚的一部分，陪伴在您的身边。
 				</view>
-				<span
+				<text
 					class="arrow"
 					style="border: 0px solid black; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: pre-wrap; color: var(--color-text-6, #fff); font-weight: lighter; text-align: left; position: absolute; left: 64.5333vw; bottom: 0vw;"
 				>
 					∨
-				</span>
+				</text>
 			</view>
 			<view
 				class="rax-view shadow-wrapper"

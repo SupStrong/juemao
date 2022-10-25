@@ -1,69 +1,69 @@
 <template>
 	<view>
-		<view class="sc-iFMAoI cKjKSN fc_block_subfloor" style="margin:0 0 0px 0" data-type="block">
+		<view class="sc-iFMAoI cKjKSN fc_block_subfloor" style="margin:0 0 0px 0" >
 			<image
-				data-type="image"
+				
 				alt="image"
 				src="https://m11.360buyimg.com/babel/s381x555_jfs/t1/165774/22/27803/48266/63317489E314fba81/d04d941278e113b6.jpg"
-				type="200000"
+				
 				class="sc-lkgURy kLUmZh"
 			/>
-			<view data-type="nestedfloor" data-root="scroll" rows="1" class="sc-fyrnIy hGerhe">
-				<view data-type="view" class="sc-iIUSfW csLtfK">
+			<view data-type="nestedfloor" class="sc-fyrnIy hGerhe">
+				<view  class="sc-iIUSfW csLtfK">
 					<view class="sc-djWQLY hgMiQj slide_android">
 						<view class="sc-avfBU kKBGeO">
 							<view class="sc-avfBU bwmqqk">
-								<view class="sc-iFMAoI jOyThw fc_block_nofloor" style="margin:0 0.5px 0 0" data-type="block">
+								<view class="sc-iFMAoI jOyThw fc_block_nofloor" style="margin:0 0.5px 0 0" >
 									<image
-										data-type="image"
+										
 										alt="image"
 										src="https://m11.360buyimg.com/babel/s264x264_jfs/t1/105091/13/33288/50933/63317450E65d01829/b5eb4c1db9adaa99.jpg"
-										type="200000"
+										
 										class="sc-lkgURy fElqMD"
 									/>
-									<view data-type="text" class="sc-dSfclH gsKCBb">
-										<span class="sc-tAEdG dLBGOh">SK-II小灯泡美白精华液50ml烟酰胺sk2护肤品套装skii精华化妆品礼盒(含神仙水+洗面奶)补水保湿生日礼物sk-ii</span>
+									<view  class="sc-dSfclH gsKCBb">
+										<text class="sc-tAEdG dLBGOh">SK-II小灯泡美白精华液50ml烟酰胺sk2护肤品套装skii精华化妆品礼盒(含神仙水+洗面奶)补水保湿生日礼物sk-ii</text>
 									</view>
-									<span data-type="price" class="sc-jlRMkV kUFEJY">
-										<span style="font-size:11.199999999999998px">￥</span>
-										<span>1590</span>
-									</span>
+									<text  class="sc-jlRMkV kUFEJY">
+										<text style="font-size:11.199999999999998px">￥</text>
+										<text>1590</text>
+									</text>
 								</view>
 							</view>
 							<view class="sc-avfBU bwmqqk">
-								<view class="sc-iFMAoI jOyThw fc_block_nofloor" style="margin:0 0.5px 0 0.5px" data-type="block">
+								<view class="sc-iFMAoI jOyThw fc_block_nofloor" style="margin:0 0.5px 0 0.5px" >
 									<image
-										data-type="image"
+										
 										alt="image"
 										src="https://m11.360buyimg.com/babel/s264x264_jfs/t1/216725/23/21605/51218/63317469E16257611/a8142efd4304dfc8.jpg"
-										type="200000"
+										
 										class="sc-lkgURy fElqMD"
 									/>
-									<view data-type="text" class="sc-dSfclH gsKCBb">
-										<span class="sc-tAEdG dLBGOh">SK-II大红瓶面霜100g(经典版)sk2护肤品套装化妆品礼盒护肤礼盒sk2面霜紧致补水保湿护肤品生日礼物sk-ii</span>
+									<view  class="sc-dSfclH gsKCBb">
+										<text class="sc-tAEdG dLBGOh">SK-II大红瓶面霜100g(经典版)sk2护肤品套装化妆品礼盒护肤礼盒sk2面霜紧致补水保湿护肤品生日礼物sk-ii</text>
 									</view>
-									<span data-type="price" class="sc-jlRMkV kUFEJY">
-										<span style="font-size:11.199999999999998px">￥</span>
-										<span>1540</span>
-									</span>
+									<text  class="sc-jlRMkV kUFEJY">
+										<text style="font-size:11.199999999999998px">￥</text>
+										<text>1540</text>
+									</text>
 								</view>
 							</view>
 							<view class="sc-avfBU bwmqqk">
-								<view class="sc-iFMAoI jOyThw fc_block_nofloor" style="margin:0 0 0 0.5px" data-type="block">
+								<view class="sc-iFMAoI jOyThw fc_block_nofloor" style="margin:0 0 0 0.5px" >
 									<image
-										data-type="image"
+										
 										alt="image"
 										src="https://m11.360buyimg.com/babel/s264x264_jfs/t1/203070/7/26820/42740/63317435Ee56e6670/de2fafc7ea5ac847.jpg"
-										type="200000"
+										
 										class="sc-lkgURy fElqMD"
 									/>
-									<view data-type="text" class="sc-dSfclH gsKCBb">
-										<span class="sc-tAEdG dLBGOh">SK-II神仙水230ml精华液sk2护肤品套装skii精华化妆品礼盒(内含爽肤水+洗面奶)补水保湿生日礼物sk-ii</span>
+									<view  class="sc-dSfclH gsKCBb">
+										<text class="sc-tAEdG dLBGOh">SK-II神仙水230ml精华液sk2护肤品套装skii精华化妆品礼盒(内含爽肤水+洗面奶)补水保湿生日礼物sk-ii</text>
 									</view>
-									<span data-type="price" class="sc-jlRMkV kUFEJY">
-										<span style="font-size:11.199999999999998px">￥</span>
-										<span>1590</span>
-									</span>
+									<text  class="sc-jlRMkV kUFEJY">
+										<text style="font-size:11.199999999999998px">￥</text>
+										<text>1590</text>
+									</text>
 								</view>
 							</view>
 						</view>

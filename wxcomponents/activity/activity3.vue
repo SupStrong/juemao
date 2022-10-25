@@ -86,19 +86,6 @@
 			};
 		},
 		beforeCreate(){
-			// #ifdef APP-PLUS
-			const domModule = weex.requireModule('dom');
-			// APP NVUE下 加载字体图标
-			domModule.addRule('fontFace', {
-				fontFamily: 'appiconfont',
-				src: "url('http://at.alicdn.com/t/font_2582495_l8bsl3n1qme.ttf')"
-			});
-			// 自定义字体,不是icons字体图标
-			domModule.addRule('fontFace', {
-				fontFamily: 'appttf',
-				src: "url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6f9528be-c345-44ba-b6fd-591d2d036aec/9768b86a-b79c-41bc-9305-c42785200f0d.ttf')"
-			});
-			// #endif
 		}
 	}
 </script>

@@ -1,6 +1,7 @@
 import App from './App'
 import store from './store'
 
+// #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
 App.mpType = 'app'
@@ -14,7 +15,7 @@ let vuexStore = require('@/store/$t.mixin.js')
 Vue.mixin(vuexStore)
 
 import {router,RouterMount} from './router/index.js'
-Vue.use(router)
+Vue.mixin(router)
 
 // 引入TuniaoUI对小程序分享的mixin封装
 let mpShare = require('tuniao-ui/libs/mixin/mpShare.js')
@@ -25,7 +26,14 @@ const app = new Vue({
   ...App
 })
 
-// 引入请求封装
-require('./util/request/index')(app)
-
+// #endif
 app.$mount()
+// #ifdef VUE3
+import { createSSRApp } from 'vue'
+export function createApp() {
+  const app = createSSRApp(App)
+  return {
+    app
+  }
+}
+// #endif

@@ -2,7 +2,7 @@
 	<view class="rax-view-v2">
 		<view class="rax-view-v2 DoubleOneModule--rootContainer--2esSVk1">
 			<view style="width: 100vw; height: 37.0667vw;">
-				<!---->
+				
 				<image
 					class="rax-image DoubleOneModule--backgroundMinStyle--3EhZz_5"
 					src="//gw.alicdn.com/imgextra/i2/O1CN01BRXcMb1QVLOGmmH1X_!!6000000001981-2-tps-1125-417.png_790x10000.jpg_.webp"
@@ -10,12 +10,12 @@
 				/>
 			</view>
 			<view class="rax-view-v2 DoubleOneModule--viewContainers--Pqft5Py" style="top: 10.6667vw;">
-				<!---->
+				
 				<view class="rax-view-v2 BottomModule--container--12dvEl1">
 					<view class="rax-view-v2 rax-scrollview rax-scrollview-horizontal" style="height: 24vw; overflow: scroll hidden;">
 						<view class="rax-view-v2 rax-scrollview-content-container-horizontal" v-for="item in 6" :key="index">
 							<view id="bottom_module-1" class="BottomModule--bottomLink--3R9YB9s" style="margin-left: 0vw; margin-right: 1.2vw;">
-								<!---->
+								
 								<image
 									class="rax-image BottomModule--bottomBg--1di6g-5"
 									src="//gw.alicdn.com/imgextra/i1/O1CN01Ax1lhG1LGABWkxTpw_!!6000000001271-2-tps-270-106.png_220x10000.jpg_.webp"

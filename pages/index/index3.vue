@@ -363,7 +363,9 @@ export default {
 		// bannerG,
 		loginA
 	},
-	onLoad() {},
+	mounted() {
+		console.log("-----")
+	},
 	methods: {},
 };
 </script>

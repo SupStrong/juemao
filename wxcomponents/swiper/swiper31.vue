@@ -6,16 +6,16 @@
 					class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-x3cy2q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"
 					style="background-image: url(https://img14.360buyimg.com/imagetools/jfs/t1/43060/16/20427/261477/6336f04eEc3c87323/ff6405256a6925c2.png);"
 				></view>
-				<image alt="" draggable="false" src="https://img14.360buyimg.com/imagetools/jfs/t1/43060/16/20427/261477/6336f04eEc3c87323/ff6405256a6925c2.png" class="css-9pa8cd" />
+				<image alt="" src="https://img14.360buyimg.com/imagetools/jfs/t1/43060/16/20427/261477/6336f04eEc3c87323/ff6405256a6925c2.png" class="css-9pa8cd" />
 			</view>
-			<view class="css-1dbjc4n r-1mlwlqe r-1udh08x r-u8s1d r-ipm5af" data-focusable="true" tabindex="0" style="height: 167px; left: 95.5px; width: 184px; z-index: 110;">
+			<view class="css-1dbjc4n r-1mlwlqe r-1udh08x r-u8s1d r-ipm5af"  style="height: 167px; left: 95.5px; width: 184px; z-index: 110;">
 				<view
 					class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"
 					style="background-image: url(https://img14.360buyimg.com/imagetools/jfs/t1/96880/1/32150/138695/6336f052Ee15624ad/7e088c1743759d96.png);"
 				></view>
-				<image alt="" draggable="false" src="https://img14.360buyimg.com/imagetools/jfs/t1/96880/1/32150/138695/6336f052Ee15624ad/7e088c1743759d96.png" class="css-9pa8cd" />
+				<image alt="" src="https://img14.360buyimg.com/imagetools/jfs/t1/96880/1/32150/138695/6336f052Ee15624ad/7e088c1743759d96.png" class="css-9pa8cd" />
 			</view>
-			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d" data-focusable="true" tabindex="0" style="height: 67px; left: 21px; top: 21px; width: 67px; z-index: 110;">
+			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d"  style="height: 67px; left: 21px; top: 21px; width: 67px; z-index: 110;">
 				<view class="css-1dbjc4n r-1d2f490 r-u8s1d r-ipm5af" style="height: 67px; width: 67px; z-index: 110;">
 					<view class="css-1dbjc4n r-1p0dtai r-1mlwlqe r-1d2f490 r-1udh08x r-u8s1d r-zchlnj r-ipm5af r-1wyyakw" style="height: 67px; width: 67px;">
 						<view
@@ -24,20 +24,20 @@
 						></view>
 						<image
 							alt=""
-							draggable="false"
+							
 							src="https://img14.360buyimg.com/imagetools/jfs/t1/96458/17/31816/3559/6336f05cEf626a7fc/ed4bb7079dee457b.png"
 							class="css-9pa8cd"
 						/>
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 17px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
 						钟表眼镜
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 3px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
@@ -50,10 +50,10 @@
 						class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"
 						style="background-image: url(https://m.360buyimg.com/babel/jfs/t1/180163/19/29171/5196/633d8543Eb5e49350/a5fd636bc70ba8c6.png);"
 					></view>
-					<image alt="" draggable="false" src="https://m.360buyimg.com/babel/jfs/t1/180163/19/29171/5196/633d8543Eb5e49350/a5fd636bc70ba8c6.png" class="css-9pa8cd" />
+					<image alt="" src="https://m.360buyimg.com/babel/jfs/t1/180163/19/29171/5196/633d8543Eb5e49350/a5fd636bc70ba8c6.png" class="css-9pa8cd" />
 				</view>
 			</view>
-			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d" data-focusable="true" tabindex="0" style="height: 67px; right: 21px; top: 21px; width: 67px; z-index: 110;">
+			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d"  style="height: 67px; right: 21px; top: 21px; width: 67px; z-index: 110;">
 				<view class="css-1dbjc4n r-1d2f490 r-u8s1d r-ipm5af" style="height: 67px; width: 67px; z-index: 110;">
 					<view class="css-1dbjc4n r-1p0dtai r-1mlwlqe r-1d2f490 r-1udh08x r-u8s1d r-zchlnj r-ipm5af r-1wyyakw" style="height: 67px; width: 67px;">
 						<view
@@ -62,20 +62,19 @@
 						></view>
 						<image
 							alt=""
-							draggable="false"
 							src="https://img14.360buyimg.com/imagetools/jfs/t1/96458/17/31816/3559/6336f05cEf626a7fc/ed4bb7079dee457b.png"
 							class="css-9pa8cd"
 						/>
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 17px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
 						家居家装
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 3px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
@@ -88,10 +87,10 @@
 						class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"
 						style="background-image: url(https://m.360buyimg.com/babel/jfs/t1/111456/17/31761/6321/6337def4Eca86bf92/89b2b1b592329b07.png);"
 					></view>
-					<image alt="" draggable="false" src="https://m.360buyimg.com/babel/jfs/t1/111456/17/31761/6321/6337def4Eca86bf92/89b2b1b592329b07.png" class="css-9pa8cd" />
+					<image alt="" src="https://m.360buyimg.com/babel/jfs/t1/111456/17/31761/6321/6337def4Eca86bf92/89b2b1b592329b07.png" class="css-9pa8cd" />
 				</view>
 			</view>
-			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d" data-focusable="true" tabindex="0" style="height: 67px; left: 21px; top: 95px; width: 67px; z-index: 110;">
+			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d"  style="height: 67px; left: 21px; top: 95px; width: 67px; z-index: 110;">
 				<view class="css-1dbjc4n r-1d2f490 r-u8s1d r-ipm5af" style="height: 67px; width: 67px; z-index: 110;">
 					<view class="css-1dbjc4n r-1p0dtai r-1mlwlqe r-1d2f490 r-1udh08x r-u8s1d r-zchlnj r-ipm5af r-1wyyakw" style="height: 67px; width: 67px;">
 						<view
@@ -100,20 +99,20 @@
 						></view>
 						<image
 							alt=""
-							draggable="false"
+							
 							src="https://img14.360buyimg.com/imagetools/jfs/t1/96458/17/31816/3559/6336f05cEf626a7fc/ed4bb7079dee457b.png"
 							class="css-9pa8cd"
 						/>
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 17px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
 						大牌美妆
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 3px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
@@ -126,10 +125,10 @@
 						class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"
 						style="background-image: url(https://m.360buyimg.com/babel/jfs/t1/131621/2/29243/8254/6336b179E24a98b15/8f4be10c5fa441f4.png);"
 					></view>
-					<image alt="" draggable="false" src="https://m.360buyimg.com/babel/jfs/t1/131621/2/29243/8254/6336b179E24a98b15/8f4be10c5fa441f4.png" class="css-9pa8cd" />
+					<image alt="" src="https://m.360buyimg.com/babel/jfs/t1/131621/2/29243/8254/6336b179E24a98b15/8f4be10c5fa441f4.png" class="css-9pa8cd" />
 				</view>
 			</view>
-			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d" data-focusable="true" tabindex="0" style="height: 67px; right: 21px; top: 95px; width: 67px; z-index: 110;">
+			<view class="css-1dbjc4n r-1awozwy r-1777fci r-u8s1d"  style="height: 67px; right: 21px; top: 95px; width: 67px; z-index: 110;">
 				<view class="css-1dbjc4n r-1d2f490 r-u8s1d r-ipm5af" style="height: 67px; width: 67px; z-index: 110;">
 					<view class="css-1dbjc4n r-1p0dtai r-1mlwlqe r-1d2f490 r-1udh08x r-u8s1d r-zchlnj r-ipm5af r-1wyyakw" style="height: 67px; width: 67px;">
 						<view
@@ -138,20 +137,20 @@
 						></view>
 						<image
 							alt=""
-							draggable="false"
+							
 							src="https://img14.360buyimg.com/imagetools/jfs/t1/96458/17/31816/3559/6336f05cEf626a7fc/ed4bb7079dee457b.png"
 							class="css-9pa8cd"
 						/>
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 17px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
 						科技保暖
 					</view>
 					<view
-						dir="auto"
+						
 						class="css-901oao r-u8s1d"
 						style="bottom: 3px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; line-height: 10.8px; text-align: center; width: 67px;"
 					>
@@ -164,7 +163,7 @@
 						class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"
 						style="background-image: url(https://m.360buyimg.com/babel/jfs/t1/180427/12/29376/22465/6336888cE4159d84f/065d73930cc9a724.png);"
 					></view>
-					<image alt="" draggable="false" src="https://m.360buyimg.com/babel/jfs/t1/180427/12/29376/22465/6336888cE4159d84f/065d73930cc9a724.png" class="css-9pa8cd" />
+					<image alt="" src="https://m.360buyimg.com/babel/jfs/t1/180427/12/29376/22465/6336888cE4159d84f/065d73930cc9a724.png" class="css-9pa8cd" />
 				</view>
 			</view>
 		</view>

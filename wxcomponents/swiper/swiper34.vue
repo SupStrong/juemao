@@ -23,12 +23,12 @@
 						#先锋美学 #INS BEAUTY
 					</view>
 				</view>
-				<span
+				<text
 					class="title"
 					style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 5.3333vw; white-space: nowrap; color: var(--color-text-0, #333); font-weight: 600; line-height: 7.4667vw; text-align: left; margin-top: 1.3333vw; text-overflow: ellipsis; overflow: hidden;"
 				>
 					能养肤的底妆
-				</span>
+				</text>
 				<view
 					class="goodsWrap"
 					style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: row; place-content: flex-start; flex-shrink: 0; margin-top: 2.1333vw;"
@@ -55,13 +55,13 @@
 							class="goodsDesc"
 							style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex: 1 1 0%; position: relative; width: 100%; place-items: center; padding-top: 0.8vw; background: linear-gradient(rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%);"
 						>
-							<span
+							<text
 								class="txt"
 								
 								style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: var(--color-text-3, #999); font-weight: 400; transform: scale(0.916667); transform-origin: left center; line-height: 4.2667vw; text-align: center; text-overflow: ellipsis; width: 95%; overflow: hidden;"
 							>
 								苏菲娜隔离妆前
-							</span>
+							</text>
 						</view>
 					</view>
 					<view
@@ -86,13 +86,13 @@
 							class="goodsDesc"
 							style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex: 1 1 0%; position: relative; width: 100%; place-items: center; padding-top: 0.8vw; background: linear-gradient(rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%);"
 						>
-							<span
+							<text
 								class="txt"
 								
 								style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: var(--color-text-3, #999); font-weight: 400; transform: scale(0.916667); transform-origin: left center; line-height: 4.2667vw; text-align: center; text-overflow: ellipsis; width: 95%; overflow: hidden;"
 							>
 								LORDBERRY超模光感秀场持妆粉底液霜混干油皮轻薄遮瑕 保湿不脱妆
-							</span>
+							</text>
 						</view>
 					</view>
 					<view
@@ -117,13 +117,13 @@
 							class="goodsDesc"
 							style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex: 1 1 0%; position: relative; width: 100%; place-items: center; padding-top: 0.8vw; background: linear-gradient(rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%);"
 						>
-							<span
+							<text
 								class="txt"
 								
 								style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: var(--color-text-3, #999); font-weight: 400; transform: scale(0.916667); transform-origin: left center; line-height: 4.2667vw; text-align: center; text-overflow: ellipsis; width: 95%; overflow: hidden;"
 							>
 								郑瑄茉气垫韩国油皮干皮粉扑持久气垫bb霜遮瑕控油持久保湿郑茉瑄
-							</span>
+							</text>
 						</view>
 					</view>
 				</view>
@@ -155,18 +155,18 @@
 						class="score"
 						style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: row; place-content: flex-start center; flex-shrink: 0; width: 12vw; position: absolute; bottom: 0vw;"
 					>
-						<span
+						<text
 							class="scoreInt"
 							style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 4.8vw; white-space: pre-wrap; color: rgb(0, 0, 0); font-weight: 400; text-align: left; font-family: tmall-price-ExtraBold;"
 						>
 							92
-						</span>
-						<span
+						</text>
+						<text
 							class="scoreFloat"
 							style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: pre-wrap; color: rgb(0, 0, 0); font-weight: 400; text-align: left; margin-top: 0.5333vw; margin-left: 0.5333vw; font-family: tmall-price-ExtraBold;"
 						>
 							.8
-						</span>
+						</text>
 					</view>
 				</view>
 			</view>

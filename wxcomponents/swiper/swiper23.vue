@@ -3,17 +3,17 @@
 		<view class="sc-hBURRC kpKoST" data-type="carousel-card" data-index="9" speed="400" style="left: -272.9px; display: block;">
 			<view class="sc-iFMAoI bDka-dX fc_block_nofloor" style="margin:0px 0px 0px 0px" data-type="block">
 				<image
-					data-type="image"
+					
 					alt="image"
 					src="https:https://m11.360buyimg.com/babel/s936x569_jfs/t1/156743/25/28855/87607/62f4bde6E7436dd92/03e326fc8eedf22a.avif"
-					type="200000"
+					
 					class="sc-lkgURy jpYZIo"
 				/>
 				<image
-					data-type="image"
+					
 					alt="image"
 					src="https://m11.360buyimg.com/babel/s261x261_jfs/t1/215659/17/13023/262953/6215a3f0Ee59dcd47/338271b0b4d1b372.avif"
-					type="200000"
+					
 					class="sc-lkgURy gtOyuW"
 				/>
 				<view data-type="text" class="sc-dSfclH ovoEi">
@@ -25,13 +25,6 @@
 							<video
 								width="100%"
 								height="100%"
-								controlslist="nodownload nofullscreen noremoteplayback"
-								playsinline=""
-								webkit-playsinline="true"
-								poster="//jvod.300hu.com/img/2022/211423127/1/img2.jpg"
-								preload="metadata"
-								x-webkit-airplay="true"
-								x5-video-player-type="h5-page"
 								style="background: rgba(255, 255, 255, 0); visibility: hidden; object-fit: contain;"
 							>
 								<source
@@ -57,15 +50,15 @@
 						<i class="sc-JkiRB cBmuFs"></i>
 					</view>
 				</view>
-				<view data-type="tag_group" class="sc-iWVLQz jatAqR">
-					<view data-type="tag" class="sc-jKTbIA lsNZC"><span class="sc-bUbQrF eRjtmV">4路120Hz</span></view>
-					<view data-type="tag" class="sc-jKTbIA lsNZC"><span class="sc-bUbQrF eRjtmV">WIFI6</span></view>
+				<view  class="sc-iWVLQz jatAqR">
+					<view  class="sc-jKTbIA lsNZC"><span class="sc-bUbQrF eRjtmV">4路120Hz</span></view>
+					<view  class="sc-jKTbIA lsNZC"><span class="sc-bUbQrF eRjtmV">WIFI6</span></view>
 				</view>
 				<image
-					data-type="image"
+					
 					alt="image"
 					src="https:https://m11.360buyimg.com/babel/s237x42_jfs/t1/200799/2/25147/1211/62f4a2eeEc49ca4ae/336a624908b29388.avif"
-					type="200000"
+					
 					class="sc-lkgURy jGEIWH"
 				/>
 				<view data-type="text" class="sc-dSfclH gBZbXQ"><span class="sc-tAEdG iVEMU">6134人追捧</span></view>

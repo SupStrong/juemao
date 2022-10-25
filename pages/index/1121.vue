@@ -1,5 +1,6 @@
 <template>
   <view class="index">
+            
     <view v-if="tabberPageLoadFlag[0]" :style="{display: currentIndex === 0 ? '' : 'none'}">
       <scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
         <Basic ref="basic"></Basic>
@@ -105,7 +106,7 @@
         tabberPageLoadFlag: []
       }
     },
-    onLoad(options) {
+    mounted(options) {
 	// this.handleGetToken()
 	console.log('123456789123456789')
       const index = Number(options.index || 0)

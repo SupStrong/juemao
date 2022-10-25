@@ -20,7 +20,7 @@
 					style="background-color: rgb(189, 49, 75); box-shadow: rgba(160, 6, 49, 0.22) 2px 2px 5px 0px; margin-top: 2.6667vw;"
 				>
 					<span class="rax-text-v2 ug-activity-mod--buttonText--QtrAF0d" style="font-family: PingFangSC-Semibold;">去抢购&nbsp;</span>
-					<image src="//gw.alicdn.com/imgextra/i3/O1CN01XWUqi71gwOdBodheU_!!6000000004206-2-tps-42-22.png_110x10000.jpg_.webp" style="width: 5.8667vw;" />
+					<image src="//gw.alicdn.com/imgextra/i3/O1CN01XWUqi71gwOdBodheU_!!6000000004206-2-tps-42-22.png_110x10000.jpg_.webp" style="width: 5.8667vw;height: 2.8667vw;" />
 					&nbsp;
 					<image
 						src="data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjEwcHgiIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDEwIDE4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGcgaWQ9Iumhtemdoi0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxnIGlkPSLml6XljoYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02NzIuMDAwMDAwLCAtMTIxOS4wMDAwMDApIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+CiAgICAgICAgICAgIDxnIGlkPSLnn6nlvaLlpIfku70tMTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjAwMDAwMCwgMTA3MC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSLnvJbnu4QtMTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ5Mi4wMDAwMDAsIDEyOC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9Iui3r+W+hC05IiBwb2ludHM9IjE2OC45OTU5MDEgMjIuNTA4MDE4NSAxNzYuNDg3ODgyIDMwIDE2OC45OTU5MDEgMzcuNDkxOTgxNSI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+"

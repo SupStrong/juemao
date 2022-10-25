@@ -8,7 +8,7 @@
 				class="optimiz-ctn"
 				style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: 100vw; position: relative; padding-top: 0px; overflow: hidden;"
 			>
-				<!---->
+				
 				<view
 					class="other-content"
 					style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; position: relative; z-index: 100; width: 100vw;"
@@ -48,7 +48,7 @@
 								style="width: 209.76px; height: 151.248px; position: absolute; bottom: 0px;"
 							/>
 						</view>
-						<!---->
+						
 					</view>
 				</view>
 			</view>

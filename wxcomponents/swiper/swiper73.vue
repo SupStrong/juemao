@@ -114,6 +114,10 @@ export default {
 	max-width: 78rpx;
 	max-height: 78rpx;
 	background-color: #fff;
+	image{
+		width: 80rpx;
+		height: 80rpx;
+	}
 }
 ._3nF_AcOj {
 	font-size: 28rpx;
@@ -152,6 +156,10 @@ export default {
 	margin-bottom: 8rpx;
 	border-radius: 4rpx;
 	background-color: #fcfcfc;
+	image{
+		width: 128rpx;
+		height: 128rpx;
+	}
 }
 ._2BCWiOSc {
 	display: -webkit-box;
