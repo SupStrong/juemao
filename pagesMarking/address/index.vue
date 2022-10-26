@@ -34,6 +34,9 @@
 				+ 收货地址
 			</view>
 		</view>
+			<view class="empty__item tn-margin-top">
+			  <tn-empty icon="https://tnuiimage.tnkjapp.com/empty/alien/2.png" text="空空如也" :imgWidth="200" :imgHeight="200"></tn-empty>
+			</view>
 			<tn-modal v-model="visible" :custom="true"  :showCloseBtn="true">
 			  <view class="custom-modal-content">
 				<view class="">
@@ -50,7 +53,7 @@
 						<view class="justify-content-item">
 						  <view class="tn-color-gray">
 							
-							  <view class="tn-color-gray" v-if="isShowAddress">{{isShowAddress}}</view>
+							  <view class="tn-color-black" v-if="isShowAddress">{{isShowAddress}}</view>
 							  <view class="tn-color-gray" v-else>省市区</view>
 						  </view>
 						</view>
