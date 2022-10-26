@@ -78,6 +78,7 @@
 		mode="single"
         :list="actionSheetList"
         @click="actionSheetClick"
+		@close="closedActionSheet"
       ></tn-action-sheet>
 	</view>
 </template>
@@ -121,7 +122,8 @@
 					district:""
 				},
 				actionSheetShow: false,
-				actionSheetList:[
+				pickerShow: false,
+				actionSheetListData:[
 					{
 					text: "编辑"
 				},
@@ -132,7 +134,8 @@
 					text: "复制"
 				},
 				
-			]
+			],
+			actionSheetList:[]
 		
 			}
 		},
@@ -158,8 +161,7 @@
 			//列表
 			getAddressListFun(){
 				getAddressList().then(res =>{
-
-					if(res.status==1){
+					if(res.code==1){
 						this.addressList = res.data
 					}
 				})
@@ -176,15 +178,22 @@
 				uni.hideKeyboard()
                 let type = this.actionSheetList[index].text
 			},
+			closedActionSheet(){
+				this.actionSheetShow = false
+			},
 			openDialog(val){
-				if(val.is_default == 1){
-					this.actionSheetList.unshift({
-						text: "取消默认地址"
-					})
-				} else {
-					this.actionSheetList.unshift({
+				let list1 = [{
+					text: "取消默认地址"
+				}]
+				let list2 = [{
 					text: "设为默认地址"
-				})
+				}]
+				if(val.is_default == 1){
+					this.actionSheetList = list1.concat(this.actionSheetListData)
+				
+				} else {
+					this.actionSheetList = list2.concat(this.actionSheetListData)
+					
 				}
 				this.actionSheetShow=true
 			}
@@ -195,7 +204,7 @@
 </script>
 
 <style lang="scss" scoped>
-page {
+.page {
 	background-color: #f8f8f8;
 }
 .rf-list {
