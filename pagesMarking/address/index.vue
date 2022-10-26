@@ -138,7 +138,7 @@
 		},
 		onLoad(){
 			this.handleGetToken()
-			this.getAddress()
+			this.getAddressListFun()
 		},
 		methods: {
 			handleSelect(){
@@ -190,11 +190,7 @@
 			}
 
 			 
-		},
-		mounted() {
-			
-			this.getAddressListFun()
-		},
+		}
 	}
 </script>
 
