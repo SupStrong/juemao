@@ -34,27 +34,27 @@
 				+ 收货地址
 			</view>
 		</view>
-		<tn-modal v-model="visible" :custom="true"  :showCloseBtn="true">
-		  <view class="custom-modal-content">
-		    <view class="">
-		      <view class="tn-text-lg tn-text-bold tn-color-purplered tn-text-center tn-padding">新增收货地址</view>
-		      <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-		        <input placeholder="姓名" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.real_name"></input>
-		      </view>
-			  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-			    <input placeholder="11位手机号码" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.phone"></input>
-			  </view>
-			  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-			    <picker mode="region" @change="bindPickerChange" :value="index" :range="array">
-			      <view class="tn-flex tn-flex-row-between tn-strip-bottom-min" style="align-items: center;">
-			        <view class="justify-content-item">
-			          <view class="tn-color-gray">
-			            
-			              <view class="tn-color-gray" v-if="index">{{array[index]}}</view>
-			              <view class="tn-color-gray" v-else>省市区</view>
-			          </view>
-			        </view>
-        <view class="justify-content-item tn-text-lg tn-color-grey">
+			<tn-modal v-model="visible" :custom="true"  :showCloseBtn="true">
+			  <view class="custom-modal-content">
+				<view class="">
+				  <view class="tn-text-lg tn-text-bold tn-color-purplered tn-text-center tn-padding">新增收货地址</view>
+				  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
+					<input placeholder="姓名" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.real_name"></input>
+				  </view>
+				  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
+					<input placeholder="11位手机号码" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.phone"></input>
+				  </view>
+				  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
+					<picker mode="region" @change="bindPickerChange" :value="index" :range="array">
+					  <view class="tn-flex tn-flex-row-between tn-strip-bottom-min" style="align-items: center;">
+						<view class="justify-content-item">
+						  <view class="tn-color-gray">
+							
+							  <view class="tn-color-gray" v-if="isShowAddress">{{isShowAddress}}</view>
+							  <view class="tn-color-gray" v-else>省市区</view>
+						  </view>
+						</view>
+			<view class="justify-content-item tn-text-lg tn-color-grey">
 			          <view class="tn-icon-right"></view>
 			        </view>
 			      </view>
@@ -91,6 +91,7 @@
 			return {
 				visible:false,
 				index: 0,
+				isShowAddress:'',
 				array: ['女', '男', '保密'],
 				addressList:[
 				{
@@ -104,11 +105,11 @@
 
 					},{
 						
-						address_name:'呃呃',
-						address_details:'测试机',
-						realname:'俩次',
-						mobile:'17338132745',
-						id:'1',
+					address_name:'呃呃',
+					address_details:'测试机',
+					realname:'俩次',
+					mobile:'17338132745',
+					id:'1',
 				is_default: true,
 
 					}
@@ -138,14 +139,23 @@
 		},
 		onLoad(){
 			this.handleGetToken()
-			this.getAddressListFun()
+			this.getAddress()
 		},
 		methods: {
 			handleSelect(){
 				console.log("长按")
 			},
+			getAddress(){
+				getAddressList().then(result => {
+					console.log(result.data.token)
+				})
+			},
 			bindPickerChange: function(e) {
-				console.log(e,"eee")
+				console.log(e.detail.value)
+				this.isShowAddress = e.detail.value.join(' ')
+				this.a = e.detail.code[0]
+				this.b = e.detail.code[1]
+				this.c = e.detail.code[2]
 			},
 			handleAddress(type){
 				if(type == 'wx'){
@@ -190,7 +200,11 @@
 			}
 
 			 
-		}
+		},
+		mounted() {
+			
+			this.getAddressListFun()
+		},
 	}
 </script>
 

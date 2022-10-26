@@ -11,7 +11,9 @@
 
 		<view class="top-backgroup"><image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image></view>
 		
-		
+		<view class="" @click="handleBtn">
+			按钮
+		</view>
 		<swiperBBS />
 		<swiperBBD />
 		<swiperBBF />
@@ -20,7 +22,7 @@
 		<swiperBBJ />
 		<swiperBBK />
 		<swiperBBL />
-		<swiperBBZ />
+		<swiperBBZ :visibile='isVisibile' />
 		<swiperBBX />
 		
 		<swiperBAS />
@@ -272,7 +274,8 @@ export default {
 	data() {
 		return {
 			list: ['电影资源仅提供介绍，请上拥有版权的APP观看', '排行仅为个人喜欢，不喜勿喷', '抓住那只猪科技有限公司出品', '今天想找个人一起去看电影'],
-			closeNoticeShow: true
+			closeNoticeShow: true,
+			isVisibile:true	
 		};
 	},
 	components: {
@@ -366,7 +369,11 @@ export default {
 	mounted() {
 		console.log("-----")
 	},
-	methods: {},
+	methods: {
+		handleBtn(){
+			this.isVisibile = true
+		}
+	},
 };
 </script>
 
