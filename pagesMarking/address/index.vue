@@ -136,23 +136,13 @@
 		
 			}
 		},
-<<<<<<< HEAD
 		onLoad(){
 			this.handleGetToken()
 			this.getAddress()
-=======
-		 onLoad(){
-			this.xToken = this.handleGetToken();
->>>>>>> 7b30826c3010248b6e1bd9f593060bd78543b4f9
 		},
 		methods: {
 			handleSelect(){
 				console.log("长按")
-			},
-			getAddress(){
-				getAddressList().then(result => {
-					console.log(result.data.token)
-				})
 			},
 			bindPickerChange: function(e) {
 				console.log(e,"eee")
