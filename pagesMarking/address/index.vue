@@ -39,10 +39,10 @@
 				<view class="">
 				  <view class="tn-text-lg tn-text-bold tn-color-purplered tn-text-center tn-padding">新增收货地址</view>
 				  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-					<input placeholder="姓名" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.real_name"></input>
+					<input placeholder="姓名" name="input" placeholder-style="color:#AAAAAA" maxlength="20" v-model="infoForm.real_name"></input>
 				  </view>
 				  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-					<input placeholder="11位手机号码" name="input" placeholder-style="color:#AAAAAA" maxlength="20" :model="infoForm.phone"></input>
+					<input placeholder="11位手机号码" name="input" placeholder-style="color:#AAAAAA" maxlength="20" v-model="infoForm.phone"></input>
 				  </view>
 				  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
 					<picker mode="region" @change="bindPickerChange" :value="index" :range="array">
@@ -54,14 +54,14 @@
 							  <view class="tn-color-gray" v-else>省市区</view>
 						  </view>
 						</view>
-			<view class="justify-content-item tn-text-lg tn-color-grey">
+					<view class="justify-content-item tn-text-lg tn-color-grey">
 			          <view class="tn-icon-right"></view>
 			        </view>
 			      </view>
 			    </picker>
 			  </view>
 			  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-			    <input placeholder="街道,楼牌号等信息" name="input" placeholder-style="color:#AAAAAA" maxlength="20"></input>
+			    <input placeholder="街道,楼牌号等信息" name="input" placeholder-style="color:#AAAAAA" maxlength="20" v-model="infoForm.district"></input>
 			  </view>
 			  
 		    </view>
@@ -119,7 +119,9 @@
 				infoForm:{
 					real_name:"",
 					phone:"",
+					province_id:"",
 					city_id:"",
+					area_id:"",
 					district:""
 				},
 				actionSheetShow: false,
@@ -156,9 +158,9 @@
 			bindPickerChange: function(e) {
 				console.log(e.detail.value)
 				this.isShowAddress = e.detail.value.join(' ')
-				this.a = e.detail.code[0]
-				this.b = e.detail.code[1]
-				this.c = e.detail.code[2]
+				this.infoForm.province_id = e.detail.code[0]
+				this.infoForm.city_id = e.detail.code[1]
+				this.infoForm.area_id = e.detail.code[2]
 			},
 			handleAddress(type){
 				if(type == 'wx'){
@@ -179,8 +181,10 @@
 
 			// 保存
 			saveFun(){
+				console.log(this.infoForm);
 				saveAddress(this.infoForm).then(res=>{
-
+                     console.log("火锅"+res);
+					 debugger
 				})
 			},
 			
