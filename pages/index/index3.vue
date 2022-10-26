@@ -22,7 +22,7 @@
 		<swiperBBJ />
 		<swiperBBK />
 		<swiperBBL />
-		<swiperBBZ :visibile='isVisibile' />
+		<swiperBBZ :visibile='isVisibile' @update="handleUpdate" />
 		<swiperBBX />
 		
 		<swiperBAS />
@@ -372,6 +372,9 @@ export default {
 	methods: {
 		handleBtn(){
 			this.isVisibile = true
+		},
+		handleUpdate(){
+			this.isVisibile = false
 		}
 	},
 };
