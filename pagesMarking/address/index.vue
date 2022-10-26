@@ -95,25 +95,6 @@
 				isShowAddress:'',
 				array: ['女', '男', '保密'],
 				addressList:[
-				{
-						
-						address_name:'呃呃',
-						address_details:'测试机',
-						realname:'俩次',
-						mobile:'17338132745',
-						id:'1',
-				is_default: false,
-
-					},{
-						
-					address_name:'呃呃',
-					address_details:'测试机',
-					realname:'俩次',
-					mobile:'17338132745',
-					id:'1',
-				is_default: true,
-
-					}
 				],
 				xToken: "",
 				infoForm:{
