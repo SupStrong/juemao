@@ -34,7 +34,7 @@
 				+ 收货地址
 			</view>
 		</view>
-		<tn-modal v-model="visible" :custom="true" :showCloseBtn="true">
+		<tn-modal v-model="visible" :custom="true"  :showCloseBtn="true">
 		  <view class="custom-modal-content">
 		    <view class="">
 		      <view class="tn-text-lg tn-text-bold tn-color-purplered tn-text-center tn-padding">新增收货地址</view>
@@ -45,7 +45,7 @@
 			    <input placeholder="11位手机号码" name="input" placeholder-style="color:#AAAAAA" maxlength="20"></input>
 			  </view>
 			  <view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-			    <picker @change="bindPickerChange" :value="index" :range="array">
+			    <picker mode="region" @change="bindPickerChange" :value="index" :range="array">
 			      <view class="tn-flex tn-flex-row-between tn-strip-bottom-min" style="align-items: center;">
 			        <view class="justify-content-item">
 			          <view class="tn-color-gray">
@@ -77,6 +77,9 @@
 
 <script>
   import loginMixins from '@/mixins/login.js';
+  import {
+  	getAddressList
+  } from '@/api/modules/api.js';
   export default {
 	mixins: [loginMixins],
 		data() {
@@ -105,13 +108,19 @@
 		},
 		onLoad(){
 			this.handleGetToken()
+			this.getAddress()
 		},
 		methods: {
 			handleSelect(){
 				console.log("长按")
 			},
+			getAddress(){
+				getAddressList().then(result => {
+					console.log(result.data.token)
+				})
+			},
 			bindPickerChange: function(e) {
-			  this.index = e.detail.value
+				console.log(e,"eee")
 			},
 			handleAddress(type){
 				if(type == 'wx'){

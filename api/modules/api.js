@@ -24,3 +24,11 @@ export function setLogin (data) {
 		data
 	})
 }
+
+export function getAddressList (data) {
+	return myRequest({
+		method: "GET",
+		url: `/api/api-address/lists`,
+		data
+	})
+}
