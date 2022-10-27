@@ -142,9 +142,9 @@
 			bindPickerChange: function(e) {
 				console.log(e.detail.value)
 				this.isShowAddress = e.detail.value.join(' ')
-				this.infoForm.province_id = e.detail.code[0]
-				this.infoForm.city_id = e.detail.code[1]
-				this.infoForm.area_id = e.detail.code[2]
+				this.infoForm.province_id = Number(e.detail.code[0])
+				this.infoForm.city_id = Number(e.detail.code[1])
+				this.infoForm.area_id = Number(e.detail.code[2])
 			},
 			handleAddress(type){
 				if(type == 'wx'){

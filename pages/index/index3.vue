@@ -14,15 +14,17 @@
 		<view class="" @click="handleBtn">
 			按钮
 		</view>
-		<swiperBBS />
+		
+		<swiperBBX />
+		<!-- <swiperBBS />
 		<swiperBBD />
 		<swiperBBF />
 		<swiperBBG />
 		<swiperBBH />
 		<swiperBBJ />
-		<swiperBBK />
-		<swiperBBL />
-		<swiperBBZ :visibile='isVisibile' @update="handleUpdate" />
+		<swiperBBK /> -->
+		<!-- <swiperBBL /> -->
+		<!-- <swiperBBZ :visibile='isVisibile' @update="handleUpdate" />
 		<swiperBBX />
 		
 		<swiperBAS />
@@ -34,9 +36,9 @@
 		<swiperBAK />
 		<swiperBAL />
 		<swiperBAZ />
-		<swiperBAX />
+		<swiperBAX /> -->
 		
-		
+		<!-- 
 		<swiperBHQ></swiperBHQ>
 		<swiperBHW></swiperBHW>
 		<swiperBHE></swiperBHE>
@@ -74,11 +76,11 @@
 		<swiperAA></swiperAA>
 		<swiperCC></swiperCC>
 		<swiperGG></swiperGG>
-		<swiperJJ></swiperJJ>
+		<swiperJJ></swiperJJ> -->
 		
 		
 		<!-- <swiperBB></swiperBB> -->
-		<swiperDD></swiperDD>
+		<!-- <swiperDD></swiperDD>
 		<swiperA></swiperA>
 		<swiperB></swiperB>
 		<swiperC></swiperC>
@@ -96,17 +98,17 @@
 		<swiperO></swiperO>
 		<swiperP></swiperP>
 		<swiperQ></swiperQ>
-		<swiperW></swiperW>
+		<swiperW></swiperW> -->
 		<!-- 缩放 -->
-		<tn-notice-bar :show="closeNoticeShow" :list="list" :closeBtn="true" @close="closeNoticeShow = false"></tn-notice-bar>
+		<!-- <tn-notice-bar :show="closeNoticeShow" :list="list" :closeBtn="true" @close="closeNoticeShow = false"></tn-notice-bar> -->
 		<!-- 广告位 -->
-		<bannerA></bannerA>
+		<!-- <bannerA></bannerA>
 		<bannerB></bannerB>
 		<bannerC></bannerC>
 		<bannerD></bannerD>
 		<bannerE @freshAllData="freshAllData" @refreshData="onRefreshData" :hideAnimation="hideAnimation"></bannerE>
 		<bannerF></bannerF>
-		<bannerG></bannerG>
+		<bannerG></bannerG> -->
 		<!-- <bannerG></bannerG> -->
 		<!--  -->
 
@@ -275,7 +277,7 @@ export default {
 		return {
 			list: ['电影资源仅提供介绍，请上拥有版权的APP观看', '排行仅为个人喜欢，不喜勿喷', '抓住那只猪科技有限公司出品', '今天想找个人一起去看电影'],
 			closeNoticeShow: true,
-			isVisibile:true	
+			isVisibile:false	
 		};
 	},
 	components: {
