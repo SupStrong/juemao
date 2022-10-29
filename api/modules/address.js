@@ -19,3 +19,11 @@ export function saveAddress (data) {
 		data
 	})
 }
+// 
+export function getRegionAll (data) {
+	return myRequest({
+		method: "POST",
+		url: '/api/api-region/getAll',
+		data
+	})
+}

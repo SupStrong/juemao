@@ -5,7 +5,7 @@ const platform = uni.getSystemInfoSync().platform
 export const myRequest = (options) => {
 	if (!options.headers) options.headers = {}
 	let newData = {}
-	options.headers['x-token'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiSUQiOjEsIlVzZXJuYW1lIjoiIiwiTmlja05hbWUiOiIiLCJBdmF0YXIiOiIiLCJBY2NvdW50IjoiMTczMzgxMzIzNTEiLCJhdXRob3JpdHlfaWQiOjAsIkJ1ZmZlclRpbWUiOjg2NDAwLCJleHAiOjE2NjczOTkxODUsImlzcyI6InFtUGx1cyIsIm5iZiI6MTY2Njc5MzM4NX0.D1HDhvoGIfaB5-ir2Hv1c91eR9IT06csMb6PTcrdgY4'
+	options.headers['x-token'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiSUQiOjEsIlVzZXJuYW1lIjoiIiwiTmlja05hbWUiOiIiLCJBdmF0YXIiOiIiLCJBY2NvdW50IjoiMTczMzgxMzIzNTEiLCJhdXRob3JpdHlfaWQiOjAsIkJ1ZmZlclRpbWUiOjg2NDAwLCJleHAiOjE2Njc1NzA1NjEsImlzcyI6InFtUGx1cyIsIm5iZiI6MTY2Njk2NDc2MX0.ysGU2Xx6hB-Y8phOn8TkWkc3pW5YOGVSyCMf7ssPpl8'
 	if (options.headers.noFilter) {
 		newData = options.data;
 	} else {
