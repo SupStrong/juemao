@@ -33,7 +33,7 @@
 						<picker mode="multiSelector" @change="bindRegionChange" @columnchange="bindMultiPickerColumnChange" :value="valueRegion" :range="multiArray">
 							<view class="acea-row tn-flex tn-flex-row-between">
 								<view class="picker" v-if="region.length">{{ region[0] }}/{{ region[1] }}/{{ region[2] }}</view>
-								<view class="picker" v-else>请选择省市区</view>
+								<view class="picker tn-color-gray" v-else>请选择省市区</view>
 								<view class="justify-content-item tn-text-lg tn-color-grey"><view class="tn-icon-right"></view></view>
 							</view>
 						</picker>
