@@ -1,216 +1,442 @@
 <template>
-	<view>
-		<image :src="path" mode="widthFix"></image>
-		<l-painter :board="poster" isCanvasToTempFilePath @success="path = $event" custom-style="position: fixed; left: 200%" />
-	</view>
+	<div class="container" catchtouchmove="ture">
+		<div class="content" :class="iphoneModel ? 'X' : ''">
+			<l-painter class="fl-row-center" isCanvasToTempFilePath @success="onImgOk($event)" :board="templateArr[currentTab].template" :dirty="true" />
+		</div>
+		<div class="toolbar" :class="iphoneModel ? 'X' : ''">
+			<scroll-view class="item-box" scroll-x>
+				<a v-for="(item, index) in templateArr" :key="index" :class="currentTab == index ? 'item active' : 'item'" :data-current="index" @click="switchTab(index)">
+					<img :src="item.small_bg" alt />
+					<span class="left"></span>
+					<i class="iconfont">&#xe6e4;</i>
+				</a>
+			</scroll-view>
+			<div class="save-button" v-if="status == 0">该商品已下架或不存在</div>
+			<div class="save-button" v-if="status == 2">未正确生成合伙人海报</div>
+			<div class="save-button fl-row-center" :class="iphoneModel ? 'X' : ''" v-if="authorization == false && status == 1" @click="saveToCarame()">
+				<i class="iconfont">&#xe70c;</i>
+				<span>保存到相册</span>
+			</div>
+			<div class="save-button" :class="iphoneModel ? 'X' : ''" v-if="authorization == true && status == 1">
+				<span class="setting">
+					打开授权设置页
+					<button open-type="openSetting"></button>
+				</span>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex';
+
+const customStyle = '';
 export default {
 	data() {
 		return {
-			path: '',
-			poster: {
-				css: {
-					width: '750rpx',
-					paddingBottom: '40rpx',
-					background: 'linear-gradient(,#000 0%, #ff5000 100%)'
-				},
-				views: [
-					{
-						src: 'https://fastly.jsdelivr.net/gh/liangei/image@latest/avatar-1.jpeg',
+			status: 1,
+			authorization: false,
+			routeData: '',
+			shareImg: '',
+			customStyle: customStyle,
+			currentTab: 0,
+			templateArr: [{ template: {} }],
+			itemsList: [
+				{
+					id: 202,
+					template: {
+						width: '500',
+						height: '875',
 						type: 'image',
+						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
 						css: {
-							background: '#fff',
-							objectFit: 'cover',
-							marginLeft: '40rpx',
-							marginTop: '40rpx',
-							width: '84rpx',
-							border: '2rpx solid #fff',
-							boxSizing: 'border-box',
-							height: '84rpx',
-							borderRadius: '50%'
-						}
-					},
-					{
-						type: 'view',
-						css: {
-							marginTop: '40rpx',
-							paddingLeft: '20rpx',
-							display: 'inline-block'
+							// 根节点若无尺寸，自动获取父级节点
+							width: '750rpx',
+							height: '1160rpx'
 						},
 						views: [
 							{
-								text: '隔壁老王',
-								type: 'text',
 								css: {
-									display: 'block',
-									paddingBottom: '10rpx',
-									color: '#fff',
-									fontSize: '32rpx',
-									fontWeight: 'bold'
-								}
+									background: '#07c160',
+									height: '120rpx',
+									width: '120rpx',
+									display: 'inline-block'
+								},
+								type: 'view'
 							},
 							{
-								text: '为您挑选了一个好物',
-								type: 'text',
 								css: {
-									color: 'rgba(255,255,255,.7)',
-									fontSize: '24rpx'
-								}
+									background: '#1989fa',
+									height: '120rpx',
+									width: '120rpx',
+									borderTopRightRadius: '60rpx',
+									borderBottomLeftRadius: '60rpx',
+									display: 'inline-block',
+									margin: '0 30rpx'
+								},
+								views: [],
+								type: 'view'
+							},
+							{
+								css: {
+									background: '#ff9d00',
+									height: '120rpx',
+									width: '120rpx',
+									borderRadius: '50%',
+									display: 'inline-block'
+								},
+								views: [],
+								type: 'view'
 							}
 						]
 					},
-					{
+					small_bg: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/9a1e549ccbf3db9c75d33a0b8e99ee47.jpg'
+				},
+				{
+					id: 201,
+					template: {
+						type: 'image',
+						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
 						css: {
-							marginLeft: '40rpx',
-							marginTop: '30rpx',
-							padding: '32rpx',
-							boxSizing: 'border-box',
-							background: '#fff',
-							borderRadius: '16rpx',
-							width: '670rpx',
-							boxShadow: '0 20rpx 58rpx rgba(0,0,0,.15)'
+							// 根节点若无尺寸，自动获取父级节点
+							width: '750rpx',
+							height: '1160rpx'
 						},
 						views: [
 							{
-								src: 'https://m.360buyimg.com/babel/jfs/t1/196317/32/13733/288158/60f4ea39E6fb378ed/d69205b1a8ed3c97.jpg',
-								type: 'image',
 								css: {
-									objectFit: 'cover',
-									objectPosition: '50% 50%',
-									width: '606rpx',
-									height: '606rpx'
-								}
-							},
-							{
-								css: {
-									marginTop: '32rpx',
-									color: '#FF0000',
-									fontWeight: 'bold',
-									fontSize: '28rpx',
-									lineHeight: '1em'
+									background: '#07c160',
+									height: '120rpx',
+									width: '120rpx',
+									display: 'inline-block'
 								},
-								views: [
-									{
-										text: '￥',
-										type: 'text',
-										css: {
-											verticalAlign: 'bottom'
-										}
-									},
-									{
-										text: '39',
-										type: 'text',
-										css: {
-											verticalAlign: 'bottom',
-											fontSize: '58rpx'
-										}
-									},
-									{
-										text: '.39',
-										type: 'text',
-										css: {
-											verticalAlign: 'bottom'
-										}
-									},
-									{
-										text: '￥59.99',
-										type: 'text',
-										css: {
-											verticalAlign: 'bottom',
-											paddingLeft: '10rpx',
-											fontWeight: 'normal',
-											textDecoration: 'line-through',
-											color: '#999999'
-										}
-									}
-								],
-
 								type: 'view'
 							},
 							{
 								css: {
-									marginTop: '32rpx',
-									fontSize: '26rpx',
-									color: '#8c5400'
+									background: '#333333',
+									height: '120rpx',
+									width: '120rpx',
+									top:"120rpx",
+									borderTopRightRadius: '60rpx',
+									borderBottomLeftRadius: '60rpx',
+									display: 'inline-block',
+									margin: '0 30rpx'
 								},
-								views: [
-									{
-										text: '自营',
-										type: 'text',
-										css: {
-											color: '#212121',
-											background: '#ffb400'
-										}
-									},
-									{
-										text: '30天最低价',
-										type: 'text',
-										css: {
-											marginLeft: '16rpx',
-											background: '#fff4d9',
-											textDecoration: 'line-through'
-										}
-									},
-									{
-										text: '满减优惠',
-										type: 'text',
-										css: {
-											marginLeft: '16rpx',
-											background: '#fff4d9'
-										}
-									},
-									{
-										text: '超高好评',
-										type: 'text',
-										css: {
-											marginLeft: '16rpx',
-											background: '#fff4d9'
-										}
-									}
-								],
-
+								views: [],
 								type: 'view'
 							},
 							{
 								css: {
-									marginTop: '30rpx'
+									background: '#ff9d00',
+									height: '120rpx',
+									width: '120rpx',
+									borderRadius: '50%',
+									display: 'inline-block'
 								},
-								views: [
-									{
-										text: '360儿童电话手表9X 智能语音问答定位支付手表 4G全网通20米游泳级防水视频通话拍照手表男女孩星空蓝',
-										type: 'text',
-										css: {
-											paddingRight: '32rpx',
-											boxSizing: 'border-box',
-											lineClamp: 2,
-											color: '#333333',
-											lineHeight: '1.8em',
-											fontSize: '36rpx',
-											width: '478rpx'
-										}
-									},
-									{
-										text: 'limeui.qcoon.cn',
-										type: 'qrcode',
-										css: {
-											width: '128rpx',
-											height: '128rpx'
-										}
-									}
-								],
+								views: [],
 								type: 'view'
 							}
-						],
-						type: 'view'
-					}
-				]
-			}
+						]
+					},
+					small_bg: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/3628229474e090b988239e3f0b9505b7.jpg'
+				}
+			]
 		};
 	},
-	methods: {}
+	onShow() {
+		this.routeData = this.$root.$mp.query;
+		this.routeData.type = 1;
+		var _that = this;
+		wx.getSetting({
+			success(res) {
+				if ('scope.writePhotosAlbum' in res.authSetting) {
+					if (res.authSetting['scope.writePhotosAlbum'] == true) {
+						_that.authorization = false;
+					} else {
+						_that.authorization = true;
+					}
+				} else {
+					_that.authorization = false;
+				}
+			}
+		});
+	},
+	computed: {
+		...mapState({
+			iphoneModel: state => state.iphoneModel,
+			userInfo: state => state.userInfo
+		})
+	},
+	methods: {
+		getPainterData(id, type, type_son = '') {
+			this.itemsList.forEach(element => {
+				//element.template = JSON.parse(element.template);
+				element.template = element.template;
+			});
+			if (this.itemsList.length > 0) {
+				this.templateArr = this.itemsList;
+			}
+		},
+		switchTab(oIndex) {
+			this.shareImg = '';
+			// if (this.getData.goods && this.getData.goods.length == 1 && oIndex == 4) {
+			//   showPopup("该门店下只有一个商品,海报生成失败");
+			//   return false;
+			// } else {
+			//   this.currentTab = oIndex;
+			// }
+			// console.log(this.templateArr[thicurrentTab].template,"templateArr[currentTab].template")
+			this.currentTab = oIndex;
+		},
+		onImgOk(e) {
+			wx.hideLoading();
+			// console.log(e,"e.mp.detail.path")
+			//    this.shareImg = e.mp.detail.path;
+		},
+		saveToCarame() {
+			let _this = this;
+			wx.showLoading({
+				title: '图片保存中...'
+			});
+			wx.getSetting({
+				success(res) {
+					if (res.authSetting['scope.writePhotosAlbum'] == true) {
+						_this.saveImage();
+					}
+					if (!res.authSetting['scope.writePhotosAlbum']) {
+						wx.authorize({
+							scope: 'scope.writePhotosAlbum',
+							success() {
+								_this.saveImage();
+							},
+							fail(errMsg) {
+								_this.authorization = true;
+								showPopup('请点击授权按钮', 0);
+							}
+						});
+					}
+				}
+			});
+		},
+		saveImage() {
+			let _this = this;
+			_this.authorization = false;
+			wx.saveImageToPhotosAlbum({
+				filePath: _this.shareImg,
+				success: function() {
+					wx.hideLoading();
+					showPopup('已保存至手机', 1);
+				}
+			});
+		}
+	},
+	watch: {
+		routeData: {
+			handler: function(val, oldval) {
+				if (val.type == 1) {
+					wx.setNavigationBarTitle({
+						title: '门店海报'
+					});
+					// id = 需要的ID
+					// type = 类型
+					// type_son = 子类
+					this.getPainterData(this.routeData.store_id, 3);
+					// this.setPosterStatus('store');//清除海报状态
+				}
+				if (val.type == 2) {
+					wx.setNavigationBarTitle({
+						title: '商品海报'
+					});
+					this.getPainterData(this.routeData.goods_id, 1);
+				}
+				if (val.type == 4 && val.name == 'baoming') {
+					wx.setNavigationBarTitle({
+						title: '报名活动海报'
+					});
+					this.getPainterData(this.routeData.promote_id, 2, 100);
+				}
+				if (val.type == 4 && val.name == 'change') {
+					wx.setNavigationBarTitle({
+						title: '以旧换新海报'
+					});
+					this.getPainterData(this.routeData.promote_id, 2, 300);
+				}
+				if (val.type == 4 && val.name == 'ticket') {
+					wx.setNavigationBarTitle({
+						title: '卡券海报'
+					});
+					this.getPainterData(this.routeData.promote_id, 2, 200);
+				}
+				if (val.type == 5 && val.name == 'insider') {
+					wx.setNavigationBarTitle({
+						title: '内幕海报'
+					});
+					this.getPainterData(this.routeData.id, 4);
+				}
+				if (val.type == 6 && val.name == 'partner') {
+					wx.setNavigationBarTitle({
+						title: '合伙人'
+					});
+					this.getPainterData(this.userInfo.store_id, 5);
+				}
+				if (val.type == 7) {
+					wx.setNavigationBarTitle({
+						title: '会员'
+					});
+					this.getPainterData(0, 7);
+					this.setPosterStatus('member'); //清除海报状态
+				}
+			},
+			deep: true
+		}
+	}
 };
 </script>
+<style lang="scss">
+.container {
+	background: rgba(51, 51, 51, 1);
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
 
-<style lang="scss" scoped></style>
+page {
+	height: 100%;
+}
+
+.toolbar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 750rpx;
+	height: 270rpx;
+	background: #fff;
+
+	&.X {
+		height: 358rpx;
+	}
+
+	.item-box {
+		width: 750rpx;
+		height: 182rpx;
+		background: #000;
+		white-space: nowrap;
+		padding: 14rpx 30rpx 0;
+
+		.item {
+			display: inline-block;
+			height: 152rpx;
+			width: 96rpx;
+			background: #f6f6f6;
+			margin-right: 24rpx;
+			border-radius: 8rpx;
+			position: relative;
+
+			img {
+				border-radius: 8rpx;
+				height: 152rpx;
+				width: 96rpx;
+			}
+
+			.left {
+				position: absolute;
+				top: 4rpx;
+				right: 4rpx;
+				width: 0;
+				height: 0;
+				border-width: 20rpx;
+				border-style: solid;
+				border-color: #f36e20 #f36e20 transparent transparent;
+				display: none;
+			}
+
+			i {
+				position: absolute;
+				right: 6rpx;
+				top: 6rpx;
+				font-size: 16rpx;
+				color: #fff;
+				display: none;
+			}
+
+			&.active {
+				img {
+					border: 4rpx solid #f36e20;
+				}
+
+				.left,
+				i {
+					display: block;
+				}
+			}
+
+			img {
+				border-radius: 8rpx;
+				height: 152rpx;
+				width: 96rpx;
+			}
+		}
+	}
+
+	.save-button {
+		width: 750rpx;
+		height: 90rpx;
+		line-height: 90rpx;
+		text-align: center;
+		color: #fff;
+		font-size: 32rpx;
+		background: #f36e20;
+
+		&.X {
+			border-radius: 46rpx;
+			width: 690rpx;
+			margin: 10rpx auto;
+		}
+
+		i {
+			color: #fff;
+			font-size: 28rpx;
+			margin-right: 5px;
+			padding-top: 2px;
+		}
+
+		.setting {
+			display: block;
+			height: 90rpx;
+			position: relative;
+
+			button {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 90rpx;
+				width: 100%;
+				line-height: 90rpx;
+				text-align: center;
+				color: #fff;
+				font-size: 32rpx;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.content {
+	height: calc(100% - 270rpx);
+	width: 100%;
+	background: #333;
+
+	&.X {
+		height: calc(100% - 358rpx);
+	}
+}
+
+painter {
+	height: 100%;
+	width: 100%;
+
+	canvas {
+	}
+}
+</style>
