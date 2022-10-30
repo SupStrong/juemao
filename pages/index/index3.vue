@@ -15,7 +15,12 @@
 			按钮
 		</view>
 		
-		<swiperBBX />
+		<!-- <swiperBBX /> -->
+		<!-- <swiperBBP /> -->
+	<!-- 	<swiperBBO />
+		<swiperBBB />
+		<swiperBBC />
+		<swiperBBV /> -->
 		<!-- <swiperBBS />
 		<swiperBBD />
 		<swiperBBF />
@@ -37,6 +42,12 @@
 		<swiperBAL />
 		<swiperBAZ />
 		<swiperBAX /> -->
+		
+		<swiperBBVV />
+		<swiperBBDD />
+		<swiperBBAA />
+		<swiperBBSS />
+		<swiperBBSL />
 		
 		<!-- 
 		<swiperBHQ></swiperBHQ>
@@ -257,6 +268,17 @@ import swiperBBK from '@/wxcomponents/swiper/swiper77.vue';
 import swiperBBL from '@/wxcomponents/swiper/swiper78.vue';
 import swiperBBZ from '@/wxcomponents/swiper/swiper79.vue';
 import swiperBBX from '@/wxcomponents/swiper/swiper80.vue';
+import swiperBBP from '@/wxcomponents/swiper/swiper81.vue';
+import swiperBBO from '@/wxcomponents/swiper/swiper82.vue';
+import swiperBBB from '@/wxcomponents/swiper/swiper83.vue';
+import swiperBBC from '@/wxcomponents/swiper/swiper84.vue';
+import swiperBBV from '@/wxcomponents/swiper/swiper85.vue';
+
+import swiperBBVV from '@/wxcomponents/swiper/swiper86.vue';
+import swiperBBDD from '@/wxcomponents/swiper/swiper87.vue';
+import swiperBBAA from '@/wxcomponents/swiper/swiper88.vue';
+import swiperBBSS from '@/wxcomponents/swiper/swiper89.vue';
+import swiperBBSL from '@/wxcomponents/swiper/swiper90.vue';
 
 
 import bannerA from '@/wxcomponents/banner/banner1.vue';
@@ -344,7 +366,16 @@ export default {
 		swiperBHI,
 		swiperBHO,
 		swiperBHP,
-		
+		swiperBBP,
+		swiperBBO,
+		swiperBBB,
+		swiperBBC,
+		swiperBBV,
+		swiperBBVV,
+		swiperBBDD,
+		swiperBBAA,
+		swiperBBSS,
+		swiperBBSL,
 		swiperBAS,
 		swiperBAD,
 		swiperBAF,
@@ -386,7 +417,7 @@ export default {
 @import '@/static/css/templatePage/custom_nav_bar.scss';
 .template-bless {
 	height: 100vh;
-	width: 100vh;
+	width: 750rpx;
 	overflow: scroll;
 }
 page {

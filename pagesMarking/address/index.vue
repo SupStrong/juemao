@@ -5,7 +5,7 @@
 				<view class="mid" @longtap="handleSelect(item.id)">
 					<view class="address-box">
 						<text v-if="parseInt(item.is_default, 10) === 1" class="tag" :class="'text-' + themeColor.name">默认</text>
-						<text class="address in1line">{{ item.detail }}</text>
+						<text class="address in1line">{{item.province}}{{item.city}}{{item.district}}{{item.detail}}</text>
 					</view>
 					<view class="u-box">
 						<text class="name">{{ item.real_name }}</text>
@@ -39,7 +39,7 @@
 						</picker>
 					</view>
 					<view class="tn-bg-gray--light" style="border-radius: 10rpx;padding: 20rpx 30rpx;margin: 20rpx 0 20rpx 0;">
-						<input placeholder="街道,楼牌号等信息" name="input" placeholder-style="color:#AAAAAA" maxlength="20" v-model="infoForm.district" />
+						<input placeholder="街道,楼牌号等信息" name="input" placeholder-style="color:#AAAAAA" maxlength="20" v-model="infoForm.detail" />
 					</view>
 				</view>
 				<view class="tn-flex-1 justify-content-item tn-margin-sm tn-text-center" style="margin-top: 50rpx;">
@@ -67,12 +67,18 @@ export default {
 			array: ['女', '男', '保密'],
 			addressList: [],
 			infoForm: {
+				address:{
+					city:'',
+					city_id: '',
+					district:'',
+					province:''
+				},
 				real_name: '',
 				phone: '',
-				province_id: '',
+				is_default: 0,
 				city_id: '',
-				area_id: '',
-				district: ''
+				id:'',
+				detail:''
 			},
 
 			region: [],
@@ -82,11 +88,13 @@ export default {
 			actionSheetListData: [
 				{
 					text: '编辑'
-				},{
-					text: '复制'
-				},{
-					text: '删除'
 				},
+				{
+					text: '复制'
+				},
+				{
+					text: '删除'
+				}
 			],
 			actionSheetList: [],
 			district: [],
@@ -97,7 +105,6 @@ export default {
 		};
 	},
 	onLoad() {
-		this.handleGetToken();
 		this.getAll();
 	},
 	methods: {
@@ -106,7 +113,7 @@ export default {
 		},
 		getAll() {
 			getRegionAll().then(res => {
-				if (res.code == 1) {
+				if (res.status == 200) {
 					this.district = res.data;
 					this.initialize();
 				}
@@ -123,51 +130,55 @@ export default {
 				province = [],
 				city = [],
 				area = [];
-			let cityChildren = that.district[0].children || [];
-			let areaChildren = cityChildren.length ? cityChildren[0].children || [] : [];
+			let cityChildren = that.district[0].c || [];
+			let areaChildren = cityChildren.length ? cityChildren[0].c || [] : [];
 			that.district.forEach((item, i) => {
-				province.push(item.name);
-				if (item.name === this.region[0]) {
+				province.push(item.n);
+				if (item.n === this.region[0]) {
 					this.valueRegion[0] = i;
 					this.multiIndex[0] = i;
 				}
 			});
-			that.district[this.valueRegion[0]].children.forEach((item, i) => {
-				if (this.region[1] == item.children) {
+			that.district[this.valueRegion[0]].c.forEach((item, i) => {
+				if (this.region[1] == item.c) {
 					this.valueRegio[1] = i;
 					this.multiIndex[1] = i;
 				}
-				city.push(item.name);
+				city.push(item.n);
 			});
-			that.district[this.valueRegion[0]].children[this.valueRegion[1]].children.forEach((item, i) => {
-				if (this.region[2] == item.children) {
+			that.district[this.valueRegion[0]].c[this.valueRegion[1]].c.forEach((item, i) => {
+				if (this.region[2] == item.c) {
 					this.valueRegio[2] = i;
 					this.multiIndex[2] = i;
 				}
-				area.push(item.name);
+				area.push(item.n);
 			});
 			this.multiArray = [province, city, area];
 		},
 		bindRegionChange: function(e) {
 			let multiIndex = this.multiIndex,
-				province = this.district[multiIndex[0]] || { v: [] },
-				city = province.children[multiIndex[1]] || { v: 0 },
-				area = city.children[multiIndex[2]] || { v: 0 },
+				province = this.district[multiIndex[0]] || {
+					c: []
+				},
+				city = province.c[multiIndex[1]] || {
+					v: 0
+				},
 				multiArray = this.multiArray,
 				value = e.detail.value;
 
 			this.region = [multiArray[0][value[0]], multiArray[1][value[1]], multiArray[2][value[2]]];
-			// province.city_id,city.city_id,area.city_id
-			this.infoForm = {
-				...this.infoForm,
-				province_id: province.city_id,
-				city_id: city.city_id,
-				area_id: area.city_id
+			// this.cityId = city.v;
+			let regionArray = this.region;
+			this.infoForm.address = {
+				province: regionArray[0],
+				city: regionArray[1],
+				district: regionArray[2],
+				city_id: city.v,
 			};
 			this.valueRegion = [0, 0, 0];
 			this.initialize();
 		},
-		bindMultiPickerColumnChange(e) {
+		bindMultiPickerColumnChange: function(e) {
 			let that = this,
 				column = e.detail.column,
 				value = e.detail.value,
@@ -179,20 +190,20 @@ export default {
 			multiIndex[column] = value;
 			switch (column) {
 				case 0:
-					let areaList = currentCity.children[0] || {
+					let areaList = currentCity.c[0] || {
 						c: []
 					};
-					multiArray[1] = currentCity.children.map(item => {
-						return item.name;
+					multiArray[1] = currentCity.c.map(item => {
+						return item.n;
 					});
-					multiArray[2] = areaList.children.map(item => {
-						return item.name;
+					multiArray[2] = areaList.c.map(item => {
+						return item.n;
 					});
 					break;
 				case 1:
-					let cityList = that.district[multiIndex[0]].children[multiIndex[1]].children || [];
+					let cityList = that.district[multiIndex[0]].c[multiIndex[1]].c || [];
 					multiArray[2] = cityList.map(item => {
-						return item.name;
+						return item.n;
 					});
 					break;
 				case 2:
@@ -206,13 +217,13 @@ export default {
 			// #ifdef H5
 			this.multiArray = multiArray;
 			// #endif
+
 			this.multiIndex = multiIndex;
-			// this.setData({ multiArray: multiArray, multiIndex: multiIndex});
 		},
 		//列表
 		getAddressListFun() {
 			getAddressList().then(res => {
-				if (res.code == 1) {
+				if (res.status == 200) {
 					this.addressList = res.data;
 				}
 			});
@@ -221,7 +232,7 @@ export default {
 		// 保存
 		saveFun() {
 			saveAddress(this.infoForm).then(res => {
-				if (res.code == 1) {
+				if (res.status == 200) {
 					this.visible = false;
 				} else {
 					// res.msg

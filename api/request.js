@@ -5,7 +5,8 @@ const platform = uni.getSystemInfoSync().platform
 export const myRequest = (options) => {
 	if (!options.headers) options.headers = {}
 	let newData = {}
-	options.headers['x-token'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVVUlEIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiSUQiOjEsIlVzZXJuYW1lIjoiIiwiTmlja05hbWUiOiIiLCJBdmF0YXIiOiIiLCJBY2NvdW50IjoiMTczMzgxMzIzNTEiLCJhdXRob3JpdHlfaWQiOjAsIkJ1ZmZlclRpbWUiOjg2NDAwLCJleHAiOjE2Njc1NzA1NjEsImlzcyI6InFtUGx1cyIsIm5iZiI6MTY2Njk2NDc2MX0.ysGU2Xx6hB-Y8phOn8TkWkc3pW5YOGVSyCMf7ssPpl8'
+	options.headers['x-token'] = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwd2QiOiJkNDFkOGNkOThmMDBiMjA0ZTk4MDA5OThlY2Y4NDI3ZSIsImlzcyI6ImNybWViLjE3c2hpY2kuY29tIiwiYXVkIjoiY3JtZWIuMTdzaGljaS5jb20iLCJpYXQiOjE2NjcxMTk2MzksIm5iZiI6MTY2NzExOTYzOSwiZXhwIjoxNjY5NzExNjM5LCJqdGkiOnsiaWQiOjEsInR5cGUiOiJhcGkifX0.lAQa2GDjKc54HJagN8BqhveEhDArNSBCNcFPFaO9nYM'
+	options.headers['Authori-zation'] = 'Beare eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwd2QiOiJkNDFkOGNkOThmMDBiMjA0ZTk4MDA5OThlY2Y4NDI3ZSIsImlzcyI6ImNybWViLjE3c2hpY2kuY29tIiwiYXVkIjoiY3JtZWIuMTdzaGljaS5jb20iLCJpYXQiOjE2NjcxMTk2MzksIm5iZiI6MTY2NzExOTYzOSwiZXhwIjoxNjY5NzExNjM5LCJqdGkiOnsiaWQiOjEsInR5cGUiOiJhcGkifX0.lAQa2GDjKc54HJagN8BqhveEhDArNSBCNcFPFaO9nYM'
 	if (options.headers.noFilter) {
 		newData = options.data;
 	} else {
@@ -15,7 +16,7 @@ export const myRequest = (options) => {
 			}
 		}
 	}
-	let newUrl = 'http://api-crmb.17shici.com' + options.url
+	let newUrl = 'http://crmeb.17shici.com' + options.url
 	return new Promise((resolve, reject) => {
 		uni.request({
 			url: newUrl,

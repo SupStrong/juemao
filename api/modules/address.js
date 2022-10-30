@@ -6,24 +6,24 @@ import {myRequest} from "../request.js"
 export function getAddressList (data) {
 	return myRequest({
 		method: "GET",
-		url: '/api/api-address/lists',
+		url: '/api/address/list',
 		data
 	})
 }
 
-//列表接口
+//保存地址
 export function saveAddress (data) {
 	return myRequest({
 		method: "POST",
-		url: '/api/api-address/store',
+		url: '/api/address/edit',
 		data
 	})
 }
 // 
 export function getRegionAll (data) {
 	return myRequest({
-		method: "POST",
-		url: '/api/api-region/getAll',
+		method: "GET",
+		url: '/api/city_list',
 		data
 	})
 }

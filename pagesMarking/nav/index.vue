@@ -45,7 +45,7 @@
                   
                   <view class="tn-classify__content__sub-classify__content tn-flex tn-flex-wrap tn-flex-col-center tn-flex-row-left">
                     <view
-                      v-for="(sub_item,sub_index) in item.classify"
+                      v-for="(sub_item,sub_index) in item.children"
                       :key="sub_index"
                       class="tn-classify__content__sub-classify__content__item tn-flex tn-flex-wrap tn-flex-row-center"
                     >
@@ -68,6 +68,7 @@
 </template>
 
 <script>
+  import { getGoodsNav } from '@/api/modules/goods.js'
   export default {
     name: 'templateShopClassify',
     data() {
@@ -141,7 +142,8 @@
         // 右边scrollView的滚动高度
         rightScrollViewTop: 0,
         // 当前选中的tabbar序号
-        currentTabbarIndex: 0
+        currentTabbarIndex: 0,
+		navList:[]
       }
     },
     computed: {
@@ -162,6 +164,9 @@
         }
       }
     },
+	onLoad() {
+		this.getNavList()
+	},
     onReady() {
       this.$nextTick(() => {
         this.getScrollViewInfo()
@@ -186,6 +191,13 @@
           this.scrollViewHeight = systemInfo.safeArea.height + systemInfo.statusBarHeight - rect.bottom - uni.upx2px(10)
         })
       },
+	  getNavList() {
+	  	getGoodsNav().then(res => {
+	  		if (res.code == 1) {
+				this.navList = res.data
+	  		}
+	  	});
+	  },
       // 获取分类菜单每个item的信息
       getTabbarItemRect() {
         let view = uni.createSelectorQuery().in(this)
