@@ -225,6 +225,18 @@ export default {
     handleAddress(type) {
       if (type == "wx") {
       } else {
+        this.typeName="新增"
+        this.infoForm.address.city = ""
+        this.infoForm.address.city_id=""
+        this.infoForm.address.district=""
+        this.infoForm.address.province=""
+        this.infoForm.real_name=""
+        this.infoForm.phone=""
+        this.infoForm.is_default=0
+        this.infoForm.city_id=""
+        this.infoForm.id=""
+        this.infoForm.detail=""
+        this.region = []
         this.visible = true;
       }
     },
@@ -341,12 +353,14 @@ export default {
     // 保存
     saveFun(type) {
       this.infoForm.id = this.typeName == "新增" ? 0 : this.itemData.id;
+      this.infoForm.address.province = this.region[0]
+      this.infoForm.address.city = this.region[1]
+      this.infoForm.address.district=this.region[2]
       saveAddress(this.infoForm).then((res) => {
         if (res.status == 200) {
           this.visible = false;
-          if (this.typeName == "编辑") {
-            this.getAddressListFun();
-          }
+          this.getAddressListFun();
+         
         } else {
           // res.msg
         }
@@ -362,10 +376,10 @@ export default {
         case "编辑":
           this.visible = !this.visible;
           this.typeName = "编辑";
-          this.infoForm.address.city = this.itemData.city;
+          this.region[0] = this.itemData.province;
+          this.region[1]  = this.itemData.city;
+          this.region[2]  = this.itemData.district;
           this.infoForm.address.city_id = this.itemData.city_id;
-          this.infoForm.address.district = this.itemData.district;
-          this.infoForm.address.province = this.itemData.province;
           this.infoForm.real_name = this.itemData.real_name;
           this.infoForm.phone = this.itemData.phone;
           this.infoForm.detail = this.itemData.detail;
