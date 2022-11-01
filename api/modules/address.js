@@ -35,3 +35,11 @@ export function delAddress (data) {
 		data
 	})
 }
+
+export function setDefault (data) {
+	return myRequest({
+		method: "POST",
+		url: '/api/address/default/set',
+		data
+	})
+}

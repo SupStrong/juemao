@@ -31,8 +31,7 @@
       <view class="btn-left" @click="handleAddress('wx')">从微信导入</view>
       <view class="btn-right" @click="handleAddress('new')">+ 收货地址</view>
     </view>
-    <view class="empty__item tn-margin-top"
-      v-if="addressList.length==0"
+    <view class="empty__item tn-margin-top" v-if="addressList.length == 0"
       ><tn-empty
         icon="https://tnuiimage.tnkjapp.com/empty/alien/2.png"
         text="空空如也"
@@ -133,7 +132,7 @@
             shadow
             fontBold
             open-type="getPhoneNumber"
-            @click="saveFun(typeName)"
+            @click="saveFun()"
           >
             <text class="tn-color-white">保 存 收 货 地 址</text>
           </tn-button>
@@ -158,6 +157,7 @@ import {
   saveAddress,
   getRegionAll,
   delAddress,
+  setDefault,
 } from "@/api/modules/address";
 export default {
   mixins: [loginMixins],
@@ -226,18 +226,18 @@ export default {
     handleAddress(type) {
       if (type == "wx") {
       } else {
-        this.typeName="新增"
-        this.infoForm.address.city = ""
-        this.infoForm.address.city_id=""
-        this.infoForm.address.district=""
-        this.infoForm.address.province=""
-        this.infoForm.real_name=""
-        this.infoForm.phone=""
-        this.infoForm.is_default=0
-        this.infoForm.city_id=""
-        this.infoForm.id=""
-        this.infoForm.detail=""
-        this.region = []
+        this.typeName = "新增";
+        this.infoForm.address.city = "";
+        this.infoForm.address.city_id = "";
+        this.infoForm.address.district = "";
+        this.infoForm.address.province = "";
+        this.infoForm.real_name = "";
+        this.infoForm.phone = "";
+        this.infoForm.is_default = 0;
+        this.infoForm.city_id = "";
+        this.infoForm.id = "";
+        this.infoForm.detail = "";
+        this.region = [];
         this.visible = true;
       }
     },
@@ -352,39 +352,53 @@ export default {
     },
 
     // 保存
-    saveFun(type) {
+    saveFun() {
       this.infoForm.id = this.typeName == "新增" ? 0 : this.itemData.id;
-      this.infoForm.address.province = this.region[0]
-      this.infoForm.address.city = this.region[1]
-      this.infoForm.address.district=this.region[2]
+      this.infoForm.address.province = this.region[0];
+      this.infoForm.address.city = this.region[1];
+      this.infoForm.address.district = this.region[2];
       saveAddress(this.infoForm).then((res) => {
         if (res.status == 200) {
           this.visible = false;
           this.getAddressListFun();
-         
         } else {
           // res.msg
         }
       });
     },
 
-    actionSheetClick(index) {
-      uni.hideKeyboard();
-
-      let type = this.actionSheetList[index].text;
-
-      switch (type) {
-        case "编辑":
+    setDataFun(){
           this.visible = !this.visible;
           this.typeName = "编辑";
           this.region[0] = this.itemData.province;
-          this.region[1]  = this.itemData.city;
-          this.region[2]  = this.itemData.district;
+          this.region[1] = this.itemData.city;
+          this.region[2] = this.itemData.district;
           this.infoForm.address.city_id = this.itemData.city_id;
           this.infoForm.real_name = this.itemData.real_name;
           this.infoForm.phone = this.itemData.phone;
           this.infoForm.detail = this.itemData.detail;
           this.infoForm.id = this.itemData.id;
+          this.infoForm.is_default = this.itemData.is_default;
+    },
+    actionSheetClick(index) {
+      uni.hideKeyboard();
+      let type = this.actionSheetList[index].text;
+      switch (type) {
+        case "设为默认地址":
+          setDefault({ id: this.itemData.id }).then((res) => {
+            if (res.status == 200) {
+              console.log("默认地址设置成功");
+              this.getAddressListFun();
+            }
+          });
+          break;
+        case "取消默认地址":
+          this.setDataFun()
+          this.infoForm.is_default = 0
+          this.saveFun()
+          break;
+        case "编辑":
+         this.setDataFun()
           break;
         case "删除":
           delAddress({ id: this.itemData.id }).then((res) => {
