@@ -32,6 +32,7 @@
       <view class="btn-right" @click="handleAddress('new')">+ 收货地址</view>
     </view>
     <view class="empty__item tn-margin-top"
+      v-if="addressList.length==0"
       ><tn-empty
         icon="https://tnuiimage.tnkjapp.com/empty/alien/2.png"
         text="空空如也"
