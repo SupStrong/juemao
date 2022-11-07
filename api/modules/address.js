@@ -19,11 +19,27 @@ export function saveAddress (data) {
 		data
 	})
 }
-// 
+
 export function getRegionAll (data) {
 	return myRequest({
 		method: "GET",
 		url: '/api/city_list',
+		data
+	})
+}
+
+export function delAddress (data) {
+	return myRequest({
+		method: "POST",
+		url: '/api/address/del',
+		data
+	})
+}
+
+export function setDefault (data) {
+	return myRequest({
+		method: "POST",
+		url: '/api/address/default/set',
 		data
 	})
 }
