@@ -1,7 +1,7 @@
 <template>
 	<div class="container" catchtouchmove="ture">
 		<div class="content" :class="iphoneModel ? 'X' : ''">
-			<l-painter class="fl-row-center" isCanvasToTempFilePath @success="onImgOk($event)" :board="templateArr[currentTab].template" :dirty="true" />
+			<l-painter class="fl-row-center" isCanvasToTempFilePath @success="shareImg = $event" :board="templateArr[currentTab].template" :dirty="true" />
 		</div>
 		<div class="toolbar" :class="iphoneModel ? 'X' : ''">
 			<scroll-view class="item-box" scroll-x>
@@ -44,53 +44,36 @@ export default {
 			itemsList: [
 				{
 					id: 202,
+					type: 1,
+					title: '笨蛋',
+					status: 0,
 					template: {
+						type: 'image',
 						width: '500',
 						height: '875',
-						type: 'image',
-						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
+						src: 'http://admin.cw100.com/storage/uploads/image/2022/11/01/c43576d5c09a1667793a0c93c784d5dc.png',
 						css: {
-							// 根节点若无尺寸，自动获取父级节点
-							width: '750rpx',
-							height: '1160rpx'
+							width: '500rpx',
+							height: '875rpx',
+							background: ''
 						},
 						views: [
 							{
+								type: 'image',
+								src: 'http://admin.cw100.com//storage/data/mini_wxcbe60162f9dc451c/2020/04/21/_a=3361&t=kq&sid=87&cid=110100.jpg',
 								css: {
-									background: '#07c160',
-									height: '120rpx',
-									width: '120rpx',
-									display: 'inline-block'
-								},
-								type: 'view'
-							},
-							{
-								css: {
-									background: '#1989fa',
-									height: '120rpx',
-									width: '120rpx',
-									borderTopRightRadius: '60rpx',
-									borderBottomLeftRadius: '60rpx',
-									display: 'inline-block',
-									margin: '0 30rpx'
-								},
-								views: [],
-								type: 'view'
-							},
-							{
-								css: {
-									background: '#ff9d00',
-									height: '120rpx',
-									width: '120rpx',
-									borderRadius: '50%',
-									display: 'inline-block'
-								},
-								views: [],
-								type: 'view'
+									hasBorder: 0,
+									right: '28rpx',
+									bottom: '122rpx',
+									position: 'fixed',
+									width: '161rpx',
+									height: '161rpx',
+									borderRadius: '0'
+								}
 							}
 						]
 					},
-					small_bg: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/9a1e549ccbf3db9c75d33a0b8e99ee47.jpg'
+					small_bg: 'https://guide.cw100.com/storage/uploads/image/2021/06/13/9a1e549ccbf3db9c75d33a0b8e99ee47.jpg'
 				},
 				{
 					id: 201,
@@ -99,8 +82,8 @@ export default {
 						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
 						css: {
 							// 根节点若无尺寸，自动获取父级节点
-							width: '750rpx',
-							height: '1160rpx'
+							width: '600rpx',
+							height: '1050rpx'
 						},
 						views: [
 							{
@@ -117,14 +100,16 @@ export default {
 									background: '#333333',
 									height: '120rpx',
 									width: '120rpx',
-									top:"120rpx",
+									position: 'fixed',
+									top: '120rpx',
+									right: '139rpx',
 									borderTopRightRadius: '60rpx',
 									borderBottomLeftRadius: '60rpx',
 									display: 'inline-block',
 									margin: '0 30rpx'
 								},
 								views: [],
-								type: 'view'
+								type: 'image'
 							},
 							{
 								css: {
@@ -189,11 +174,6 @@ export default {
 			// console.log(this.templateArr[thicurrentTab].template,"templateArr[currentTab].template")
 			this.currentTab = oIndex;
 		},
-		onImgOk(e) {
-			wx.hideLoading();
-			// console.log(e,"e.mp.detail.path")
-			//    this.shareImg = e.mp.detail.path;
-		},
 		saveToCarame() {
 			let _this = this;
 			wx.showLoading({
@@ -235,9 +215,6 @@ export default {
 		routeData: {
 			handler: function(val, oldval) {
 				if (val.type == 1) {
-					wx.setNavigationBarTitle({
-						title: '门店海报'
-					});
 					// id = 需要的ID
 					// type = 类型
 					// type_son = 子类
@@ -304,7 +281,16 @@ export default {
 page {
 	height: 100%;
 }
-
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fl-row-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .toolbar {
 	position: fixed;
 	bottom: 0;
