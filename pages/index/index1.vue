@@ -17,7 +17,6 @@
 		<view class="goods-list" style="position: relative;padding: 0 16rpx;display: flow-root;">
 			<activityBL />
 			<activityBP />
-			<activityBR />
 			<activityB style='margin-right: 20rpx;'></activityB>
 			<activityA></activityA>
 			<activityC style='margin-right: 20rpx;'></activityC>
@@ -37,6 +36,7 @@
 						</view> -->
 						<view class="goods-list" style="position: relative;display: flow-root;">
 							<activityP></activityP>
+							<activityBR />
 						</view>
 						<view class="goods-list" style="position: relative;display: flow-root;">
 							<activityS></activityS>
