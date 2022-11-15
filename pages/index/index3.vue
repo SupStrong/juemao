@@ -14,7 +14,10 @@
 		<view class="" @click="handleBtn">
 			按钮
 		</view>
-		
+		<swiperBBSP />
+		<swiperBBSK />
+		<swiperBBSC />
+		<swiperBBSA />
 		<!-- <swiperBBX /> -->
 		<!-- <swiperBBP /> -->
 	<!-- 	<swiperBBO />
@@ -280,6 +283,11 @@ import swiperBBAA from '@/wxcomponents/swiper/swiper88.vue';
 import swiperBBSS from '@/wxcomponents/swiper/swiper89.vue';
 import swiperBBSL from '@/wxcomponents/swiper/swiper90.vue';
 
+import swiperBBSP from '@/wxcomponents/swiper/swiper91.vue';
+import swiperBBSK from '@/wxcomponents/swiper/swiper92.vue';
+import swiperBBSC from '@/wxcomponents/swiper/swiper93.vue';
+import swiperBBSA from '@/wxcomponents/swiper/swiper94.vue';
+
 
 import bannerA from '@/wxcomponents/banner/banner1.vue';
 import bannerB from '@/wxcomponents/banner/banner2.vue';
@@ -397,7 +405,11 @@ export default {
 		swiperBBZ,
 		swiperBBX,
 		// bannerG,
-		loginA
+		loginA,
+		swiperBBSP,
+		swiperBBSK,
+		swiperBBSC,
+		swiperBBSA,
 	},
 	mounted() {
 		console.log("-----")
