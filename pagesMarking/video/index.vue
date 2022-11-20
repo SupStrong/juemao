@@ -21,12 +21,8 @@
         :autoplay="false" duration="500" interval="5000" @change="cardSwiper" > 
         <swiper-item v-for="(item,index) in swiperList0" :key="index" :class="cardCur==index?'cur':''">
           <view class="swiper-item image-banner">
-            
-            
-                      <video :id="`video-${item.id}`" :src="item.mp4"
-                      loop style="height: 100vh;width: 100vw;"></video>
-            
-            
+			  <video :id="`video-${item.id}`" :src="item.mp4"
+			  loop style="height: 100vh;width: 100vw;"></video>
           </view>
           <view class="swiper-item-icon image-banner">
             <view class="">
@@ -79,12 +75,8 @@
         :autoplay="false" duration="500" interval="5000" @change="cardSwiper" > 
         <swiper-item v-for="(item,index) in swiperList1" :key="index" :class="cardCur==index?'cur':''">
           <view class="swiper-item image-banner">
-            
-            
-                      <video :id="`video-${item.id}`" :src="item.mp4"
-                      loop style="height: 100vh;width: 100vw;"></video>
-            
-            
+			  <video :id="`video-${item.id}`" :src="item.mp4"
+			  loop style="height: 100vh;width: 100vw;"></video>
           </view>
           <view class="swiper-item-icon image-banner">
             <view class="">

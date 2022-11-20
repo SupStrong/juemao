@@ -10,10 +10,67 @@
 		</tn-nav-bar>
 
 		<view class="top-backgroup"><image class="backgroud-image" src="https://tnuiimage.tnkjapp.com/index_bg/basic_new.jpg" mode=""></image></view>
-		
-		<view class="" @click="handleBtn">
-			按钮
-		</view>
+
+		<view class="" @click="handleBtn">按钮</view>
+		<view class="" @click="handleBtn2">按钮2</view>
+	<!-- 	<tn-modal v-model="isVisibile2" :custom="true" :showCloseBtn="true">
+			<view class="custom-modal-content">
+				<view class="rax-view-v2 Subscribe--subScribeInner--Uns6ZGu" data-before-current-y="156.015625" data-appeared="true" data-has-appeared="true">
+					<image
+						class="Subscribe--subScribeHearder--2ozHx0G"
+						src="//gw.alicdn.com/imgextra/i3/O1CN016WPVRS1CIbhRV0fAh_!!6000000000058-2-tps-630-364.png"
+					/>
+					<image
+						class="Subscribe--subScribeIcon--3ObPNNi"
+						src="//gw.alicdn.com/imgextra/i4/O1CN017OZtyr1TlK03TK5gJ_!!6000000002422-2-tps-40-41.png"
+					/>
+					<text lines="1" class="rax-text-v2 Subscribe--subScribeTitle--22flWzo">恭喜你订阅成功</text>
+					<text lines="1" class="rax-text-v2 Subscribe--subScribeCaption--CIlUiwk">记得回【有好货首页-右上角我的兴趣】查</text>
+					<text lines="1" class="rax-text-v2 Subscribe--subScribeCon--3xh3EDQ">看我已关注以及更多推荐兴趣哦</text>
+					<view class="rax-view-v2 Subscribe--subScribeBtn--mSaxfI2">我知道啦</view>
+				</view>
+			</view>
+		</tn-modal> -->
+		<tn-modal v-model="isVisibile2" width='70%' padding='0 0' :custom="true">
+			<view
+				class="rax-modal-main"
+				style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: auto; height: auto; background-color: transparent; position: relative; border-radius: 3.2vw; -webkit-box-align: center; align-items: center;"
+			>
+				<view
+					style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: 72vw; position: relative; border-radius: 3.2vw; -webkit-box-align: center; align-items: center; background-color: rgb(248, 248, 248);"
+				>
+					<view
+						style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; place-content: flex-start center; flex-shrink: 0; position: relative; width: 72vw; height: 35.6vw; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; z-index: 1;"
+					>
+						<image
+							class="rax-image "
+							src="//gw.alicdn.com/tfs/TB16u2PoQL0gK0jSZFxXXXWHVXa-395-285.png_450x10000.jpg_.webp"
+							style="width: 205px; height: 205px; margin-bottom: 5.33333vw;"
+						/>
+					</view>
+					<text
+						style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 5.06667vw; white-space: pre-wrap; color: rgb(51, 51, 51); line-height: 7.2vw;"
+					>
+						恭喜开到了
+					</text>
+					<text
+						style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 5.06667vw; white-space: pre-wrap; color: rgb(51, 51, 51); line-height: 7.2vw;"
+					>
+						机长满满的爱
+					</text>
+					<view
+						style="border: 0px solid black; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; place-content: flex-start center; flex-shrink: 0; width: 58vw; height: 12vw; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; border-radius: 13.3333vw; background-image: linear-gradient(to right, rgb(129, 85, 255), rgb(145, 144, 244)); margin-top: 12vw;"
+					>
+						<text
+							style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 32rpx; white-space: pre-wrap; color: rgb(255, 255, 255);"
+						>
+							邀请好友再开宝箱
+						</text>
+					</view>
+				</view>
+				<image class="rax-image " src="//gw.alicdn.com/tfs/TB1L3jDoQT2gK0jSZPcXXcKkpXa-204-204.png_110x10000.jpg_.webp" style="width: 1.02rem; height: 1.02rem; margin-top: 8vw;" />
+			</view>
+		</tn-modal>
 		<!-- <swiperBBSP />
 		<swiperBBSK />
 		<swiperBBSC />
@@ -21,14 +78,18 @@
 		
 		<swiperBBSD /> -->
 		<!-- <swiperBBSG /> -->
-		<swiperBBSJ />
+		<!-- <swiperBBSJ />
 		<swiperBBSE />
 		<swiperBBST />
-		<swiperBBSW />
-		
+		<swiperBBSW /> -->
+		<swiperBBSWW />
+		<swiperBBSWP />
+		<swiperBBSWO />
+		<swiperBBSWI />
+		<!-- <swiperBBSWL /> -->
 		<!-- <swiperBBX /> -->
 		<!-- <swiperBBP /> -->
-	<!-- 	<swiperBBO />
+		<!-- 	<swiperBBO />
 		<swiperBBB />
 		<swiperBBC />
 		<swiperBBV /> -->
@@ -53,13 +114,13 @@
 		<swiperBAL />
 		<swiperBAZ />
 		<swiperBAX /> -->
-		
+
 		<!-- <swiperBBVV />
 		<swiperBBDD /> -->
 		<!-- <swiperBBAA /> -->
-	<!-- 	<swiperBBSS />
+		<!-- 	<swiperBBSS />
 		<swiperBBSL /> -->
-		
+
 		<!-- 
 		<swiperBHQ></swiperBHQ>
 		<swiperBHW></swiperBHW>
@@ -99,8 +160,7 @@
 		<swiperCC></swiperCC>
 		<swiperGG></swiperGG>
 		<swiperJJ></swiperJJ> -->
-		
-		
+
 		<!-- <swiperBB></swiperBB> -->
 		<!-- <swiperDD></swiperDD>
 		<swiperA></swiperA>
@@ -215,8 +275,8 @@ import swiperW from '@/wxcomponents/swiper/swiper18.vue';
 import swiperWW from '@/wxcomponents/swiper/swiper19.vue';
 import swiperVV from '@/wxcomponents/swiper/swiper20.vue';
 import swiperEE from '@/wxcomponents/swiper/swiper21.vue';
-import swiperAA from '@/wxcomponents/swiper/swiper22.vue'
-import swiperBB from '@/wxcomponents/swiper/swiper23.vue'
+import swiperAA from '@/wxcomponents/swiper/swiper22.vue';
+import swiperBB from '@/wxcomponents/swiper/swiper23.vue';
 // import swiperBB from '@/wxcomponents/swiper/swiper23.vue'
 import swiperCC from '@/wxcomponents/swiper/swiper27.vue';
 import swiperDD from '@/wxcomponents/swiper/swiper28.vue';
@@ -254,9 +314,6 @@ import swiperBHI from '@/wxcomponents/swiper/swiper58.vue';
 import swiperBHO from '@/wxcomponents/swiper/swiper59.vue';
 import swiperBHP from '@/wxcomponents/swiper/swiper60.vue';
 
-
-
-
 import swiperBAS from '@/wxcomponents/swiper/swiper61.vue';
 import swiperBAD from '@/wxcomponents/swiper/swiper62.vue';
 import swiperBAF from '@/wxcomponents/swiper/swiper63.vue';
@@ -267,7 +324,6 @@ import swiperBAK from '@/wxcomponents/swiper/swiper67.vue';
 import swiperBAL from '@/wxcomponents/swiper/swiper68.vue';
 import swiperBAZ from '@/wxcomponents/swiper/swiper69.vue';
 import swiperBAX from '@/wxcomponents/swiper/swiper70.vue';
-
 
 import swiperBBS from '@/wxcomponents/swiper/swiper71.vue';
 import swiperBBD from '@/wxcomponents/swiper/swiper72.vue';
@@ -303,6 +359,11 @@ import swiperBBSE from '@/wxcomponents/swiper/swiper98.vue';
 import swiperBBST from '@/wxcomponents/swiper/swiper99.vue';
 import swiperBBSW from '@/wxcomponents/swiper/swiper100.vue';
 
+import swiperBBSWW from '@/wxcomponents/swiper/swiper101.vue';
+import swiperBBSWP from '@/wxcomponents/swiper/swiper102.vue';
+import swiperBBSWO from '@/wxcomponents/swiper/swiper103.vue';
+import swiperBBSWI from '@/wxcomponents/swiper/swiper104.vue';
+import swiperBBSWL from '@/wxcomponents/swiper/swiper105.vue';
 
 import bannerA from '@/wxcomponents/banner/banner1.vue';
 import bannerB from '@/wxcomponents/banner/banner2.vue';
@@ -322,7 +383,8 @@ export default {
 		return {
 			list: ['电影资源仅提供介绍，请上拥有版权的APP观看', '排行仅为个人喜欢，不喜勿喷', '抓住那只猪科技有限公司出品', '今天想找个人一起去看电影'],
 			closeNoticeShow: true,
-			isVisibile:false	
+			isVisibile: false,
+			isVisibile2: false
 		};
 	},
 	components: {
@@ -425,25 +487,33 @@ export default {
 		swiperBBSK,
 		swiperBBSC,
 		swiperBBSA,
-		
+
 		swiperBBSD,
 		swiperBBSG,
 		swiperBBSJ,
 		swiperBBSE,
 		swiperBBST,
-		swiperBBSW
+		swiperBBSW,
+		swiperBBSWW,
+		swiperBBSWP,
+		swiperBBSWO,
+		swiperBBSWI,
+		swiperBBSWL
 	},
 	mounted() {
-		console.log("-----")
+		console.log('-----');
 	},
 	methods: {
-		handleBtn(){
-			this.isVisibile = true
+		handleBtn() {
+			this.isVisibile = true;
 		},
-		handleUpdate(){
-			this.isVisibile = false
+		handleBtn2() {
+			this.isVisibile2 = true;
+		},
+		handleUpdate() {
+			this.isVisibile = false;
 		}
-	},
+	}
 };
 </script>
 
@@ -721,4 +791,143 @@ page {
 		height: 100%;
 	}
 }
+.rax-view-v2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-content: flex-start;
+  border: 0 solid #000;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.Subscribe--subScribeMengCeng--2EOHFWE,
+.Subscribe--subScribeWrap--3B5xU4C {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+.Subscribe--subScribeMengCeng--2EOHFWE {
+  background-color: #000;
+  opacity: 0.6;
+  top: 0;
+}
+.Subscribe--subScribeInner--Uns6ZGu {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  right: 7.46667vw;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5.33333vw;
+  background-color: #fff;
+  width: 84vw;
+  height: 94.66667vw;
+  margin-top: -47.33333vw;
+  transform: scale(1);
+}
+.Subscribe--subScribeHearder--2ozHx0G {
+  position: relative;
+  top: -0.26667vw;
+  width: 84vw;
+  height: 48.4vw;
+}
+.Subscribe--subScribeIcon--3ObPNNi {
+  position: absolute;
+  top: 53.33333vw;
+  left: 19.46667vw;
+  width: 5.33333vw;
+  height: 5.33333vw;
+}
+.Subscribe--subScribeTitle--22flWzo {
+  position: absolute;
+  top: 52.66667vw;
+  left: 28.53333vw;
+  white-space: nowrap;
+  color: #333;
+  font-family: PingFang SC;
+  font-size: 4.8vw;
+  font-weight: 400;
+}
+.Subscribe--subScribeCaption--CIlUiwk {
+  left: 8.66667vw;
+  top: 62.53333vw;
+}
+.Subscribe--subScribeCaption--CIlUiwk,
+.Subscribe--subScribeCon--3xh3EDQ {
+  position: absolute;
+  color: #666;
+  font-family: PingFang SC;
+  font-size: 3.46667vw;
+  font-weight: 400;
+}
+.Subscribe--subScribeCon--3xh3EDQ {
+  top: 67.33333vw;
+  left: 17.86667vw;
+}
+.Subscribe--subScribeBtn--mSaxfI2 {
+  width: 75.2vw;
+  height: 12.66667vw;
+  border-radius: 6.33333vw;
+  background-image: linear-gradient(90deg, #199fff, #007ae6);
+  position: absolute;
+  top: 76.66667vw;
+  left: 4.53333vw;
+  text-align: center;
+  line-height: 12.66667vw;
+  color: #fff;
+  font-weight: 400;
+  font-size: 4.8vw;
+}
+.Subscribe--nofocus--K3-ZqzX {
+  font-size: 3.73333vw;
+  color: #fff;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1.6vw;
+  width: 48.53333vw;
+  height: 10vw;
+  line-height: 10vw;
+  white-space: nowrap;
+  text-align: center;
+}
+.Subscribe--nofocus--K3-ZqzX,
+.Subscribe--unfirst--bzaW2xO {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.Subscribe--unfirst--bzaW2xO {
+  width: 81.46667vw;
+  height: 28.93333vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  border-radius: 4.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Subscribe--successFocus--1jARuhl {
+  font-size: 4.8vw;
+  color: #fff;
+  margin-top: 4.53333vw;
+}
+.Subscribe--successText--hLwQtyN {
+  font-size: 3.46667vw;
+  color: #fff;
+  opacity: 1;
+  margin-top: 2.4vw;
+}
+.Subscribe--successCon--3aYcpI_ {
+  font-size: 3.46667vw;
+  color: #fff;
+  opacity: 1;
+  margin-top: 1.33333vw;
+}
+
 </style>

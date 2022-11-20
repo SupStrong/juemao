@@ -24,6 +24,7 @@
 			<activityC style='margin-right: 20rpx;'></activityC>
 			<activityA></activityA>
 			<activityE></activityE>
+			<activityPP></activityPP>
 		</view>
 
 		<!-- 商品 -->
@@ -237,6 +238,7 @@ import activityBO from '@/wxcomponents/activity/activity16.vue';
 import activityBL from '@/wxcomponents/activity/activity18.vue';
 import activityBP from '@/wxcomponents/activity/activity19.vue';
 import activityBR from '@/wxcomponents/activity/activity20.vue';
+import activityPP from '@/wxcomponents/activity/activity21.vue';
 
 export default {
 	name: 'index',
@@ -261,6 +263,7 @@ export default {
 		activityBL,
 		activityBP,
 		activityBR,
+		activityPP
 	},
 	data() {
 		return {
