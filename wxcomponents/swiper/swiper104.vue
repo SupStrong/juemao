@@ -12,8 +12,6 @@
 				style="box-sizing: border-box; display: flex; position: relative; flex-direction: row; flex-shrink: 0; place-content: flex-start center; border-width: 0vw; border-style: solid; border-color: black; margin: 0vw; padding: 0vw; min-width: 0vw; width: 16.2667vw; height: 16.2667vw; align-items: center;"
 			>
 				<image
-					lazyload="false"
-					data-once="true"
 					src="//gw.alicdn.com/imgextra/i4/O1CN01tI7dSF1UJfi2Sk8pP_!!6000000002497-2-tps-92-104.png_140x10000.jpg_.webp"
 					style="width: 14.9333vw; height: 14.1333vw; position: absolute; left: 0.6667vw; top: 0vw; object-fit: contain;"
 				/>
