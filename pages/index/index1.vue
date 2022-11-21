@@ -25,6 +25,7 @@
 			<activityA></activityA>
 			<activityE></activityE>
 			<activityPP></activityPP>
+			<activityPF></activityPF>
 		</view>
 
 		<!-- 商品 -->
@@ -239,6 +240,7 @@ import activityBL from '@/wxcomponents/activity/activity18.vue';
 import activityBP from '@/wxcomponents/activity/activity19.vue';
 import activityBR from '@/wxcomponents/activity/activity20.vue';
 import activityPP from '@/wxcomponents/activity/activity21.vue';
+import activityPF from '@/wxcomponents/activity/activity22.vue';
 
 export default {
 	name: 'index',
@@ -263,7 +265,8 @@ export default {
 		activityBL,
 		activityBP,
 		activityBR,
-		activityPP
+		activityPP,
+		activityPF
 	},
 	data() {
 		return {
