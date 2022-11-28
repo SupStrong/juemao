@@ -19,16 +19,6 @@
 					<text class="rax-text-v2 TodayNew--titleNum--8zmMSUU">00</text>
 				</view>
 			</view>
-			<view class="rax-view-v2 TodayNew--down--3Jlip8-">
-				<text class="rax-text-v2 TodayNew--downLeft--2BKV4mH">距结束仅剩</text>
-				<view class="rax-view-v2 TodayNewCountdown--countDown--3Kygjbo">
-					<text class="rax-text-v2 TodayNewCountdown--number--2mPFbp3">13</text>
-					<text class="rax-text-v2 TodayNewCountdown--colon--EyUy_lm">:</text>
-					<text class="rax-text-v2 TodayNewCountdown--number--2mPFbp3">34</text>
-					<text class="rax-text-v2 TodayNewCountdown--colon--EyUy_lm">:</text>
-					<text class="rax-text-v2 TodayNewCountdown--number--2mPFbp3">19</text>
-				</view>
-			</view>
 			<view class="rax-view-v2 TodayNew--producs--28b3msm" style="width:56.00000vw;margin-left:3.20000vw;margin-right:3.20000vw;">
 				<view class="rax-view-v2" style="margin-left:;">
 					<view class="rax-view-v2 TodayNew--try--EzE9Yks" data-appeared="true" data-has-appeared="true" data-before-current-y="285">
@@ -72,8 +62,6 @@
 			<view class="rax-view-v2" style="flex-direction:row;margin-top:3.20000vw;">
 				<view class="rax-view-v2 TodayNew--splitLine--2KEvHAj"></view>
 				<view class="rax-view-v2" style="align-items:flex-start;">
-					<text class="rax-text-v2 TodayNew--titlePart--1YPIYx9">今日权益</text>
-					<text class="rax-text-v2 TodayNew--quanyiDesc--13bk939">0.01元随心试</text>
 					<image
 						class="TodayNew--quanyiItemImg--2Umfph3"
 						src="https://gw.alicdn.com/imgextra/i4/O1CN0167LVb71mAf3FtH6FU_!!6000000004914-54-tps-200-200.apng"
@@ -132,7 +120,7 @@ export default {
 	  justify-content: space-between;
 	  align-items: center;
 	  width: 96.8vw;
-	  height: 37.46667vw;
+	  height: 32.46667vw;
 	  margin: 0 auto;
 	  overflow: hidden;
 	  background-size: cover;
@@ -142,7 +130,7 @@ export default {
 	}
 	.TodayNew--bannerLeft--3Gexbx_ {
 	  min-width: 64vw;
-	  height: 37.46667vw;
+	  height: 32.46667vw;
 	}
 	.TodayNew--herald--2qApOpu {
 	  margin-top: 3.2vw;
@@ -257,7 +245,7 @@ export default {
 	.TodayNew--quanyiItemImg--2Umfph3 {
 	  width: 20.8vw;
 	  height: 20.8vw;
-	  margin-top: 1.6vw;
+	  margin-top: 4.6vw;
 	  border-radius: 2.4vw;
 	}
 	.TodayNew--todayNewGoods--1YLuRS1 {

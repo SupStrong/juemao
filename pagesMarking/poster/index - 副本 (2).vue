@@ -14,100 +14,49 @@
 		<swiper
 			class="card-swiper tn-margin-top-sm"
 			:circular="true"
-			:autoplay="true"
+			:autoplay="false"
 			duration="500"
 			interval="5000"
 			previous-margin="75rpx"
 			next-margin="75rpx"
 			@change="cardSwiper"
-			style="margin-top: 120px;"
+			style="margin-top: 45px;"
 		>
 			<swiper-item v-for="(item, index) in itemsList" :key="index">
-				<view class="tnphone-black-min swiper-item  wow fadeInLeft2">
-					<view class="skin wow fadeInRight2">
-						<view class="screen wow fadeInUp2">
-							<view class="peak wow">
-								<view class="sound"></view>
-								<view class="lens"></view>
-							</view>
-
-							<view class="image-banner">
-								<l-painter class="fl-row-center" isCanvasToTempFilePath @success="shareImg = $event" :board="item.template" :dirty="true" />
+				<view class="" style="width: 100%;">
+					<view class="tnphone-black-min swiper-item  wow fadeInLeft2">
+						<view class="skin wow fadeInRight2">
+							<view class="screen wow fadeInUp2">
+								<view class="peak wow">
+									<view class="sound"></view>
+									<view class="lens"></view>
+								</view>
+					
+								<view class="image-banner">
+									<l-painter class="fl-row-center" isCanvasToTempFilePath @success="handleSuccess($event,index)" :board="item.template" :dirty="true" />
+								</view>
 							</view>
 						</view>
 					</view>
-				</view>
-				<view class="swiper-item-text tn-text-center">
-					<view class="tn-text-xl tn-text-bold tn-padding-top-xs">{{ item.name }}</view>
+					<view class="swiper-item-text tn-text-center">
+						<view class="tn-text-xl tn-text-bold tn-padding-top-xs">{{ item.name }}</view>
+					</view>
 				</view>
 			</swiper-item>
 		</swiper>
 
 		<view class="tn-text-center year-text">
-			<div class="save-button fl-row-center" @click="saveToCarame()"><span>保存到相册</span></div>
+			 <tn-button :shadow="true" width="100%" height="100rpx" backgroundColor="#01BEFF" fontColor="#FFFFFF" margin="10rpx 0" class='save-button'  @click="saveToCarame()">保存到相册</tn-button>
 		</view>
 
 		<!-- 底部背景图片-->
 		<view class="login__bg login__bg--bottom"><image src="https://tnuiimage.tnkjapp.com/bless/bless-bottom.jpg" mode="widthFix"></image></view>
-
-		<!-- 底部tabbar start-->
-		<view class="tabbar footerfixed">
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon"><image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-home.png"></image></view>
-				<view class="tn-color-gray">首页</view>
-			</view>
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon"><image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-flower.png"></image></view>
-				<view class="tn-color-gray">发现</view>
-			</view>
-
-			<view class="action bar-center" @click="navTuniaoHome">
-				<view class="nav-index-button">
-					<view class="nav-index-button__content">
-						<view class="nav-index-button__content--icon tn-flex tn-flex-row-center tn-flex-col-center">
-							<!-- <view class="tn-icon-logo-tuniao"></view> -->
-							<view class="bar-circle"><image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-tiger.png"></image></view>
-						</view>
-					</view>
-
-					<view class="nav-index-button__meteor">
-						<view class="nav-index-button__meteor__wrapper">
-							<view
-								v-for="(item, index) in 6"
-								:key="index"
-								class="nav-index-button__meteor__item"
-								:style="{ transform: `rotateX(${-60 + 30 * index}deg) rotateZ(${-60 + 30 * index}deg)` }"
-							>
-								<view class="nav-index-button__meteor__item--pic"></view>
-							</view>
-						</view>
-					</view>
-				</view>
-				<!-- <view class="tn-color-gray">发布</view> -->
-			</view>
-
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon">
-					<!-- <view class="tn-icon-image-text tn-color-gray--dark">
-          </view> -->
-					<image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-china.png"></image>
-				</view>
-				<view class="tn-color-gray">祝福</view>
-			</view>
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon">
-					<!-- <view class="tn-icon-my tn-color-gray--dark">
-          </view> -->
-					<image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-money.png"></image>
-				</view>
-				<view class="tn-color-gray">我的</view>
-			</view>
-		</view>
 	</view>
 </template>
 
 <script>
 import template_page_mixin from '@/libs/mixin/template_page_mixin.js';
+import { mapState, mapMutations } from 'vuex';
 const customStyle = '';
 export default {
 	name: 'TemplateBless',
@@ -115,8 +64,9 @@ export default {
 	data() {
 		return {
 			cardCur: 0,
-			shareImg: '',
+			shareImg: [],
 			customStyle: customStyle,
+			authorization: false,
 			itemsList: [
 				{
 					id: 202,
@@ -157,7 +107,7 @@ export default {
 					id: 201,
 					template: {
 						type: 'image',
-						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
+						src: 'https://tnuiimage.tnkjapp.com/swiper/swiper1.jpg',
 						css: {
 							// 根节点若无尺寸，自动获取父级节点
 
@@ -210,7 +160,7 @@ export default {
 					id: 201,
 					template: {
 						type: 'image',
-						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
+						src: 'https://tnuiimage.tnkjapp.com/swiper/swiper4.jpg',
 						css: {
 							// 根节点若无尺寸，自动获取父级节点
 							width: '530rpx',
@@ -264,14 +214,61 @@ export default {
 	onLoad() {
 		this.$t.mpShare.title = '🐅🐅💢🥳您有一条新年祝福待签收';
 	},
+	computed: {
+		...mapState({
+			iphoneModel: state => state.iphoneModel,
+		})
+	},
 	methods: {
 		// cardSwiper
 		cardSwiper(e) {
 			this.cardCur = e.detail.current;
 		},
+		handleSuccess(e,index){
+			console.log(e,index,"rrere")
+			this.shareImg[index] = e;
+		},
 		// 跳转到
 		navTuniaoUI(e) {
 			wx.vibrateShort();
+		},
+		saveToCarame() {
+			let _this = this;
+			wx.showLoading({
+				title: '图片保存中...'
+			});
+			wx.getSetting({
+				success(res) {
+					if (res.authSetting['scope.writePhotosAlbum'] == true) {
+						_this.saveImage();
+					}
+					if (!res.authSetting['scope.writePhotosAlbum']) {
+						uni.authorize({
+							scope: 'scope.writePhotosAlbum',
+							success() {
+								_this.saveImage();
+							},
+							fail(errMsg) {
+								_this.authorization = true;
+								showPopup('请点击授权按钮', 0);
+							}
+						});
+					}
+				}
+			});
+		},
+		saveImage() {
+			let _this = this;
+			_this.authorization = false;
+			uni.saveImageToPhotosAlbum({
+				filePath: _this.shareImg[_this.cardCur],
+				success: function() {
+					uni.hideLoading();
+					uni.showLoading({
+						title: '已保存至手机...'
+					});
+				}
+			});
 		},
 		// 跳转到
 		navTuniaoHome(e) {
@@ -292,10 +289,11 @@ export default {
 /* 祝福 start*/
 .year-text {
 	position: fixed;
-	bottom: 15vh;
+	bottom: 30rpx;
 	margin: 0 auto;
 	right: 0rpx;
 	left: 0rpx;
+	width: 690rpx;
 }
 
 /* .tnphone-black-min 细边框*/
@@ -470,6 +468,8 @@ export default {
 	box-sizing: border-box;
 	padding: 0rpx 20rpx 90rpx 20rpx;
 	overflow: initial;
+	display: flex;
+	align-items: center;
 }
 
 .card-swiper swiper-item .swiper-item {

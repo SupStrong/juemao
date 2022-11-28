@@ -71,29 +71,36 @@
 				<image class="rax-image " src="//gw.alicdn.com/tfs/TB1L3jDoQT2gK0jSZPcXXcKkpXa-204-204.png_110x10000.jpg_.webp" style="width: 1.02rem; height: 1.02rem; margin-top: 8vw;" />
 			</view>
 		</tn-modal>
-		<!-- <swiperBBSP />
-		<swiperBBSK />
+		<!-- <swiperBBSP /> -->
+	<!-- 	<swiperBBSK />
 		<swiperBBSC />
 		<swiperBBSA />
 		
-		<swiperBBSD /> -->
-		<!-- <swiperBBSG /> -->
-		<!-- <swiperBBSJ />
+		<swiperBBSD />
+		<swiperBBSG />
+		<swiperBBSJ />
 		<swiperBBSE />
 		<swiperBBST />
 		<swiperBBSW /> -->
-<!-- 		<swiperBBSWW />
+		<swiperBBSWW />
 		<swiperBBSWP />
-		<swiperBBSWO />
-		<swiperBBSWI /> -->
-		<swiperBBSWL />
-		<!-- <swiperBBX /> -->
-		<!-- <swiperBBP /> -->
-		<!-- 	<swiperBBO />
+		
 		<swiperBBB />
 		<swiperBBC />
-		<swiperBBV /> -->
-		<!-- <swiperBBS />
+		<swiperBBV />
+		<swiperBBS />
+		<!-- <swiperBBD /> 稍等 -->
+		<!-- <swiperBBF /> 稍等 -->
+		<!-- <swiperBBSWI />稍等 -->
+		<!-- <swiperBBSWO />稍等 -->
+	<!-- 	<swiperBBSWL />
+		<swiperBBX />
+		<swiperBBP />
+			<swiperBBO />
+		<swiperBBB />
+		<swiperBBC />
+		<swiperBBV />
+		<swiperBBS />
 		<swiperBBD />
 		<swiperBBF />
 		<swiperBBG />
@@ -101,8 +108,8 @@
 		<swiperBBJ />
 		<swiperBBK /> -->
 		<!-- <swiperBBL /> -->
-		<!-- <swiperBBZ :visibile='isVisibile' @update="handleUpdate" />
-		<swiperBBX />
+	<!-- 	<swiperBBZ :visibile='isVisibile' @update="handleUpdate" />
+		<swiperBBX /> -->
 		
 		<swiperBAS />
 		<swiperBAD />
@@ -112,16 +119,14 @@
 		<swiperBAJ />
 		<swiperBAK />
 		<swiperBAL />
-		<swiperBAZ />
-		<swiperBAX /> -->
-
-		<!-- <swiperBBVV />
-		<swiperBBDD /> -->
-		<!-- <swiperBBAA /> -->
-		<!-- 	<swiperBBSS />
-		<swiperBBSL /> -->
-
-		<!-- 
+		<swiperBAZ /> 
+		<swiperBAX />
+<!-- 
+		<swiperBBVV />
+		<swiperBBDD /> 
+		<swiperBBAA />
+			<swiperBBSS />
+		<swiperBBSL />
 		<swiperBHQ></swiperBHQ>
 		<swiperBHW></swiperBHW>
 		<swiperBHE></swiperBHE>
@@ -131,9 +136,9 @@
 		<swiperBHU></swiperBHU>
 		<swiperBHI></swiperBHI>
 		<swiperBHO></swiperBHO>
-		<swiperBHP></swiperBHP>
+		<swiperBHP></swiperBHP> -->
 		
-		<swiperBC></swiperBC>
+	<!-- 	<swiperBC></swiperBC>
 		<swiperBD></swiperBD>
 		<swiperBE></swiperBE>
 		<swiperBF></swiperBF>
@@ -160,9 +165,9 @@
 		<swiperCC></swiperCC>
 		<swiperGG></swiperGG>
 		<swiperJJ></swiperJJ> -->
-
-		<!-- <swiperBB></swiperBB> -->
-		<!-- <swiperDD></swiperDD>
+<!-- 
+		<swiperBB></swiperBB>
+		<swiperDD></swiperDD> 
 		<swiperA></swiperA>
 		<swiperB></swiperB>
 		<swiperC></swiperC>
@@ -254,6 +259,7 @@
 
 <script>
 import template_page_mixin from '@/libs/mixin/template_page_mixin.js';
+import { getDiyDefault }  from '@/api/modules/default.js';
 import swiperA from '@/wxcomponents/swiper/swiper1.vue';
 import swiperB from '@/wxcomponents/swiper/swiper2.vue';
 import swiperC from '@/wxcomponents/swiper/swiper3.vue';
@@ -502,10 +508,21 @@ export default {
 	},
 	mounted() {
 		console.log('-----');
+		this.getDiy()
+	},
+	onLoad(){
 	},
 	methods: {
+		getDiy(){
+			let that = this;
+			
+			getDiyDefault({id:'15'}).then(res => {
+				console.log(res,"Rerere")
+			});
+		},
 		handleBtn() {
-			this.isVisibile = true;
+			uni.navigateTo({ url: '/pages/index/index3'})
+			// this.isVisibile = true;
 		},
 		handleBtn2() {
 			this.isVisibile2 = true;

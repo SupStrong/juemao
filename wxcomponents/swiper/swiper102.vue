@@ -8,31 +8,7 @@
 				class="moduleTitle"
 				style="border: 0px solid black; box-sizing: border-box; display: flex; flex-direction: row; place-content: flex-start space-between; flex-shrink: 0; position: relative; padding-bottom: 2.1333vw; padding-right: 0.2667vw;"
 			>
-				<text
-					class="title"
-					style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.7333vw; white-space: pre-wrap; color: rgb(0, 0, 0); font-weight: 700; text-align: left;"
-				>
-					精致养娃进行时
-				</text>
-				<view
-					class="btnMore"
-					style="border: none; box-sizing: border-box; display: flex; flex-direction: row; place-content: flex-start center; flex-shrink: 0; border-radius: 2.9333vw; background: rgb(255, 61, 16); align-items: center; font-size: 3.2vw; color: rgb(255, 255, 255); text-align: center; height: 6.1333vw; padding-left: 2.4vw; padding-right: 2.4vw;"
-				>
-					<text
-						class="btnMoreTxt"
-						style="border-width: 0px; border-style: solid; border-color: black; position: relative; box-sizing: border-box; display: block; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 3.2vw; white-space: nowrap; color: var(--color-text-6, #fff); font-weight: 400; text-align: left; width: 18.6667vw; overflow: hidden; text-overflow: ellipsis;"
-					>
-						分享领券 限时秒杀
-					</text>
-					<view
-						style="border-width: 0vw 0.2667vw 0.2667vw 0vw; border-style: solid; border-color: rgb(255, 255, 255); border-image: initial; box-sizing: border-box; display: flex; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: 1.8667vw; height: 1.8667vw; transform: rotate(-45deg);"
-					></view>
-				</view>
-				<a
-					href="//h5.m.taobao.com/taolive/video.html?id=387181061534&amp;type=473&amp;livetype=living&amp;vrType=0&amp;livesource=tmallimport"
-					class="liveLink"
-					style="display: flex; position: absolute; top: 0vw; left: 0vw; width: 100%; height: 100%;"
-				></a>
+			<image src="../../static/favicon.ico" style="border: 1px solid red;height: 50rpx;width: 100%;"></image>
 			</view>
 			<view
 				class="liveInfo"

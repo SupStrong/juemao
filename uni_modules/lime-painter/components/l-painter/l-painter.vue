@@ -140,6 +140,7 @@
 					filePath = await base64ToPath(path)
 				}
 				if (param && param.isEmit) {
+					console.log("tmddddd")
 					this.$emit('success', filePath);
 				}
 				return filePath
@@ -256,9 +257,11 @@
 				if (this.isCanvasToTempFilePath) {
 					this.canvasToTempFilePath()
 						.then(res => {
+					console.log("tmddddd111")
 							this.$emit('success', res.tempFilePath)
 						})
 						.catch(err => {
+					console.log("tmddddd222",err)
 							this.$emit('fail', new Error(JSON.stringify(err)));
 						});
 				}

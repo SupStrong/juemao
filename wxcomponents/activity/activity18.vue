@@ -7,8 +7,11 @@
 					style="background-image: url(https://img.alicdn.com/imgextra/i1/O1CN01HR7rcY1SKvaTB5kzE_!!6000000002229-2-tps-714-1074.png); background-size: cover; width: 47.6vw; height: 71.6vw; margin: 0px 0.8vw 1.2vw;"
 				>
 					<view class="rax-view-v2 ButieCard--titlePart--22cx-31">
-						<text class="rax-text-v2 ButieCard--title--1jY_QGq rax-text-v2--overflow-hidden rax-text-v2--singleline">限量补贴专区</text>
-						<text class="rax-text-v2 ButieCard--desc--SaAgNNY rax-text-v2--overflow-hidden rax-text-v2--singleline">试用立减指定商品通用</text>
+					<!-- 	<text class="rax-text-v2 ButieCard--title--1jY_QGq rax-text-v2--overflow-hidden rax-text-v2--singleline">限量补贴专区</text>
+						<text class="rax-text-v2 ButieCard--desc--SaAgNNY rax-text-v2--overflow-hidden rax-text-v2--singleline">试用立减指定商品通用</text> -->
+						<view class="" style="height: 70rpx;">
+							
+						</view>
 					</view>
 					<view class="rax-view-v2 Coupon--mod--2Onr57o">
 						<view class="rax-view-v2 Coupon--primary--1aRtf3E">

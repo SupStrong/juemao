@@ -173,12 +173,40 @@
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false,
-				"navigationStyle": "default"
+				"navigationStyle": "custom"
+            }
+            
+        },{
+            "path" : "pagesMarking/coupon/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
             }
             
         }
         ,{
             "path" : "pagesMarking/video/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMarking/commerce/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pagesMarking/problem/index",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

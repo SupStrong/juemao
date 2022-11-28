@@ -9,274 +9,133 @@
 		</tn-nav-bar>
 
 		<!-- 顶部背景图片-->
-		<view class="login__bg login__bg--top"><image class="bg" src="https://tnuiimage.tnkjapp.com/bless/bless-top.jpg" mode="widthFix"></image></view>
-		<view class="login__bg login__bg--top"><image class="rocket rocket-sussuspension" src="https://tnuiimage.tnkjapp.com/bless/bless-fish.png" mode="widthFix"></image></view>
-		<swiper
-			class="card-swiper tn-margin-top-sm"
-			:circular="true"
-			:autoplay="true"
-			duration="500"
-			interval="5000"
-			previous-margin="75rpx"
-			next-margin="75rpx"
-			@change="cardSwiper"
-			style="margin-top: 120px;"
-		>
-			<swiper-item v-for="(item, index) in itemsList" :key="index">
-				<view class="tnphone-black-min swiper-item  wow fadeInLeft2">
-					<view class="skin wow fadeInRight2">
-						<view class="screen wow fadeInUp2">
-							<view class="peak wow">
-								<view class="sound"></view>
-								<view class="lens"></view>
+		<view class="login__bg login__bg--top"><image class="bg" src="https://tnuiimage.tnkjapp.com/money/money-bg.jpg" mode="widthFix"></image></view>
+		<!-- 		<view class="login__bg login__bg--top"><image class="rocket rocket-sussuspension" src="https://tnuiimage.tnkjapp.com/bless/bless-fish.png" mode="widthFix"></image></view>
+ -->
+		<view class="order--wrap" :style="{ top: vuex_custom_bar_height + 'px' }">
+			<tn-tabs-swiper class="order__tabs" ref="tabs" :list="list" :current="tabsIndex" :isScroll="false" @change="tabsChange"></tn-tabs-swiper>
+			<swiper
+				class="order__swiper"
+				:style="{ top: `${swiperTop}px`, height: `${swiperHeight}px` }"
+				:current="swiperIndex"
+				@transition="swiperTransition"
+				@animationfinish="swiperAnimationFinish"
+			>
+				<swiper-item class="order__swiper__item" style="display: flex;height: auto;!important">
+					<scroll-view scroll-y style="margin-bottom: 40px;">
+						<view v-for="(item, index) in 6" :key="index" class="order__item">
+							<view class="order__item__head tn-flex tn-flex-direction-row tn-flex-col-center tn-flex-row-between">
+								<view class="order__item__head__title">
+									图鸟官方小店
+									<text class="order__item__head__title--right-icon tn-icon-right"></text>
+								</view>
+								<view class="order__item__head__status">完成</view>
 							</view>
 
-							<view class="image-banner">
-								<l-painter class="fl-row-center" isCanvasToTempFilePath @success="shareImg = $event" :board="item.template" :dirty="true" />
+							<view class="order__item__content tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-between">
+								<view class="tn-flex tn-flex-nowrap tn-flex-direction-row tn-flex-col-center tn-flex-row-left">
+									<view class="order__item__content__image"><image src="https://tnuiimage.tnkjapp.com/shop/card.jpg" mode="scaleToFill"></image></view>
+									<view class="order__item__content__image"><image src="https://tnuiimage.tnkjapp.com/shop/computer1.jpg" mode="scaleToFill"></image></view>
+									<view class="order__item__content__image"><image src="https://tnuiimage.tnkjapp.com/shop/watch1.jpg" mode="scaleToFill"></image></view>
+								</view>
+								<view class="order__item__content__info tn-flex tn-flex-direction-column tn-flex-col-center tn-flex-row-center">
+									<view class="order__item__content__info__price">
+										<text class="order__item__content__info__price--unit">￥</text>
+										<text class="order__item__content__info__price__value--integer">4000</text>
+										<text class="order__item__content__info__price__value--decimal">.00</text>
+									</view>
+									<view class="order__item__content__info__count"><text>共4件</text></view>
+								</view>
+							</view>
+
+							<view class="order__item__operation tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-between">
+								<view class="order__item__operaation__left"><text class="order__item__operaation__left--text">更多</text></view>
+								<view class="order__item__operation__right tn-flex tn-flex-direction-row tn-flex-nowrap tn-flex-col-center tn-flex-row-right">
+									<view class="order__item__operaation__right__button">
+										<tn-button :plain="true" shape="round" fontColor="#080808" backgroundColor="#080808" :fontSize="24" height="auto" padding="10rpx 18rpx">
+											查看发票
+										</tn-button>
+									</view>
+									<view class="order__item__operation__right__button">
+										<tn-button :plain="true" shape="round" fontColor="#080808" backgroundColor="#080808" :fontSize="24" height="auto" padding="10rpx 18rpx">
+											退换/售后
+										</tn-button>
+									</view>
+									<view class="order__item__operation__right__button">
+										<tn-button
+											:plain="true"
+											shape="round"
+											fontColor="tn-color-red"
+											backgroundColor="tn-bg-red"
+											:fontSize="24"
+											height="auto"
+											padding="10rpx 18rpx"
+										>
+											再次购买
+										</tn-button>
+									</view>
+								</view>
 							</view>
 						</view>
-					</view>
-				</view>
-				<view class="swiper-item-text tn-text-center">
-					<view class="tn-text-xl tn-text-bold tn-padding-top-xs">{{ item.name }}</view>
-				</view>
-			</swiper-item>
-		</swiper>
-
-		<view class="tn-text-center year-text">
-			<div class="save-button fl-row-center" @click="saveToCarame()"><span>保存到相册</span></div>
+						<view class="tn-padding-bottom"></view>
+					</scroll-view>
+				</swiper-item>
+			</swiper>
 		</view>
-
 		<!-- 底部背景图片-->
 		<view class="login__bg login__bg--bottom"><image src="https://tnuiimage.tnkjapp.com/bless/bless-bottom.jpg" mode="widthFix"></image></view>
-
-		<!-- 底部tabbar start-->
-		<view class="tabbar footerfixed">
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon"><image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-home.png"></image></view>
-				<view class="tn-color-gray">首页</view>
-			</view>
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon"><image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-flower.png"></image></view>
-				<view class="tn-color-gray">发现</view>
-			</view>
-
-			<view class="action bar-center" @click="navTuniaoHome">
-				<view class="nav-index-button">
-					<view class="nav-index-button__content">
-						<view class="nav-index-button__content--icon tn-flex tn-flex-row-center tn-flex-col-center">
-							<!-- <view class="tn-icon-logo-tuniao"></view> -->
-							<view class="bar-circle"><image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-tiger.png"></image></view>
-						</view>
-					</view>
-
-					<view class="nav-index-button__meteor">
-						<view class="nav-index-button__meteor__wrapper">
-							<view
-								v-for="(item, index) in 6"
-								:key="index"
-								class="nav-index-button__meteor__item"
-								:style="{ transform: `rotateX(${-60 + 30 * index}deg) rotateZ(${-60 + 30 * index}deg)` }"
-							>
-								<view class="nav-index-button__meteor__item--pic"></view>
-							</view>
-						</view>
-					</view>
-				</view>
-				<!-- <view class="tn-color-gray">发布</view> -->
-			</view>
-
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon">
-					<!-- <view class="tn-icon-image-text tn-color-gray--dark">
-          </view> -->
-					<image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-china.png"></image>
-				</view>
-				<view class="tn-color-gray">祝福</view>
-			</view>
-			<view class="action" @click="navTuniaoUI">
-				<view class="bar-icon">
-					<!-- <view class="tn-icon-my tn-color-gray--dark">
-          </view> -->
-					<image class="" src="https://tnuiimage.tnkjapp.com/bless/bless-money.png"></image>
-				</view>
-				<view class="tn-color-gray">我的</view>
-			</view>
-		</view>
 	</view>
 </template>
 
 <script>
 import template_page_mixin from '@/libs/mixin/template_page_mixin.js';
-const customStyle = '';
+import { mapState, mapMutations } from 'vuex';
 export default {
 	name: 'TemplateBless',
 	mixins: [template_page_mixin],
 	data() {
 		return {
-			cardCur: 0,
-			shareImg: '',
-			customStyle: customStyle,
-			itemsList: [
-				{
-					id: 202,
-					type: 1,
-					title: '笨蛋',
-					status: 0,
-					template: {
-						type: 'image',
-						width: '530rpx',
-						height: '980rpx',
-						borderRadius: '10rpx',
-						src: 'http://admin.cw100.com/storage/uploads/image/2022/11/01/c43576d5c09a1667793a0c93c784d5dc.png',
-						css: {
-							width: '530rpx',
-							borderRadius: '20rpx',
-							height: '980rpx',
-							background: ''
-						},
-						views: [
-							{
-								type: 'image',
-								src: 'http://admin.cw100.com//storage/data/mini_wxcbe60162f9dc451c/2020/04/21/_a=3361&t=kq&sid=87&cid=110100.jpg',
-								css: {
-									hasBorder: 0,
-									right: '28rpx',
-									bottom: '122rpx',
-									position: 'fixed',
-									width: '161rpx',
-									height: '161rpx',
-									borderRadius: '0'
-								}
-							}
-						]
-					},
-					small_bg: 'https://guide.cw100.com/storage/uploads/image/2021/06/13/9a1e549ccbf3db9c75d33a0b8e99ee47.jpg'
-				},
-				{
-					id: 201,
-					template: {
-						type: 'image',
-						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
-						css: {
-							// 根节点若无尺寸，自动获取父级节点
-
-							width: '530rpx',
-							height: '980rpx',
-							borderRadius: '20rpx',
-						},
-						views: [
-							{
-								css: {
-									background: '#07c160',
-									height: '120rpx',
-									width: '120rpx',
-									display: 'inline-block'
-								},
-								type: 'view'
-							},
-							{
-								css: {
-									background: '#333333',
-									height: '120rpx',
-									width: '120rpx',
-									position: 'fixed',
-									top: '120rpx',
-									right: '139rpx',
-									borderTopRightRadius: '60rpx',
-									borderBottomLeftRadius: '60rpx',
-									display: 'inline-block',
-									margin: '0 30rpx'
-								},
-								views: [],
-								type: 'image'
-							},
-							{
-								css: {
-									background: '#ff9d00',
-									height: '120rpx',
-									width: '120rpx',
-									borderRadius: '50%',
-									display: 'inline-block'
-								},
-								views: [],
-								type: 'view'
-							}
-						]
-					},
-					small_bg: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/3628229474e090b988239e3f0b9505b7.jpg'
-				},
-				{
-					id: 201,
-					template: {
-						type: 'image',
-						src: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/a142b217bc90704d450c49a9dd1af383.jpg',
-						css: {
-							// 根节点若无尺寸，自动获取父级节点
-							width: '530rpx',
-							height: '980rpx',
-							borderRadius: '20rpx',
-						},
-						views: [
-							{
-								css: {
-									background: '#07c160',
-									height: '120rpx',
-									width: '120rpx',
-									display: 'inline-block'
-								},
-								type: 'view'
-							},
-							{
-								css: {
-									background: '#333333',
-									height: '120rpx',
-									width: '120rpx',
-									position: 'fixed',
-									top: '120rpx',
-									right: '139rpx',
-									borderTopRightRadius: '60rpx',
-									borderBottomLeftRadius: '60rpx',
-									display: 'inline-block',
-									margin: '0 30rpx'
-								},
-								views: [],
-								type: 'image'
-							},
-							{
-								css: {
-									background: '#ff9d00',
-									height: '120rpx',
-									width: '120rpx',
-									borderRadius: '50%',
-									display: 'inline-block'
-								},
-								views: [],
-								type: 'view'
-							}
-						]
-					},
-					small_bg: 'https://guide.cw100.com//storage/uploads/image/2021/06/13/3628229474e090b988239e3f0b9505b7.jpg'
-				}
-			]
+			list: [{ name: '全部' }, { name: '待付款' }, { name: '待发货' }, { name: '待收货' }, { name: '待评价' }],
+			tabsIndex: 0,
+			swiperIndex: 0,
+			swiperTop: 0,
+			swiperHeight: 0
 		};
 	},
 	onLoad() {
 		this.$t.mpShare.title = '🐅🐅💢🥳您有一条新年祝福待签收';
+	},
+	computed: {
+		...mapState({
+			iphoneModel: state => state.iphoneModel
+		})
+	},
+	onReady() {
+		this.$nextTick(() => {
+			this.updateSwiperInfo();
+		});
 	},
 	methods: {
 		// cardSwiper
 		cardSwiper(e) {
 			this.cardCur = e.detail.current;
 		},
-		// 跳转到
-		navTuniaoUI(e) {
-			wx.vibrateShort();
+		tabsChange(index) {
+			this.swiperIndex = index;
 		},
-		// 跳转到
-		navTuniaoHome(e) {
-			uni.navigateTo({
-				url: '/pages/index/index'
+		// 计算可滑动区域的高度信息
+		updateSwiperInfo() {
+			// 获取可滑动菜单的信息
+			this._tGetRect('.order__tabs').then(res => {
+				if (!res) {
+					setTimeout(() => {
+						this.updateSwiperInfo();
+					}, 10);
+					return;
+				}
+				const systemInfo = uni.getSystemInfoSync();
+				this.swiperTop = res.bottom - this.vuex_custom_bar_height;
+				this.swiperHeight = systemInfo.safeArea.height - res.bottom + systemInfo.statusBarHeight;
 			});
 		}
 	}
@@ -292,16 +151,17 @@ export default {
 /* 祝福 start*/
 .year-text {
 	position: fixed;
-	bottom: 15vh;
+	bottom: 8vh;
 	margin: 0 auto;
 	right: 0rpx;
 	left: 0rpx;
+	width: 690rpx;
 }
 
 /* .tnphone-black-min 细边框*/
 .tnphone-black-min {
 	width: 100%;
-	height: 1010rpx;
+	height: 980rpx;
 	border-radius: 40rpx;
 	background: #c6d1d8;
 	padding: 7rpx;
@@ -470,6 +330,8 @@ export default {
 	box-sizing: border-box;
 	padding: 0rpx 20rpx 90rpx 20rpx;
 	overflow: initial;
+	display: flex;
+	align-items: center;
 }
 
 .card-swiper swiper-item .swiper-item {
@@ -506,7 +368,7 @@ export default {
 }
 .image-banner image {
 	width: 100%;
-	height: 1010rpx;
+	height: 980rpx;
 	// border: 1rpx solid red;
 }
 
@@ -787,5 +649,132 @@ export default {
 	to {
 		transform: rotate(360deg);
 	}
+}
+/* 自定义导航栏内容 end */
+
+.order {
+	&--wrap {
+		position: fixed;
+		left: 0;
+		right: 0;
+		width: 100%;
+		background-color: inherit;
+	}
+
+	/* 导航栏 start */
+	&__tabs {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: inherit;
+	}
+	/* 导航栏 end */
+
+	/* swiper start */
+	&__swiper {
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+		background-color: inherit;
+		padding: 0 16rpx;
+	}
+	/* swiper end */
+
+	/* 订单内容 start */
+	&__item {
+		margin: 20rpx;
+		padding: 36rpx 26rpx;
+		background-color: #ffffff;
+		border-radius: 18rpx;
+
+		&:first-child {
+			margin-top: 40rpx;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		/* 头部 start */
+		&__head {
+			&__title {
+				font-weight: bold;
+				line-height: normal;
+
+				&--right-icon {
+					font-size: 24rpx;
+					margin-left: 8rpx;
+				}
+			}
+
+			&__status {
+				font-size: 22rpx;
+				color: #aaaaaa;
+			}
+		}
+		/* 头部 end */
+
+		/* 内容 start */
+		&__content {
+			margin-top: 20rpx;
+
+			&__image {
+				margin-right: 20rpx;
+
+				image {
+					width: 140rpx;
+					height: 140rpx;
+					border-radius: 10rpx;
+				}
+			}
+
+			&__title {
+				padding-right: 40rpx;
+				display: -webkit-box;
+				overflow: hidden;
+				white-space: normal !important;
+				text-overflow: ellipsis;
+				word-wrap: break-word;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+
+			&__info {
+				&__price {
+					&--unit {
+						font-size: 20rpx;
+					}
+					&__value--integer,
+					&__value--decimal {
+						font-weight: bold;
+					}
+					&__value--decimal {
+						font-size: 20rpx;
+					}
+				}
+
+				&__count {
+					color: #aaaaaa;
+					font-size: 24rpx;
+				}
+			}
+		}
+		/* 内容 end */
+
+		/* 操作按钮 start */
+		&__operation {
+			margin-top: 20rpx;
+
+			&__right {
+				&__button {
+					margin-left: 10rpx;
+				}
+			}
+		}
+		/* 操作按钮 end */
+	}
+	/* 订单内容 end */
 }
 </style>

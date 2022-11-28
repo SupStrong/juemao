@@ -21,8 +21,21 @@
         :autoplay="false" duration="500" interval="5000" @change="cardSwiper" > 
         <swiper-item v-for="(item,index) in swiperList0" :key="index" :class="cardCur==index?'cur':''">
           <view class="swiper-item image-banner">
-			  <video :id="`video-${item.id}`" :src="item.mp4"
-			  loop style="height: 100vh;width: 100vw;"></video>
+			 <video :id="`video-${item.id}`" :src="item.mp4"
+			  loop style="height: 100vh;width: 100vw;" v-if="item.type == 'video'"></video>
+			  <swiper class="card-swiper" :circular="true"
+				:autoplay="true" duration="500" interval="5000" @change="cardSwiper" v-if="item.type == 'imgList'"> 
+				<swiper-item v-for="(citem,cindex) in item.imgList" :key="index" :class="cardCur==cindex?'cur':''"  style="display: flex;align-items: center;;width: 100%;">
+				  <view class="swiper-item image-banner">
+					<image :src="citem" mode="aspectFill" style="max-height: 80vh;width: 100%;"></image>
+				  </view>
+				</swiper-item>
+			  </swiper>
+			  <view class="indication">
+				  <block v-for="(item,index) in swiperListText" :key="index">
+					  <view class="spot" :class="cardCur==index?'active':''"></view>
+				  </block>
+			  </view>
           </view>
           <view class="swiper-item-icon image-banner">
             <view class="">
@@ -45,7 +58,34 @@
                 <view class="tn-margin-top-xs" style="font-size: 20rpx;position: relative;">{{item.share}}</view>
               </view>
             </view>
-            
+			<view class="electric-house">
+				<view class="headerMain">
+					<view class="headerInfo">
+						<view class="headerTitle">
+							<image src="" alt="" class="jinghao" />
+							<text class="headerTitleDsc">宿舍生活</text>
+						</view>
+						<view class="headerHot">
+							<image src="" alt="" class="iconfire" />
+							732人追捧</view>
+							<view class="headerInfoDesc">
+								<text class="quotationMark">“</text>
+								<text class="desc">宿舍好物，让生活舒适感飙升~</text>
+								<text class="quotationMark">”</text>
+							</view>
+						<view class="headerDes">
+							<view class="goodsBox">
+								<image src="https://m.360buyimg.com/babel/jfs/t1/179650/19/29949/90602/63771db0E81534097/53311d8f636ef38d.jpg.avif" alt="" class="iconmore" />
+							</view>
+							<view class="goodsBox">
+								<image src="https://m.360buyimg.com/babel/jfs/t1/179650/19/29949/90602/63771db0E81534097/53311d8f636ef38d.jpg.avif" alt="" class="iconmore" />
+							</view>
+						</view>
+				</view>
+			</view>
+			</view>
+			
+           
             <view class="swiper-item-text">
               <view class="tn-color-white tn-text-xl">
                 <text class="tn-icon-topics tn-padding-right-xs"></text>
@@ -55,135 +95,16 @@
               <view class="tn-color-white tn-padding-top-xs tn-text-lg clamp-text-2" style="width: 72%;">
                 {{item.title}}
               </view>
-            </view>        
+            </view>       
             
           </view>
+		  
           
         </swiper-item>
       </swiper>
-      <!-- <view class="indication">
-          <block v-for="(item,index) in swiperList" :key="index">
-              <view class="spot" :class="cardCur==index?'active':''"></view>
-          </block>
-      </view> -->
       
     </view>
-    
-    <!-- 视频，采用轮播形式，放10个视频左右，小程序性能决定了这个不能太骚，如果你想骚，可以把微信买下来 -->
-    <view class="" v-if="current==1">
-      <swiper class="card-swiper" :circular="true" vertical="true"
-        :autoplay="false" duration="500" interval="5000" @change="cardSwiper" > 
-        <swiper-item v-for="(item,index) in swiperList1" :key="index" :class="cardCur==index?'cur':''">
-          <view class="swiper-item image-banner">
-			  <video :id="`video-${item.id}`" :src="item.mp4"
-			  loop style="height: 100vh;width: 100vw;"></video>
-          </view>
-          <view class="swiper-item-icon image-banner">
-            <view class="">
-              <view class="user-pic button-0">
-                <view class="user-image">
-                  <view class="tn-shadow-blur" :style="'background-image:url('+ item.url + ');width: 87rpx;height: 87rpx;background-size: cover;overflow: hidden;'">
-                  </view>
-                </view>
-              </view>
-              <view class="icon15__item--icon tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center tn-shadow-blur button-1">
-                <view class="tn-icon-like-fill" style="font-size: 70rpx;"></view>
-                <view class="tn-margin-top-xs" style="font-size: 20rpx;position: relative;">{{item.like}}</view>
-              </view>
-              <view class="icon15__item--icon tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center tn-shadow-blur button-2">
-                <view class="tn-icon-message-fill" style="font-size: 70rpx;"></view>
-                <view class="tn-margin-top-xs" style="font-size: 20rpx;position: relative;">{{item.message}}</view>
-              </view>
-              <view class="icon15__item--icon tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center tn-shadow-blur button-3">
-                <view class="tn-icon-send-fill" style="font-size: 70rpx;"></view>
-                <view class="tn-margin-top-xs" style="font-size: 20rpx;position: relative;">{{item.share}}</view>
-              </view>
-            </view>
-            
-            <view class="swiper-item-text">
-              <view class="tn-color-white tn-text-xl">
-                <text class="tn-icon-topics tn-padding-right-xs"></text>
-                <text class="tn-text-bold">{{item.user}}</text>
-                
-              </view>
-              <view class="tn-color-white tn-padding-top-xs tn-text-lg clamp-text-2" style="width: 72%;">
-                {{item.title}}
-              </view>
-            </view>        
-            
-          </view>
-          
-        </swiper-item>
-      </swiper>
-      <!-- <view class="indication">
-          <block v-for="(item,index) in swiperList" :key="index">
-              <view class="spot" :class="cardCur==index?'active':''"></view>
-          </block>
-      </view> -->
-    </view>
-    
-    <!-- 活动 -->
-    <view class="" v-if="current==2">
-      <swiper class="card-swiper" :circular="true" vertical="true"
-        :autoplay="false" duration="500" interval="5000" @change="cardSwiper" > 
-        <swiper-item v-for="(item,index) in swiperList2" :key="index" :class="cardCur==index?'cur':''">
-          <view class="swiper-item image-banner">
-            
-            
-                      <video :id="`video-${item.id}`" :src="item.mp4"
-                      loop style="height: 100vh;width: 100vw;"></video>
-            
-            
-          </view>
-          <view class="swiper-item-icon image-banner">
-            <view class="">
-              <view class="user-pic button-0">
-                <view class="user-image">
-                  <view class="tn-shadow-blur" :style="'background-image:url('+ item.url + ');width: 87rpx;height: 87rpx;background-size: cover;overflow: hidden;'">
-                  </view>
-                </view>
-              </view>
-              <view class="icon15__item--icon tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center tn-shadow-blur button-1">
-                <view class="tn-icon-like-fill" style="font-size: 70rpx;"></view>
-                <view class="tn-margin-top-xs" style="font-size: 20rpx;position: relative;">{{item.like}}</view>
-              </view>
-              <view class="icon15__item--icon tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center tn-shadow-blur button-2">
-                <view class="tn-icon-message-fill" style="font-size: 70rpx;"></view>
-                <view class="tn-margin-top-xs" style="font-size: 20rpx;position: relative;">{{item.message}}</view>
-              </view>
-              <view class="icon15__item--icon tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center tn-shadow-blur button-3">
-                <view class="tn-icon-send-fill" style="font-size: 70rpx;"></view>
-                <view class="tn-margin-top-xs" style="font-size: 20rpx;position: relative;">{{item.share}}</view>
-              </view>
-            </view>
-            
-            <view class="swiper-item-text">
-              <view class="tn-color-white tn-text-xl">
-                <text class="tn-icon-topics tn-padding-right-xs"></text>
-                <text class="tn-text-bold">{{item.user}}</text>
-                
-              </view>
-              <view class="tn-color-white tn-padding-top-xs tn-text-lg clamp-text-2" style="width: 72%;">
-                {{item.title}}
-              </view>
-            </view>        
-            
-          </view>
-          
-        </swiper-item>
-      </swiper>
-      <!-- <view class="indication">
-          <block v-for="(item,index) in swiperList" :key="index">
-              <view class="spot" :class="cardCur==index?'active':''"></view>
-          </block>
-      </view> -->
-      
-    </view>
-    
     <!-- 压屏窗-->
-    <!-- <tn-landscape :show="show2" @close="closeLandscape" closePosition="bottom" :closeSize="60">
-      
-      <!-- 方式9 start-->
       <view class="tn-flex" style="margin-bottom: 100rpx;padding-top: 46vh;">
         <view class="tn-flex-1 tn-margin-sm tn-radius" @click="navEdit">
           <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
@@ -216,39 +137,7 @@
           </view>
         </view>
       </view>
-      
-      
-    </tn-landscape> -->
-    
-    <!-- <view class="edit tnxuanfu" @tap="showLandscape">
-      <view class="bg0 pa">
-        <view class="bg1">
-          <image src="https://tnuiimage.tnkjapp.com/my/my6.png" class="button-shop shadow"></image>
-        </view>
-      </view>
-      <view class="hx-box pa">
-        <view class="pr">
-          <view class="hx-k1 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k2 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k3 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k4 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k5 pa0">
-            <view class="span"></view>
-          </view>
-          <view class="hx-k6 pa0">
-            <view class="span"></view>
-          </view>
-        </view>
-      </view>
-    </view> -->
+    </tn-landscape> 
         
   </view>
 </template>
@@ -261,17 +150,18 @@
           cardCur: 0,
           swiperList0: [{
             id: 0,
-            type: 'image',
+            type: 'imgList',
             url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664005699066-assets/web-upload/f7a37b29-506a-4e79-937f-826334902bb4.jpeg',
             mp4: 'https://tnuiimage.tnkjapp.com/new/111.mp4',
             user: '图鸟猪猪',
             title: '晚风轻踩着云朵，月亮在贩售快乐，你从银河背后靠近我，我与星辉一同为你沉沦。。',
             like: '12.9W',
             message: '1.6W',
-            share: '2.2W'
+            share: '2.2W',
+			imgList:['https://tnuiimage.tnkjapp.com/shop/cup1.jpg','https://tnuiimage.tnkjapp.com/swiper/read.jpg'],
           }, {
             id: 1,
-            type: 'image',
+            type: 'video',
             url: 'https://tnuiimage.tnkjapp.com/blogger/blogger_beibei.jpg',
             mp4: 'https://tnuiimage.tnkjapp.com/new/22.mp4',
             user: '图鸟北北',
@@ -280,9 +170,8 @@
             message: '35',
             share: '16'
             }, {
-          }, {
             id: 2,
-            type: 'image',
+            type: 'video',
             url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664179989916-assets/web-upload/eda197eb-42ce-44b1-9b14-fce3481db603.jpeg',
             mp4: 'https://tnuiimage.tnkjapp.com/new/111.mp4',
             user: '你的名字',
@@ -290,100 +179,6 @@
             like: '292',
             message: '108',
             share: '63'
-          }, {
-            id: 3,
-            type: 'image',
-            url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664005699053-assets/web-upload/8645ea3a-e0a9-4422-8364-cc5ede305c9f.jpeg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/33.mp4',
-            user: '不许凶我',
-            title: '有些记忆会被时间焚烧',
-            like: '1.06K',
-            message: '868',
-            share: '606'
-          }],
-          swiperList1: [{
-            id: 0,
-            type: 'image',
-            url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664005699066-assets/web-upload/f7a37b29-506a-4e79-937f-826334902bb4.jpeg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/22.mp4',
-            user: '图鸟猪猪',
-            title: '晚风轻踩着云朵，月亮在贩售快乐，你从银河背后靠近我，我与星辉一同为你沉沦。。',
-            like: '12.9W',
-            message: '1.6W',
-            share: '2.2W'
-          }, {
-            id: 1,
-            type: 'image',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/blogger_beibei.jpg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/22.mp4',
-            user: '图鸟北北',
-            title: '我不喜欢带伞，因为雨水从不滴落在我的心上；心若向阳，无惧远方。。',
-            like: '231',
-            message: '35',
-            share: '16'
-            }, {
-          }, {
-            id: 2,
-            type: 'image',
-            url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664179989916-assets/web-upload/eda197eb-42ce-44b1-9b14-fce3481db603.jpeg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/111.mp4',
-            user: '你的名字',
-            title: '为什么我没能早点遇见你...',
-            like: '292',
-            message: '108',
-            share: '63'
-          }, {
-            id: 3,
-            type: 'image',
-            url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664005699053-assets/web-upload/8645ea3a-e0a9-4422-8364-cc5ede305c9f.jpeg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/33.mp4',
-            user: '不许凶我',
-            title: '有些记忆会被时间焚烧',
-            like: '1.06K',
-            message: '868',
-            share: '606'
-          }],
-          swiperList2: [{
-            id: 0,
-            type: 'image',
-            url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664005699066-assets/web-upload/f7a37b29-506a-4e79-937f-826334902bb4.jpeg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/33.mp4',
-            user: '图鸟猪猪',
-            title: '晚风轻踩着云朵，月亮在贩售快乐，你从银河背后靠近我，我与星辉一同为你沉沦。。',
-            like: '12.9W',
-            message: '1.6W',
-            share: '2.2W'
-          }, {
-            id: 1,
-            type: 'image',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/blogger_beibei.jpg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/22.mp4',
-            user: '图鸟北北',
-            title: '我不喜欢带伞，因为雨水从不滴落在我的心上；心若向阳，无惧远方。。',
-            like: '231',
-            message: '35',
-            share: '16'
-            }, {
-          }, {
-            id: 2,
-            type: 'image',
-            url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664179989916-assets/web-upload/eda197eb-42ce-44b1-9b14-fce3481db603.jpeg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/111.mp4',
-            user: '你的名字',
-            title: '为什么我没能早点遇见你...',
-            like: '292',
-            message: '108',
-            share: '63'
-          }, {
-            id: 3,
-            type: 'image',
-            url: 'https://cdn.nlark.com/yuque/0/2022/jpeg/280373/1664005699053-assets/web-upload/8645ea3a-e0a9-4422-8364-cc5ede305c9f.jpeg',
-            mp4: 'https://tnuiimage.tnkjapp.com/new/33.mp4',
-            user: '不许凶我',
-            title: '有些记忆会被时间焚烧',
-            like: '1.06K',
-            message: '868',
-            share: '606'
           }],
           current: 0,
           scrollList: [
@@ -391,429 +186,8 @@
             {name: '关注'},
             {name: '朋友', count: ''}
           ],
-          latestUserAvatar: [
-            {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-            {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-            {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-            {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-          ],
-          bloggerList: [{
-            id: 0,
-            type: 'image',
-            name: 'UI设计',
-            text: '629人关注',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/blogger_beibei.jpg',
-          }, {
-            id: 1,
-            type: 'image',
-            name: '前端开发',
-            text: '688人关注',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-          }, {
-            id: 2,
-            type: 'image',
-            name: '校园生活',
-            text: '552人关注',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg',
-          }, {
-            id: 3,
-            type: 'image',
-            name: '户外摄影',
-            text: '105人关注',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg',
-          }, {
-            id: 4,
-            type: 'image',
-            name: '电影点评',
-            text: '387人关注',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg',
-          }, {
-            id: 5,
-            type: 'image',
-            name: '热血动漫',
-            text: '643人关注',
-            url: 'https://tnuiimage.tnkjapp.com/blogger/content_1.jpeg',
-          }],
           // 内容默认隐藏显示的高度
           contentHideShowHeight: 0,
-          content: [
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              label: ['开源','创意','UI框架'],
-              desc: '开源可商用组件，助你开发酷炫UI一臂之力',
-              content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
-              viewUser: {
-                latestUserAvatar: [
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-                ],
-                viewUserCount: 62
-              },
-              collectionCount: 439,
-              commentCount: 46,
-              likeCount: 83
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              label: ['开源','创意','UI框架'],
-              desc: '开源可商用组件，助你开发酷炫UI一臂之力',
-              content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
-              mainImage:[
-                'https://tnuiimage.tnkjapp.com/blogger/content_1.jpeg'
-              ],
-              viewUser: {
-                latestUserAvatar: [
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-                ],
-                viewUserCount: 12
-              },
-              collectionCount: 902,
-              commentCount: 64,
-              likeCount: 83
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              label: [],
-              desc: '',
-              content: '',
-              mainImage:[
-                'https://tnuiimage.tnkjapp.com/shop/computer2.jpg',
-                'https://tnuiimage.tnkjapp.com/shop/prototype2.jpg',
-              ],
-              viewUser: {
-                latestUserAvatar: [
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                ],
-                viewUserCount: 56
-              },
-              collectionCount: 431,
-              commentCount: 26,
-              likeCount: 84
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              label: ['开源','创意'],
-              desc: '开源可商用组件',
-              content: '基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了 基础常用的布局元素，酷炫完善的配色体系，统一可增的图标 icon ，简便调用的功能组件，酷炫的前端页面，吖，编不下去了',
-              mainImage:[
-                'https://tnuiimage.tnkjapp.com/swiper/swiper2.jpg',
-                'https://tnuiimage.tnkjapp.com/swiper/swiper3.jpg',
-                'https://tnuiimage.tnkjapp.com/swiper/swiper4.jpg',
-              ],
-              viewUser: {
-                latestUserAvatar: [
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                ],
-                viewUserCount: 231
-              },
-              collectionCount: 780,
-              commentCount: 89,
-              likeCount: 82
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/blogger_beibei.jpg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              label: ['开源','链接'],
-              desc: 'https://www.yuque.com/tuniao',
-              mainImage:[
-                'https://tnuiimage.tnkjapp.com/shop/watch1.jpg',
-                'https://tnuiimage.tnkjapp.com/shop/watch2.jpg',
-                'https://tnuiimage.tnkjapp.com/shop/pillow2.jpg',
-                'https://tnuiimage.tnkjapp.com/shop/pillow.jpg',
-              ],
-              viewUser: {
-                latestUserAvatar: [
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                ],
-                viewUserCount: 28
-              },
-              collectionCount: 432,
-              commentCount: 33,
-              likeCount: 12
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/content_1.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              label: ['开源','创意'],
-              desc: '开源可商用组件',
-              mainImage:[
-                'https://tnuiimage.tnkjapp.com/blogger/y11.jpg',
-                'https://tnuiimage.tnkjapp.com/blogger/y33.jpg',
-                'https://tnuiimage.tnkjapp.com/blogger/y22.jpg',
-                'https://tnuiimage.tnkjapp.com/blogger/y44.jpg',
-                'https://tnuiimage.tnkjapp.com/blogger/y55.jpg',
-              ],
-              viewUser: {
-                latestUserAvatar: [
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                  {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                ],
-                viewUserCount: 65
-              },
-              collectionCount: 265,
-              commentCount: 22,
-              likeCount: 62
-            }
-          ],
-          reserve: [{
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'red',
-              label: ['新年祝福'],
-              title: '2023年祝福接力',
-              desc: '祝福接力活动：预约接龙的用户，将收到祝福通知',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/prototype2.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 567
-              },
-              collectionCount: 543,
-              commentCount: 543,
-              likeCount: 206
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/blogger_beibei.jpg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'cyan',
-              label: ['时光信件'],
-              title: '寄给十年后自己',
-              desc: '时光邮局：预约接龙的用户，十年后，将收到一份来着十年前发出的信件',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/prototype1.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 987
-              },
-              collectionCount: 567,
-              commentCount: 69,
-              likeCount: 65
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'blue',
-              label: ['纪念日'],
-              title: '常常忘记纪念日？',
-              desc: '纪念日提醒：预约接龙的用户，微信上将收到纪念日提醒通知',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/computer2.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 321
-              },
-              collectionCount: 654,
-              commentCount: 232,
-              likeCount: 543
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'green',
-              label: ['团购接龙'],
-              title: '冰箱空空如也？一起团购屯菜吖',
-              desc: '团购活动：预约接龙的用户，将参与一起来买菜',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/phonecase1.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 230
-              },
-              collectionCount: 987,
-              commentCount: 236,
-              likeCount: 342
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/shop/phonecase2.jpg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'orange',
-              label: ['回母校'],
-              title: '常回家看看',
-              desc: '线下活动：预约接龙的用户，将表示参与了活动当天回母校',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/phonecase2.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 106
-              },
-              collectionCount: 765,
-              commentCount: 32,
-              likeCount: 91
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/shop/watch1.jpg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'purplered',
-              label: ['婚礼'],
-              title: '我们结婚啦',
-              desc: '婚礼请帖：欢迎来参加我们的婚礼宴席，不用随礼',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/watch1.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 232
-              },
-              collectionCount: 776,
-              commentCount: 48,
-              likeCount: 86
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/shop/sticker.jpg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'purple',
-              label: ['大扫除'],
-              title: '组队参加大扫除公益活动',
-              desc: '活动组队：预约接龙的学生，将表示参与了当天的大扫除活动',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/sticker.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 456
-              },
-              collectionCount: 342,
-              commentCount: 42,
-              likeCount: 76
-            },
-            {
-              userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-              userName: '图鸟北北',
-              date: '2022年5月20日',
-              color: 'brown',
-              label: ['新疆出游'],
-              title: '一起组队去新疆看西西',
-              desc: '旅游出行：一起去新疆看西西',
-              mainImage: 'https://tnuiimage.tnkjapp.com/shop/card.jpg',
-              viewUser: {
-                latestUserAvatar: [{
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'
-                  },
-                  {
-                    src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'
-                  },
-                ],
-                viewUserCount: 129
-              },
-              collectionCount: 265,
-              commentCount: 22,
-              likeCount: 62
-            }
-          ],
           adList: [
             {image: 'https://tnuiimage.tnkjapp.com/swiper/ad1.jpg'},
             {image: 'https://tnuiimage.tnkjapp.com/swiper/ad2.jpg'},
@@ -935,9 +309,7 @@
             }, 10)
             return
           }
-          // console.log(res);
           res.map((item) => {
-            // console.log(item.height, this.contentHideShowHeight);
             // 获取对应的标号
             const id = item.id
             const idIndex = /blogger__content--(\d)/.exec(id)[1]
@@ -947,30 +319,8 @@
             contentItem.contentContainerHeight = item.height
             contentItem.contentContainerInit = true
             this.$set(this.content, idIndex, contentItem)
-            
-            // console.log(/blogger__content--(\d)/.exec(id)[1]);
           })
         })
-      },
-      // 切换内容的显示与隐藏
-      switchContentShowStatus(index) {
-        const contentItem = this.content[index]
-        contentItem.showAllContent = !contentItem.showAllContent
-        this.$set(this.content, index, contentItem)
-      },
-      
-      // 弹出压屏窗
-      showLandscape() {
-        this.openLandscape()
-      },
-      // 打开压屏窗
-      openLandscape() {
-        // wx.vibrateLong();
-        this.show2 = true
-      },
-      // 关闭压屏窗
-      closeLandscape() {
-        this.show2 = false
       }
     }
   }
@@ -979,6 +329,7 @@
 <style lang="scss" scoped>
   .template-circle{
     max-height: 100vh;
+	background-color: #000;
   }
   /* 底部安全边距 start*/
   .tn-tabbar-height {
@@ -1218,7 +569,7 @@
   .card-swiper swiper-item .swiper-item {
     width: 100%;
     display: block;
-    height: 100vh;
+    // height: 100vh;
     border-radius: 0rpx;
     transform: scale(1);
     transition: all 0.2s ease-in 0s;
@@ -1638,4 +989,127 @@
     transform: rotateX(90deg) rotateZ(90deg)
   }
  
+ .electric-house .headerMain {
+   position: absolute;
+   left: 3.4667vw;
+   top: 31.4667vw;
+ }
+ .electric-house .headerInfo {
+   width: 51.2vw;
+   height: 45.6vw;
+   color: #fff;
+   margin-top: 	650rpx;
+ }
+ .electric-house .headerInfo .headerTitle {
+   white-space: nowrap;
+   margin-bottom: 1.4222vw;
+ }
+ .electric-house .headerInfo .headerTitle .jinghao {
+   width: 4.2667vw;
+   height: 5.1556vw;
+   vertical-align: middle;
+   display: inline-block;
+ }
+ .electric-house .headerInfo .headerTitle .headerTitleDsc {
+   width: 51.2vw;
+   height: 9.9556vw;
+   font-size: 8.5333vw;
+   font-family: FZRuiZhengHeiS-B-GB;
+   font-weight: 700;
+   color: #fff;
+   margin-left: 0.9778vw;
+   white-space: nowrap;
+   vertical-align: middle;
+ }
+ .electric-house .headerInfo .headerHot {
+   height: 4.0889vw;
+   background: linear-gradient(90deg, #ffd7d7, #ffe6e6 35.8596712351%, #ffefb7);
+   border-radius: 2.0444vw;
+   margin-bottom: 3.2vw;
+   white-space: nowrap;
+   font-size: 2.4889vw;
+   color: #212121;
+   vertical-align: middle;
+   font-family: PingFang SC;
+   font-weight: 400;
+   line-height: 4.0889vw;
+   display: inline-block;
+   padding-right: 1.7778vw;
+ }
+ .electric-house .headerInfo .headerHot .iconfire {
+   width: 1.7778vw;
+   height: 2.1333vw;
+   margin-left: 1.7778vw;
+   margin-right: 0.4444vw;
+   vertical-align: middle;
+   display: inline-block;
+ }
+ .electric-house .headerInfo .headerInfoDesc {
+   background: linear-gradient(
+     270deg,
+     transparent,
+     #000 51.0968506336%,
+     transparent
+   );
+   opacity: 1;
+   width: 57.3333vw;
+   height: 5.6889vw;
+   white-space: nowrap;
+   margin-bottom: 3.0222vw;
+   display: flex;
+   align-items: center;
+ }
+ .electric-house .headerInfo .headerInfoDesc .quotationMark {
+   width: 2.5778vw;
+   height: 4vw;
+   font-size: 5.3333vw;
+   font-family: Arial;
+   font-weight: 700;
+   vertical-align: top;
+   color: #fff;
+ }
+ .electric-house .headerInfo .headerInfoDesc .desc {
+   font-size: 2.9333vw;
+   font-family: PingFang SC;
+   font-weight: 500;
+   vertical-align: top;
+   color: #fff;
+ }
+ .electric-house .headerInfo .headerDes {
+   display: flex;
+   justify-content: start;
+   width: 46.2222vw;
+   height: 18.6667vw;
+ }
+ .electric-house .headerInfo .headerDes .goodsBox {
+   font-size: 0;
+   margin-right: 1.3333vw;
+   width: 18.6667vw;
+   height: 18.6667vw;
+   border-radius: 2.6667vw;
+   border: 0.5333vw solid hsla(0, 0%, 100%, 0.3);
+   background-color: #fff;
+   overflow: hidden;
+   display: inline-block;
+ }
+ .electric-house .headerInfo .headerDes .goodsBox image {
+   height: 100%;
+   width: 100%;
+ }
+ .electric-house .headerInfo .headerDes .iconBox {
+   width: 6.2222vw;
+   height: 18.6667vw;
+   display: inline-block;
+ }
+ .electric-house .headerInfo .headerDes .iconBox .iconmore {
+   box-sizing: initial;
+   width: 6.2222vw;
+   height: 18.6667vw;
+ }
+ .electric-house .headerSwiper {
+   width: 100%;
+   height: 25.0667vw;
+   position: absolute;
+   bottom: 2.8444vw;
+ }
 </style>
