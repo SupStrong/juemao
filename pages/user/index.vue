@@ -261,7 +261,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/static/css/templatePage/custom_nav_bar.scss';
+// @import '@/static/css/templatePage/custom_nav_bar.scss';
 /* 胶囊banner*/
 .image-capsule {
 	padding: 100rpx 0rpx;

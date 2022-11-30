@@ -1,231 +1,71 @@
 {
-  "easycom": {
-    "^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
-  },
-  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-    {
-      "path": "pages/index/index",
-      "style": {
-        "mp-weixin": {
-          "disableScroll": true
-        },
-        "app-plus": {
-          "bounce": "none"
-        },
-        "mp-alipay": {
-          "allowsBounceVertical": "NO"
-        },
-        "mp-baidu": {
-          "disableScroll": true
-        }
-      }
-  },
-	 {
-	     "path": "pages/user/index",
-	     "style": {
-	       "mp-weixin": {
-	         "disableScroll": true
-	       },
-	       "app-plus": {
-	         "bounce": "none"
-	       },
-	       "mp-alipay": {
-	         "allowsBounceVertical": "NO"
-	       },
-	       "mp-baidu": {
-	         "disableScroll": true
-	       }
-	     }
-	 },{
-            "path" : "pagesMarking/blogger/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        },{
-            "path" : "pagesMarking/nav/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/blogger/index1",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/index/index1",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        },{
-            "path" : "pages/index/index2",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        },{
-            "path" : "pages/index/index3",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }    
-        },{
-            "path" : "pages/index/index4",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }    
-        }
-        ,{
-            "path" : "pagesMarking/order/detail",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/order/list",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/address/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"navigationStyle": "default"
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/goods/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/order/create",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/cart/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"navigationStyle": "default"
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/set",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/avatar",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/poster/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-            }
-            
-        },{
-            "path" : "pagesMarking/coupon/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/video/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/commerce/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-            }
-            
-        }
-        ,{
-            "path" : "pagesMarking/problem/index",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
-  "preloadRule": {
-    "pages/index/index": {
-      "network": "all",
-      "packages": []
-    }
-  },
-  "globalStyle": {
-    "navigationStyle": "custom",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Tuniao UI",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  }
+	"easycom": {
+		"^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					"bounce": "none"
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"mp-baidu": {
+					"disableScroll": true
+				}
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					"bounce": "none"
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"mp-baidu": {
+					"disableScroll": true
+				}
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pagesMarking",
+			"pages": [
+				{
+					"path": "address/index",
+					"meta": {
+						"isLogin": true
+					},
+					"style": {
+						"navigationBarTitleText": "个性定制",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "poster/index",
+					"style": {
+						"navigationBarTitleText": "笨蛋",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Tuniao UI",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
 }

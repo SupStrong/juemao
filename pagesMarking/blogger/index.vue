@@ -195,7 +195,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/static/css/templatePage/custom_nav_bar.scss';
+// @import '@/static/css/templatePage/custom_nav_bar.scss';
 .template-bless {
 	height: 100vh;
 	overflow: scroll;

@@ -1,155 +1,130 @@
 <template>
-  <view class="index">
-    <view v-if="tabberPageLoadFlag[0]" :style="{display: currentIndex === 0 ? '' : 'none'}">
-      <scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
-        <Basic ref="basic"></Basic>
-      </scroll-view>
-    </view>
-    <view v-if="tabberPageLoadFlag[1]" :style="{display: currentIndex === 1 ? '' : 'none'}">
-      <scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
-        <NavItem ref="navItem"></NavItem>
-      </scroll-view>
-    </view>
-    <view v-if="tabberPageLoadFlag[2]" :style="{display: currentIndex === 2 ? '' : 'none'}">
-      <scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
-        <childItem ref="vip"></childItem>
-      </scroll-view>
-    </view>
-    <view v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}">
-      <scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
-        <cartItem ref="template"></cartItem>
-      </scroll-view>
-    </view>
-    <view v-if="tabberPageLoadFlag[4]" :style="{display: currentIndex === 4 ? '' : 'none'}">
-      <scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
-        <UserItem ref="about"></UserItem>
-      </scroll-view>
-    </view>
-    
-    <tn-tabbar
-      v-model="currentIndex"
-      :list="tabbarList"
-      activeColor="#838383"
-      inactiveColor="#AAAAAA"
-      activeIconColor="tn-cool-bg-color-7"
-      :animation="true"
-	  height='120'
-      :safeAreaInsetBottom="true"
-      @change="switchTabbar"
-    ></tn-tabbar>
-
-  </view>
+	<view class="template-set">
+		<!-- 商品 -->
+		<goodsLevelHorizontal />
+		<!-- <goodsLevelVertical /> -->
+		<!-- 轮播 -->
+		<bannerItem />
+		<!-- 视频 -->
+		<videoItem></videoItem>
+		<!-- 试卷 -->
+		<paperItem></paperItem>
+		<!-- 分类 -->
+		<!-- <navItem></navItem> -->
+		<!-- 优惠券 -->
+		<couponItem></couponItem>
+		<!-- 问答 -->
+		<amswersItem></amswersItem>
+		<!-- 文章 -->
+		<articleItem></articleItem>
+		<!-- 图集 -->
+		<atlasItem></atlasItem>
+		<!-- 品牌 -->
+		<brandItem></brandItem>
+		<!-- 卡片 -->
+		<cardItem></cardItem>
+		<!-- 海报 -->
+		<posterItem></posterItem>
+		<!-- 标签 -->
+		<tagItem></tagItem>
+		<!-- 模板 -->
+		<templateItem></templateItem>
+		<!-- 杂七杂八 -->
+		<mixedItem></mixedItem>
+		
+		<!-- <view class=""  @click="isVisibile = true">
+			按钮
+		</view> -->
+		<!-- 弹窗 -->
+		<popupItem :isVisibile="isVisibile"></popupItem>
+	</view>
 </template>
 
 <script>
-  import Basic from './index1.vue'
-  import NavItem from '@/pagesMarking/nav/index.vue'
-  import TemplatePage from './index1.vue'
-  import childItem from './index3.vue'
-  import cartItem from '@/pagesMarking/cart/index.vue'
-  import UserItem from '@/pages/user/index.vue'
-  // import loginMixins from '@/mixins/login.js';
-  export default {
-	// mixins: [loginMixins],
-    components: {
-      Basic,
-      NavItem,
-      TemplatePage,
-      cartItem,
-      UserItem,
-	  childItem
-    },
-    data() {
-      return {
-        // 底部tabbar菜单数据
-        tabbarList: [
-          {
-            title: '首页',
-            activeIcon: 'count-fill',
-            inactiveIcon: 'menu',
-			iconSize: 50,
-          },
-          {
-            title: '分类',
-            activeIcon: 'honor-fill',
-            inactiveIcon: 'honor',
-            iconSize: 50,
-          },
-          {
-            title: '逛逛',
-            activeIcon: 'vip-fill',
-            inactiveIcon: 'vip',
-            activeIconColor: '#FFFFFF',
-            inactiveIconColor: '#FFFFFF',
-            iconSize: 50,
-            out: true
-          },
-          {
-            title: '购物车',
-            activeIcon: 'discover-fill',
-            inactiveIcon: 'discover',
-            iconSize: 50,
-            count: 100
-          },
-          {
-            title: '我的',
-            activeIcon: 'computer-fill',
-            inactiveIcon: 'computer',
-			iconSize: 50,
-            dot: true
-          }
-        ],
-        // tabbar当前被选中的序号
-        currentIndex: 2,
-        // 自定义底栏对应页面的加载情况
-        tabberPageLoadFlag: []
-      }
-    },
-    onLoad(options) {
-	// this.handleGetToken()
-      const index = Number(options.index || 0)
-      // 根据底部tabbar菜单列表设置对应页面的加载情况
-      this.tabberPageLoadFlag = this.tabbarList.map((item, tabbar_index) => {
-        return index === tabbar_index
-      })
-      this.switchTabbar(index)
-    },
-    methods: {
-      // 切换导航
-      switchTabbar(index) {
-        this._switchTabbarPage(index)
-      },
-      
-      
-      // 导航页面滚动到底部
-      tabbarPageScrollLower(e) {
-      },
-      
-      // 切换导航页面
-      _switchTabbarPage(index) {
-        const selectPageFlag = this.tabberPageLoadFlag[index]
-        if (selectPageFlag === undefined) {
-          return
-        }
-        if (selectPageFlag === false) {
-          this.tabberPageLoadFlag[index] = true
-        }
-        this.currentIndex = index
-      }
-    }
-  }
+import popupItem from '@/wxcomponents/popup/index.vue';
+import goodsLevelHorizontal from '@/wxcomponents/goods/goodsLevelHorizontal.vue';
+import goodsLevelVertical from '@/wxcomponents/goods/goodsLevelVertical.vue';
+import bannerItem from '@/wxcomponents/banner/index.vue';
+import videoItem from '@/wxcomponents/video/index.vue';
+import paperItem from '@/wxcomponents/paper/index.vue';
+import navItem from '@/wxcomponents/nav/index.vue';
+import mixedItem from '@/wxcomponents/mixed/index.vue';
+import couponItem from '@/wxcomponents/coupon/index.vue';
+import amswersItem from '@/wxcomponents/amswers/index.vue';
+import articleItem from '@/wxcomponents/article/index.vue';
+import atlasItem from '@/wxcomponents/atlas/index.vue';
+import brandItem from '@/wxcomponents/brand/index.vue';
+import cardItem from '@/wxcomponents/card/index.vue';
+import tagItem from '@/wxcomponents/tag/index.vue';
+import templateItem from '@/wxcomponents/template/index.vue';
+import posterItem from '@/wxcomponents/poster/index.vue';
+
+import initialMixins from '@/mixins/initial.js'
+export default {
+	mixins: [initialMixins],
+	name: 'Index1',
+	data() {
+		return {
+			isVisibile: false
+		};
+	},
+	computed: {},
+	components: {
+		popupItem,
+		bannerItem,
+		videoItem,
+		paperItem,
+		navItem,
+		mixedItem,
+		couponItem,
+		amswersItem,
+		articleItem,
+		atlasItem,
+		brandItem,
+		cardItem,
+		posterItem,
+		tagItem,
+		templateItem,
+		goodsLevelHorizontal,
+		goodsLevelVertical,
+	},
+	methods: {}
+};
 </script>
 
 <style lang="scss" scoped>
-  
-  .index {
-    overflow: hidden;
-    height: 100%;
-  }
-  
-  .custom-tabbar-page {
-    height: calc(100vh - (100rpx + env(safe-area-inset-bottom) / 2));
-  }
-
+	page{
+		height: 100vh;
+		overflow: scroll;
+	}
+	.template-set{
+		height: 100vh;
+		overflow: scroll;
+		background-color: red;
+	}
 </style>
-	
+<!-- 杂草也有存在的意义， -->
+<!-- 折朵花 -->
+<!-- 吹了吹风，淋了淋雨 -->
+<!-- 再给你个狗日的三五个月你就知道低头了
+这个春天啊 是你的
+等你低头了 就是我的春天了。 -->
+<!-- 哪一次我都是先惦记着你啊 -->
+<!-- 你的命比我金贵 -->
+
+<!-- 到地里走走 -->
+<!-- 
+        四季
+到地里走走 抽上几袋旱烟
+踢开杂草 给仰着头的麦穗讲讲道理
+清晨夜晚、刮风下雨
+一年四季 你的命比我金贵
+淋了雨 吹了风 
+等你低了头 我就老了一岁 
+ -->
+ <!-- 
+	花
+
+  -->
+ 
+ 风把树叶吹到我脸上

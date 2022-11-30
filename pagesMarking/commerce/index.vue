@@ -143,7 +143,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/static/css/templatePage/custom_nav_bar.scss';
+// @import '@/static/css/templatePage/custom_nav_bar.scss';
 .template-browser {
 	margin-bottom: calc(110rpx + env(safe-area-inset-bottom) / 2);
 }
