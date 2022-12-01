@@ -94,7 +94,10 @@
         },
         "usingComponents" : true,
         "optimization" : {
-            "subPackages" : true
+            "subPackages" : true,
+            "treeShaking" : {
+                "enable" : true
+            }
         },
         "permission" : {
             "scope.userLocation" : {

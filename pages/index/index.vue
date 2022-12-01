@@ -1,8 +1,8 @@
 <template>
 	<view class="template-set">
 		<!-- 商品 -->
-		<goodsLevelHorizontal />
-		<!-- <goodsLevelVertical /> -->
+		<!-- <goodsLevelHorizontal /> -->
+		<goodsLevelVertical />
 		<!-- 轮播 -->
 		<bannerItem />
 		<!-- 视频 -->

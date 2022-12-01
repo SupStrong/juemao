@@ -16,9 +16,9 @@
 				style="width: 100%; height: 100%; opacity: 1;"
 			/>
 		</view>
-		<span class="sc-jeqYYF dbMvbw" data-type="text">口碑平价美妆榜</span>
-		<!-- <span class="sc-jeqYYF dtbxdn" data-type="text">大家都在买</span> -->
-		<span class="sc-jeqYYF hILqdI" data-type="text">180.3万人买过</span>
+		<text class="sc-jeqYYF dbMvbw" data-type="text">口碑平价美妆榜</text>
+		<!-- <text class="sc-jeqYYF dtbxdn" data-type="text">大家都在买</text> -->
+		<text class="sc-jeqYYF hILqdI" data-type="text">180.3万人买过</text>
 	</view>
 </template>
 

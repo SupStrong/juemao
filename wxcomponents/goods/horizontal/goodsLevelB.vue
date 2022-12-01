@@ -67,7 +67,6 @@
 								<text style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 16px;">168</text>
 							</view>
 							<view
-								view-name="View"
 								style="position: relative; display: flex; flex-shrink: 0; flex-grow: 0; visibility: visible; margin: 0px; width: 9px; height: 1px; place-self: flex-start;"
 							></view>
 							<view

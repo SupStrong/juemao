@@ -1,6 +1,6 @@
 <template>
 	<view class="">
-	<!-- 	<cardLevelA></cardLevelA>
+		<!-- <cardLevelA></cardLevelA>
 		<cardLevelB></cardLevelB>
 		<cardLevelC></cardLevelC>
 		<cardLevelD></cardLevelD>
@@ -30,8 +30,11 @@
 		<cardLevelBB></cardLevelBB>
 		<cardLevelCC></cardLevelCC>
 		<cardLevelDD></cardLevelDD> -->
-		<!-- <cardLevelEE></cardLevelEE> -->
-		<!-- <cardLevelFF></cardLevelFF> -->
+		<!-- <cardLevelEE></cardLevelEE>
+		<cardLevelFF></cardLevelFF> -->
+		<!-- <cardLevelGG></cardLevelGG>
+		<cardLevelHH></cardLevelHH> -->
+		<cardLevelII></cardLevelII>
 	</view>
 </template>
 
@@ -68,6 +71,10 @@ import cardLevelCC from '@/wxcomponents/card/components/cardLevelCC.vue';
 import cardLevelDD from '@/wxcomponents/card/components/cardLevelDD.vue';
 import cardLevelEE from '@/wxcomponents/card/components/cardLevelEE.vue';
 import cardLevelFF from '@/wxcomponents/card/components/cardLevelFF.vue';
+import cardLevelGG from '@/wxcomponents/card/components/cardLevelGG.vue';
+import cardLevelHH from '@/wxcomponents/card/components/cardLevelHH.vue';
+import cardLevelII from '@/wxcomponents/card/components/cardLevelII.vue';
+
 
 export default {
 	name: 'cardItem',
@@ -106,7 +113,10 @@ export default {
 		cardLevelCC,
 		cardLevelDD,
 		cardLevelEE,
-		cardLevelFF
+		cardLevelFF,
+		cardLevelGG,
+		cardLevelHH,
+		cardLevelII
 	},
 	methods: {}
 }
