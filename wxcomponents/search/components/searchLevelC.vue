@@ -1,33 +1,17 @@
 <template>
-	<view
-		class="rax-view-v2  search-bar"
-		style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding-top:0vw;padding-right:3.2vw;padding-bottom:0vw;padding-left:3.2vw;height:11.7333vw;width:100%;z-index:2;box-sizing:border-box;"
-	>
-		<view id="custom-header-placeholder2" class="rax-view-v2 import-header custom-area">
-			<view
-				href="https://pages.tmall.com/wow/z/import/tmg-rax-home/tmallimportwupr-index?wh_biz=tm&amp;wh_pid=tmg-website%2Fcategory&amp;wh_act_hidebar=true&amp;disableNav=YES"
-				style="display:flex;position:relative;flex-direction:column;align-items:center;justify-content:center;"
-			>
-				<image
-					src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 27'%3E%3Cg fill='%23fff' fill-rule='evenodd'%3E%3Cpath d='M0 3h28V0H0zM0 15h28v-3H0zM0 27h28v-3H0z'/%3E%3C/g%3E%3C/svg%3E"
-					style="width:3.7333vw;height:3.6vw;padding-top:1.0667vw;padding-right:1.7333vw;padding-bottom:1.0667vw;padding-left:1.7333vw;"
-				/>
-				<text class="rax-text-v2 " style="font-size:3.4667vw;font-weight:bold;color:rgb(255,255,255);">分类</text>
+	<view class="zebra-jinkou-merged-header tmg-2021-header  has-color hack_by_hideHeader_pt20_under_ios9 transparent">
+		<view class="background"></view>
+		<view class="merged-header">
+			<view class="tmallhk-site-icon">
+				<image src="https://gw.alicdn.com/imgextra/i4/O1CN01kzM95a1KJznl4Uxko_!!6000000001144-2-tps-80-80.png_110x10000.jpg_.webp" style="width: 162rpx;height: 50rpx;">
 			</view>
-			<view
-				href="https://s.m.tmall.com/m/searchbar.htm?type=p&amp;tmhkh5=1&amp;dim=tmallhk.list.app&amp;searchType=tmallhk&amp;q=毛衣"
-				style="display: flex; position: relative; flex-direction: row; align-items: center; justify-content: flex-start; width: 83.3333vw; height: 38px; flex: 0 1 auto;"
-			>
-				<view
-					class="rax-view-v2 "
-					style="position: absolute; top: 0vw; left: 0vw; width: 100%; height: 38px; background-color: rgb(255, 255, 255); border-radius: 133.333vw; border-style: none;"
-				></view>
-				<image
-					src="//gw.alicdn.com/imgextra/i3/O1CN013h8qTs1av7oS6IuoP_!!6000000003391-2-tps-70-70.png_110x10000.jpg_.webp"
-					style="width:4.8vw;height:4.8vw;position:relative;margin-left:2.1333vw;z-index:1;"
-				/>
-				<text class="rax-text-v2 " style="position:relative;margin-left:1.8667vw;font-size:3.7333vw;color:rgb(102,102,102);z-index:1;">毛衣</text>
+
+			<view class="search-wrapper">
+				<image src="https://gw.alicdn.com/imgextra/i4/O1CN01kzM95a1KJznl4Uxko_!!6000000001144-2-tps-80-80.png_110x10000.jpg_.webp" style="width: 36rpx;height: 36rpx">
+				<span class="hot-search" >全球新发现</span>
 			</view>
+
+			<view class="import-header custom-area" id="custom-header-placeholder"></view>
 		</view>
 	</view>
 </template>
@@ -35,76 +19,296 @@
 <script></script>
 
 <style lang="scss" scoped>
-.Search--search_content_box--1JdQzIu {
-	position: relative;
+ .zebra-jinkou-merged-header.transparent .cart .cart-svg,
+ .zebra-jinkou-merged-header.transparent .more-svg,
+ .zebra-jinkou-merged-header.transparent .tmallhk-site-icon .site-icon {
+  fill: #fff;
 }
-.Search--topSearchControl--1uWWaeG {
-	position: absolute;
-	width: 100%;
-	height: 0.13333vw;
-	opacity: 0;
-	pointer-events: none;
+.hidden {
+  display: none;
 }
-.Search--search_content--23Agk2S {
-	position: relative;
-	z-index: 10;
-	width: 100vw;
-	margin: 0.26667vw auto 0;
+.need-head {
+  height: 50px;
+  padding-top: var(--safe-area-inset-top);
 }
-.Search--search_content--23Agk2S,
-.Search--search_content_right--2wuaTgG {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	height: 8vw;
-	padding-left: 2.4vw;
+ .zebra-jinkou-merged-header {
+  padding: 0 12px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2002;
+  background-color: transparent;
+  padding-top: var(--safe-area-inset-top);
+  display: flex;
+  align-items: center;
 }
-.Search--search_content_right--2wuaTgG {
-	z-index: 1;
-	width: 92vw;
-	padding-right: 0.8vw;
-	border-radius: 4.4vw;
-	background: hsla(0, 0%, 100%, 0.3);
+ .zebra-jinkou-merged-header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
-.Search--search_content_left--32LRKHS {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-align-items: center;
-	align-items: center;
+ .zebra-jinkou-merged-header .merged-header {
+  position: relative;
+  padding: 10px 0;
+  height: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
-.Search--search_content_left_text--KXjvPwi {
-	overflow: hidden;
-	margin-right: 2.66667vw;
-	margin-left: 1.6vw;
-	color: hsla(0, 0%, 100%, 0.8);
-	font-size: 3.46667vw;
-	text-overflow: ellipsis;
+ .zebra-jinkou-merged-header .merged-header .tmallhk-site-icon {
+  position: relative;
+  margin-top: -6px;
+  width: 81px;
+  height: 25px;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  transition: width 0.3s;
 }
-.Search--search_content_left_button--SRYcBfH {
-	-webkit-flex: 0 0 auto;
-	flex: 0 0 auto;
-	height: 6.4vw;
-	padding: 0.8vw 3.73333vw;
-	border-radius: 3.86667vw;
-	background-image: -webkit-linear-gradient(345deg, #ffe1d5, #ffddea 46%, #dcecf7 78%, #cceef9);
-	background-image: linear-gradient(105deg, #ffe1d5, #ffddea 46%, #dcecf7 78%, #cceef9);
-	color: #ee1851;
-	font-size: 3.46667vw;
-	font-family: PingFangSC-Medium;
+ .zebra-jinkou-merged-header .merged-header .search-wrapper {
+  position: relative;
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -moz-transition: transform 0.4s, -moz-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s;
+  width: 100%;
+  height: 29px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  padding-left: 7px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: width;
 }
-.Header--headerContainer--19w0XmK {
-	position: relative;
-	box-sizing: content-box;
-	width: 100vw;
+ .zebra-jinkou-merged-header .merged-header .search-wrapper .search-icon {
+  width: 18px;
+  height: 18px;
 }
-.Header--headerSearch--19F6bbb {
-	margin-bottom: 2.13333vw;
+ .zebra-jinkou-merged-header .merged-header .search-wrapper .hot-search {
+  margin-left: 4px;
+  color: #ccc;
+  font-family: PingFang SC;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 210px;
+  font-size: 12px;
+  font-weight: 200;
+  -webkit-transform-origin: 0 center;
+  -moz-transform-origin: 0 center;
+  -ms-transform-origin: 0 center;
+  transform-origin: 0 center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
 }
+@media screen and (max-width: 356px) {
+   .zebra-jinkou-merged-header .merged-header .search-wrapper .hot-search {
+    display: none;
+  }
+}
+ .zebra-jinkou-merged-header .merged-header .btn-action-follow {
+  margin-left: 6px;
+  width: 57px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+ .zebra-jinkou-merged-header .merged-header .btn-action-follow .follow-icon {
+  display: none;
+  margin-left: -5px;
+  width: 26px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+ .zebra-jinkou-merged-header .merged-header .btn-action-follow.active {
+  background: #fff;
+  color: #333;
+}
+ .zebra-jinkou-merged-header .merged-header .btn-action-follow.active .follow-icon {
+  display: block;
+}
+ .zebra-jinkou-merged-header.has-color .background {
+  opacity: 1;
+  background: #6746f9;
+}
+ .zebra-jinkou-merged-header.transparent:not([class~='has-color']) .background {
+  opacity: 0;
+}
+ .zebra-jinkou-merged-header.transparent.has-background .background {
+  opacity: 1;
+  background: #fff;
+}
+ .zebra-jinkou-merged-header.transparent.has-background .search-wrapper {
+  background-color: #f2f0f2;
+}
+ .zebra-jinkou-merged-header.transparent.has-background .search-wrapper .hot-search {
+  color: #8f8e92;
+}
+@media screen and (max-width: 356px) {
+   .zebra-jinkou-merged-header.transparent.has-background .search-wrapper .hot-search {
+    display: block;
+  }
+}
+ .zebra-jinkou-merged-header.transparent.has-background .search-wrapper .search-icon g {
+  stroke: #b5b5b5;
+}
+ .zebra-jinkou-merged-header.transparent.has-background .btn-action-follow.active {
+  -webkit-box-shadow: 0 2.5px 7.5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2.5px 7.5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2.5px 7.5px rgba(0, 0, 0, 0.1);
+}
+ .zebra-jinkou-merged-header.transparent .goback-btn-icon .back-svg {
+  stroke: #fff;
+}
+ .zebra-jinkou-merged-header.transparent .search-wrapper {
+  border: none;
+}
+ .zebra-jinkou-merged-header.transparent .search-wrapper .hot-search {
+  color: #ccc;
+}
+ .zebra-jinkou-merged-header.light-mode .goback-btn-icon .back-svg,
+ .zebra-jinkou-merged-header.transparent.has-background .goback-btn-icon .back-svg {
+  -webkit-transition: stroke 0.4s;
+  -moz-transition: stroke 0.4s;
+  transition: stroke 0.4s;
+  stroke: var(--color-text-0, #333);
+}
+ .zebra-jinkou-merged-header.light-mode .tmallhk-site-icon .site-icon,
+ .zebra-jinkou-merged-header.transparent.has-background .tmallhk-site-icon .site-icon {
+  fill: var(--color-brand-1, #7c48db);
+}
+ .zebra-jinkou-merged-header.light-mode .cart .cart-svg,
+ .zebra-jinkou-merged-header.light-mode .more-svg,
+ .zebra-jinkou-merged-header.transparent.has-background .cart .cart-svg,
+ .zebra-jinkou-merged-header.transparent.has-background .more-svg {
+  fill: var(--color-text-0, #333);
+}
+ .zebra-jinkou-merged-header.light-mode .search-wrapper {
+  color: #ccc;
+  border: 2px solid var(--color-brand-1, #7c48db);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ .zebra-jinkou-merged-header.light-mode .search-wrapper .hot-search {
+  color: #ccc;
+}
+ .zebra-jinkou-merged-header.has-background .tmallhk-site-icon {
+  opacity: 0;
+  width: 0;
+}
+ .zebra-jinkou-merged-header.has-background .search-wrapper {
+  color: #ccc;
+  border: none;
+}
+ .zebra-jinkou-merged-header.has-background .search-wrapper .hot-search {
+  color: #ccc;
+}
+.TMG_transparent_navigtion_adapter {
+  margin: 0;
+  margin-top: var(--safe-area-inset-top);
+}
+@supports (width: var(--tmg-top-nav-height)) {
+  .TMG_transparent_navigtion_adapter {
+    padding-top: 50px;
+  }
+}
+
 </style>
