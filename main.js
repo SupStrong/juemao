@@ -15,7 +15,8 @@ let vuexStore = require('@/store/$t.mixin.js')
 Vue.mixin(vuexStore)
 
 import {router,RouterMount} from './router/index.js'
-import './static/css/flex.scss'
+// import '@/static/css/flex.scss'
+// ./static/css/flex.scss
 Vue.mixin(router)
 
 // 引入TuniaoUI对小程序分享的mixin封装

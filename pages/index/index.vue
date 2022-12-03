@@ -2,9 +2,11 @@
 	<view class="template-set">
 		<!-- 商品 -->
 		<!-- <goodsLevelHorizontal /> -->
-		<goodsLevelVertical />
+		<!-- <goodsLevelVertical /> -->
 		<!-- 轮播 -->
 		<bannerItem />
+		<!-- 搜索 -->
+		<searchItem />
 		<!-- 视频 -->
 		<videoItem></videoItem>
 		<!-- 试卷 -->
@@ -47,6 +49,7 @@ import goodsLevelVertical from '@/wxcomponents/goods/goodsLevelVertical.vue';
 import bannerItem from '@/wxcomponents/banner/index.vue';
 import videoItem from '@/wxcomponents/video/index.vue';
 import paperItem from '@/wxcomponents/paper/index.vue';
+import searchItem from '@/wxcomponents/search/index.vue';
 import navItem from '@/wxcomponents/nav/index.vue';
 import mixedItem from '@/wxcomponents/mixed/index.vue';
 import couponItem from '@/wxcomponents/coupon/index.vue';
@@ -79,6 +82,7 @@ export default {
 		couponItem,
 		amswersItem,
 		articleItem,
+		searchItem,
 		atlasItem,
 		brandItem,
 		cardItem,
